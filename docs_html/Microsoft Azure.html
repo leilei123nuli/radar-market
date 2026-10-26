@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Microsoft Azure</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="microsoft-azure">Microsoft Azure</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：2010
+<strong>护城河</strong>：OpenAI 独家云 + 企业客户基础，AI 云增速最快</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Microsoft Azure 是微软的云计算平台，全球第二大公有云，产品线覆盖 IaaS（计算/存储/网络）、PaaS（数据库/容器/开发者工具）到 AI 平台（Microsoft Foundry，原 Azure AI Foundry 更名）的全栈云服务。当前业务重心明显向 AI 倾斜：以 Microsoft Foundry 为"AI 应用与智能体工厂"，向上承接 Copilot 体系，向下依托全球区域最多的数据中心与自研芯片基础设施，主要客户为大型企业与开发者。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li><strong>AI 云一体化</strong>：把 Azure 从通用云重塑为"智能体云"——Foundry（模型与智能体平台）+ Microsoft IQ（Work IQ / Fabric IQ / Foundry IQ 构成的上下文知识层，Build 2026 宣布 GA）+ Copilot 入口，三层打通</li>
+<li><strong>模型开放策略</strong>：Azure OpenAI in Foundry Models 提供 OpenAI 模型（独家云地位），同时引入第三方模型（2026-10 博客宣布 Anthropic Claude Opus 5.5 上线 Foundry），走"模型货架"路线</li>
+<li><strong>基础设施军备</strong>：从数据中心到自研芯片（silicon to systems）全栈优化，区域数量号称全球云厂商最多，主攻 AI 训练/推理工作负载</li>
+<li><strong>混合云与多云</strong>：Azure Arc / Azure Local / Azure Stack 系列把云能力延伸到本地与边缘，绑定企业存量 IT</li>
+<li><strong>开发者生态</strong>：GitHub Copilot、VS Code、AKS 组成开发者入口；2026 年获 Gartner 容器管理魔力象限领导者</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="ai">AI 与机器学习</h3>
+<ul>
+<li><strong>Microsoft Foundry</strong>：AI 应用与智能体工厂，统一模型目录、智能体运行时与治理（原 Azure AI Foundry）</li>
+<li><strong>Foundry Models / Azure OpenAI in Foundry Models</strong>：多模型调用服务，含 OpenAI 系列与第三方模型</li>
+<li><strong>Foundry Agent Service</strong>：托管智能体服务，自动化复杂业务流程</li>
+<li><strong>Foundry IQ / Foundry Control Plane</strong>：智能体统一知识层；跨组织观察、管控、治理智能体</li>
+<li><strong>Azure Machine Learning</strong>：企业级端到端机器学习生命周期平台</li>
+<li><strong>Azure AI Search</strong>：面向 RAG 与智能体的统一检索层</li>
+<li><strong>Phi open models</strong>：微软自研小语言模型（SLM）系列，主打低成本低时延</li>
+</ul>
+<h3 id="_5">数据与分析</h3>
+<ul>
+<li><strong>Microsoft Fabric</strong>：AI 驱动的一体化数据平台，统一数据湖、数仓、BI</li>
+<li><strong>Power BI</strong>：交互式数据可视化与报表</li>
+<li><strong>Azure Synapse Analytics / Azure Databricks / Azure Data Factory</strong>：分析、Spark 数据工程、混合数据集成</li>
+<li><strong>Microsoft Purview</strong>：数据治理与合规</li>
+</ul>
+<h3 id="_6">计算与容器</h3>
+<ul>
+<li><strong>Virtual Machines / Azure Compute Fleet / Spot VMs</strong>：按需与规模化算力</li>
+<li><strong>Azure Kubernetes Service (AKS)</strong>：托管 Kubernetes，容器管理领导者象限产品</li>
+<li><strong>Azure Container Apps</strong>：Serverless 容器应用平台（Container Apps Sandboxes 已 GA，为 AI 智能体提供隔离沙箱）</li>
+<li><strong>Azure Functions</strong>：事件驱动 Serverless 计算</li>
+</ul>
+<h3 id="_7">数据库</h3>
+<ul>
+<li><strong>Azure SQL 系列</strong>：SQL Database / Managed Instance，托管 SQL Server 云化</li>
+<li><strong>Azure Cosmos DB</strong>：全球分布式多模型 NoSQL 数据库</li>
+<li><strong>Azure HorizonDB</strong>（预览）：新一代 PostgreSQL 云数据库，面向关键任务应用</li>
+<li><strong>Azure Database for PostgreSQL / MySQL、Azure Managed Redis</strong>：开源数据库托管</li>
+</ul>
+<h3 id="_8">存储与网络</h3>
+<ul>
+<li><strong>Azure Blob Storage / Files / Disk Storage / Elastic SAN</strong>：对象/文件/块/云原生 SAN 存储</li>
+<li><strong>Azure Virtual Network / ExpressRoute / Front Door / Firewall</strong>：虚拟网络、专线、CDN 入口与云防火墙</li>
+</ul>
+<h3 id="_9">安全与身份</h3>
+<ul>
+<li><strong>Microsoft Entra ID</strong>（原 Azure AD）：身份与访问管理</li>
+<li><strong>Microsoft Sentinel</strong>：云原生 SIEM 与安全分析</li>
+<li><strong>Microsoft Defender for Cloud / Security Copilot</strong>：多云混合防护、生成式 AI 安全助手</li>
+<li><strong>Azure Key Vault</strong>：密钥与机密管理</li>
+</ul>
+<h3 id="_10">混合云与边缘</h3>
+<ul>
+<li><strong>Azure Arc</strong>：跨本地、多云、边缘的统一管理平面</li>
+<li><strong>Azure Local / Azure Stack Hub / Azure Stack Edge</strong>：本地分布式云、一体机、边缘计算设备</li>
+</ul>
+<h3 id="iot">开发者工具与 IoT</h3>
+<ul>
+<li><strong>Visual Studio / VS Code、Azure DevOps、GitHub Copilot</strong>：开发工具链与 CI/CD</li>
+<li><strong>Azure IoT Hub / IoT Operations / Digital Twins</strong>：物联网连接、边缘智能与数字孪生</li>
+</ul>
+<h2 id="_11">三、服务分类</h2>
+<h3 id="iaaspaas">云资源服务（IaaS/PaaS）</h3>
+<ul>
+<li>按量付费（Pay-as-you-go）、预留实例、Spot 折扣等多种计费模式</li>
+<li>Azure Free：新用户 30 天免费试用额度</li>
+</ul>
+<h3 id="ai_1">AI 平台服务</h3>
+<ul>
+<li>Foundry Models 按 token 计费的模型推理服务（OpenAI + 第三方模型）</li>
+<li>Foundry Agent Service 托管智能体运行服务</li>
+<li>Content Safety / Observability in Foundry Control Plane：内容安全与智能体可观测服务</li>
+</ul>
+<h3 id="_12">企业协议与支持服务</h3>
+<ul>
+<li>企业协议（EA）等大客户采购框架；分档技术支持计划；销售专家一对一咨询</li>
+<li>Microsoft Learn：免费自学式云技能培训与认证体系</li>
+</ul>
+<h3 id="_13">开发者平台服务</h3>
+<ul>
+<li>GitHub Enterprise / GitHub Advanced Security for Azure DevOps：代码托管与安全服务</li>
+<li>Microsoft Dev Box：云端即用开发工作站</li>
+</ul>
+<h2 id="_14">四、解决方案分类</h2>
+<h3 id="_15">按工作负载</h3>
+<ul>
+<li><strong>AI 应用与智能体</strong>：Microsoft Foundry + Microsoft IQ + Copilot，构建企业级生成式 AI 应用与自定义智能体</li>
+<li><strong>数据与分析现代化</strong>：Microsoft Fabric 统一数据底座，近实时分析洞察</li>
+<li><strong>应用现代化</strong>：AKS + Container Apps + App Service，支持开源框架（Ray、vLLM、KAITO）跑关键 AI 应用</li>
+<li><strong>上云迁移与灾备</strong>：Azure Migrate、Azure Site Recovery、Azure Data Box（离线大数据迁移）</li>
+<li><strong>基础设施韧性</strong>：Azure Infrastructure Resiliency Manager，面向现代化改造的韧性目标管理</li>
+</ul>
+<h3 id="_16">混合云/多云方案</h3>
+<ul>
+<li>Azure Arc 统一管理本地、边缘与其他云资源；Azure Multicloud Interconnect 跨云互联</li>
+<li>Azure VMware Solution / Nutanix Cloud Clusters：存量虚拟化负载平移上云</li>
+</ul>
+<h3 id="_17">行业方案</h3>
+<ul>
+<li><strong>医疗</strong>：Azure Health Data Services（PHI 数据）、Health Bot（虚拟医疗助手）</li>
+<li><strong>能源</strong>：Microsoft Energy Data Services（能源数据现代化）</li>
+<li><strong>地理空间/科研</strong>：Microsoft Planetary Computer Pro（地理空间数据 + 企业 AI）</li>
+<li>官网客户案例覆盖制造（Fortune Brands）、医疗（Solv）、化工（Syensqo 基于 Azure OpenAI Service 构建 SyGPT）等</li>
+</ul>
+<h2 id="_18">五、更新记录</h2>
+<h3 id="_19">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_20">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_21">六、总结</h2>
+<h3 id="_22">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Microsoft Foundry</strong>：Azure AI 战略的核心载体，"模型目录 + 智能体运行时 + 治理"一体化，是观察企业级 AI 落地进度的最佳窗口</li>
+<li><strong>Azure OpenAI in Foundry Models</strong>：OpenAI 独家云分发 + 第三方模型上架，模型货架模式护城河明显</li>
+<li><strong>AKS + Container Apps</strong>：容器管理层 2026 Gartner 领导者象限，AI 工作负载容器化（Ray/vLLM/KAITO）增长动能强</li>
+<li><strong>Microsoft Fabric</strong>：数据分析一体化平台，与 Foundry 共同构成 AI 数据闭环</li>
+</ul>
+<h3 id="_23">强势战略留意</h3>
+<ul>
+<li><strong>Microsoft IQ（Work IQ / Fabric IQ / Foundry IQ）</strong>：Build 2026 推出 GA 的上下文知识栈，意在让"智能体理解企业上下文"成为平台级壁垒，是 Copilot 与 Foundry 之间的关键粘合层</li>
+<li><strong>更名与整合信号</strong>：Azure AI Foundry → Microsoft Foundry、Azure AD → Entra 等品牌去 Azure 化，说明 AI/安全产品线正被拔高到公司级平台定位</li>
+<li><strong>自研芯片与数据中心扩张</strong>：AI 云增速依赖巨额资本开支，其回报率是判断 Azure 长期竞争力的核心变量</li>
+<li><strong>模型中立化</strong>：引入 Claude 等第三方模型，短期扩大模型货架吸引力，长期需观察与 OpenAI 独家关系的演变</li>
+</ul>
+<h2 id="_24">信息来源</h2>
+<ul>
+<li>官网 https://azure.microsoft.com（通）：首页产品动态、Microsoft Foundry / Fabric / IQ、HorizonDB 预览、Container Apps Sandboxes GA、基础设施叙事</li>
+<li>产品 https://azure.microsoft.com/en-us/products（通）：全量产品目录与官方产品分类（AI+ML、分析、计算、容器、数据库、网络、安全、存储、混合云等 20 类）</li>
+<li>博客/新闻 https://azure.microsoft.com/en-us/blog（通）：Claude Opus 5.5 上线 Foundry、2026 Gartner 容器管理领导者、基础设施韧性现代化</li>
+<li>补充抓取：解决方案页 https://azure.microsoft.com/en-us/solutions（通，页面内容较简略，解决方案分类主要依据官网首页与产品页归纳）</li>
+<li>网络搜索补充（Microsoft Foundry 更名沿革、Build 2026 的 IQ Stack GA、Foundry IQ 定位），用于战略背景核对</li>
+<li>公司网站.json 未收录投资者关系链接，本版未使用 IR 材料；财务与增速数据公开信息有限，未引用具体数字</li>
+</ul></div></div></body></html>

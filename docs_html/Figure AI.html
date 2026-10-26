@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Figure AI</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="figure-ai">Figure AI</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：5. 具身智能 | <strong>地区</strong>：国外 | <strong>类型</strong>：新型 | <strong>成立</strong>：2022
+<strong>护城河</strong>：Helix 端到端模型 + 宝马工厂试点，商业化进度最快之一</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Figure AI 是美国人形机器人公司，定位"general purpose humanoid"，采用"AI 模型 + 本体硬件 + 自建制造"全栈垂直整合路线：底层是自研视觉-语言-动作（VLA）模型 Helix，载体是 Figure 系列人形机器人（当前为第三代 Figure 03），制造由自建工厂 BotQ 承担。商业化沿"工业/物流 → 商业场景 → 家庭"路径推进：Figure 02 已在宝马 Spartanburg 工厂完成 11 个月产线部署（装载 90,000+ 钣金件、运行 1,250+ 小时、参与 30,000+ 辆 X3 生产），Figure 03 已进厂转向更复杂的 sequencing 工序；C 轮融资承诺资本超 10 亿美元，投后估值 390 亿美元（Parkway 领投，NVIDIA、Intel Capital、高通、LG、Salesforce 等参投）。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>数据为核心壁垒：启动 Project Go-Big 互联网级人形预训练数据集计划，与 Brookfield（管理超 10 万套住宅、万亿级资产）战略合作采集真实环境人类视频；另建 Index 创作者网络（App 众包人类第一视角视频，已上传 1,600 万+ 条，向创作者支付 1,500 万美元，计划未来 12 个月在数据与算力上投入超 10 亿美元）</li>
+<li>制造规模化：BotQ 工厂 Figure 03 产能已从每天 1 台提升到每小时 1 台，首代产线规划年产 1.2 万台，目标四年累计 10 万台</li>
+<li>家庭为终局市场：Figure 03 专为家庭环境重新设计（软包覆、无线充电、电池安全 UN38.3 认证），官网主打家庭家务场景</li>
+<li>商业场景并行：物流分拣（Helix 已接近人工速度，单件处理 4.05 秒、条码朝向成功率约 95%）、与 Catalyst Brands 等签约、探索 Brookfield 旗下商业物业部署</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">人形机器人本体</h3>
+<ul>
+<li><strong>Figure 03</strong>：第三代产品，为 Helix、家庭与大规模制造重新设计——新一代视觉系统（帧率 2 倍、延迟 1/4、视场角宽 60%）、手掌摄像头、自研指尖触觉传感器（可感知 3 克压力）、2 kW 无线感应充电、10 Gbps mmWave 数据回传、可拆洗软包覆</li>
+<li><strong>Figure 02</strong>：第二代产品，已随 Figure 03 发布启动退役（f-02-decommission），其在宝马的部署经验全部回流入 Figure 03 设计</li>
+<li><strong>Figure 01</strong>：首代原型机，2023 年 5 月首次行走，验证技术路线</li>
+</ul>
+<h3 id="ai">AI 模型产品</h3>
+<ul>
+<li><strong>Helix</strong>：通用型人形 VLA 模型，单一神经网络端到端输出操作与导航指令，已展示纯人类视频零样本迁移到机器人导航</li>
+<li><strong>Helix 02</strong>：最新版本，S0/S1/S2 三层架构——System 0（1 kHz 全身控制，10M 参数，基于 1,000+ 小时人体动作数据与仿真强化学习训练，替代 10.9 万行手写 C++，新增视觉感知条件控制可零样本上下楼梯）、System 1（200 Hz 视觉运动策略，全传感器进、全关节出）、System 2（场景理解与语言推理）；已实现 4 分钟连续自主厨房任务（61 个移动操作动作）</li>
+</ul>
+<h3 id="_6">制造与基础设施</h3>
+<ul>
+<li><strong>BotQ</strong>：自建高产能制造工厂，自研 MES 系统，150+ 联网工位、50+ 过程质检点，产线直通率超 80%，已交付 350+ 台 Figure 03、生产 9,000+ 执行器</li>
+<li><strong>Index</strong>：数据采集 App 与数据集管线（过滤、反作弊、去重、再平衡、标注五阶段），同时为未来"机器人即服务"奠定入口</li>
+</ul>
+<h2 id="_7">三、服务分类</h2>
+<h3 id="_8">机器人部署服务</h3>
+<ul>
+<li>工厂产线部署：与宝马集团的制造场景合作（钣金装载 → sequencing 物料排序）</li>
+<li>物流场景服务：包裹分拣与条码朝向处理，已部署于真实物流客户环境</li>
+<li>商业客户定制：车队制服/侧屏品牌定制、Field Service Management 现场服务体系</li>
+</ul>
+<h3 id="_9">数据与平台服务</h3>
+<ul>
+<li>Index 创作者网络：个人可上传任务视频获得报酬，企业可预约创作者上门服务</li>
+<li>车队运营：自研 Fleet Management System + OTA 远程升级，机器人健康、位置、状态实时管理</li>
+</ul>
+<h2 id="_10">四、解决方案分类</h2>
+<h3 id="_11">制造业解决方案</h3>
+<ul>
+<li>汽车产线自动化：宝马 Spartanburg 工厂钣金装载与 sequencing 上下料，解决传统六轴机械臂无法处理的动态物料场景</li>
+</ul>
+<h3 id="_12">物流解决方案</h3>
+<ul>
+<li>小型包裹分拣：覆盖硬质纸箱、软包、气泡信封等多形态包裹，自适应抓取策略</li>
+</ul>
+<h3 id="_13">家庭解决方案</h3>
+<ul>
+<li>家务自动化：洗衣、清洁、洗碗机装卸、卧室/客厅整理等场景自主完成（当前处于能力展示与早期推进阶段）</li>
+</ul>
+<h3 id="_14">生态合作方案</h3>
+<ul>
+<li>Brookfield：数据采集 + AI 基础设施（GPU 数据中心、机器人训练场地）+ 商业部署三位一体合作</li>
+<li>Nscale：算力基础设施战略合作（配套 Helix 训练的下一代 GPU 基建）</li>
+</ul>
+<h2 id="_15">五、更新记录</h2>
+<h3 id="_16">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_17">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_18">六、总结</h2>
+<h3 id="_19">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Helix 02 + Figure 03 组合</strong>：S0/S1/S2 分层架构是目前公开的人形机器人中最完整的端到端全身控制方案，4 分钟连续自主任务为行业最长水平之一，值得逐版本跟踪</li>
+<li><strong>BotQ 制造能力</strong>：1 台/小时的节拍与垂直整合供应链是其相对其他人形公司的硬壁垒，产能爬坡速度直接决定数据飞轮转速</li>
+<li><strong>Index 数据网络</strong>：众包人类视频是差异化数据源，绕开了机器人遥操作数据的成本瓶颈</li>
+</ul>
+<h3 id="_20">强势战略留意</h3>
+<ul>
+<li>家庭场景是估值锚点：Figure 03 为家庭重新设计 + 官网全面转向家庭叙事，但实际家庭落地进度（安全性、售价、订阅模式）公开信息有限，需持续验证</li>
+<li>数据军备竞赛：Project Go-Big + Index + Brookfield 三线并进，12 个月 10 亿美元数据/算力投入，观察其数据规模能否转化为跨场景泛化能力</li>
+<li>商业化节奏：宝马从试点走向 sequencing 新工序是积极信号；390 亿美元估值对应收入体量极小，留意与 Tesla Optimus、1X、Agility 的进度对比及后续融资/上市动向</li>
+</ul>
+<h2 id="_21">信息来源</h2>
+<ul>
+<li>官网 https://www.figure.ai（通）：Figure 03 与 Helix 产品叙事、家庭场景定位</li>
+<li>公司页 https://www.figure.ai/company（通）：Figure 01/02 产品沿革</li>
+<li>产品页 https://www.figure.ai/figure（通）、Helix 页 https://www.figure.ai/helix（通）</li>
+<li>新闻/博客 https://www.figure.ai/news（通）：C 轮融资（series-c）、Figure 03 发布（introducing-figure-03）、宝马部署复盘（production-at-bmw）、F.03 进厂（f-03-at-bmw）、Helix 02 技术报告（helix-02）、物流规模化（scaling-helix-logistics）、Brookfield 合作、Project Go-Big、Index 发布（introducing-index）、产能爬坡（ramping-figure-03-production）</li>
+<li>公司网站.json 中该公司仅有官网一条链接，无独立的投资者关系/博客条目；新闻页系从官网导航发现</li>
+<li>定价、家庭版发售时间、收入数据公开信息有限，未纳入本档案</li>
+</ul></div></div></body></html>

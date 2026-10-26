@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wayve</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="wayve">Wayve</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：4. 汽车 / 智驾 | <strong>地区</strong>：国外 | <strong>类型</strong>：新型 | <strong>成立</strong>：2017
+<strong>护城河</strong>：端到端具身智驾，软银/英伟达投资</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Wayve 是英国自动驾驶软件公司（总部伦敦，2017 年创立，公司主体 Wayve Technologies Ltd.），主打 Embodied AI（具身智能）路线：为汽车开发"机器人大脑"式的驾驶基础模型。核心产品是 <strong>Wayve AI Driver</strong>——不依赖高精地图（mapless）、车型与传感器无关（vehicle/sensor-agnostic）的端到端智驾软件，以授权方式提供给 OEM 与车队运营方，覆盖从 L2+ 辅助驾驶到 L4 自动驾驶的全部等级。公司累计融资约 $2.8B（4 轮），其中 2026 年完成 $1.5B 新一轮融资；员工 1,000+，分布于伦敦、硅谷、斯图加特（Leonberg）、Herzliya、温哥华、横滨等地。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>定位"全球自动驾驶软件平台"：区别于垂直整合车企（如 Tesla）与重资产 Robotaxi 运营商（如 Waymo），Wayve 走第三条路线——向车企授权可跨品牌、跨地域复制的 AI Driver 软件，靠车队数据网络效应形成复利</li>
+<li>技术路线 AV2.0：以单一端到端神经网络替代传统"感知-规划-控制"模块化架构（AV1.0），自监督学习免标注数据，强调泛化能力解决长尾场景</li>
+<li>商业化两步走：2026 年起与 Uber 合作在伦敦上线 Robotaxi 并计划扩至 10+ 市场；2027 年起消费者可购买搭载 Wayve AI Driver 的量产车（首发为日产下一代 ProPILOT，L2+ 起步）</li>
+<li>用 Global Road Trip / AI-500 Roadshow（单一模型 500 城零样本测试）验证"无需区域重训练"的全球泛化能力，支撑平台化叙事</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">智驾软件产品</h3>
+<ul>
+<li><strong>Wayve AI Driver</strong>：核心产品，一套 AI 驾驶软件覆盖 L2+ 到 L4 所有自动化等级，支持 OTA 持续升级，可快速适配新车型与新地域</li>
+</ul>
+<h3 id="av20">核心技术体系（AV2.0）</h3>
+<ul>
+<li><strong>端到端驾驶模型</strong>：原始传感器输入直接输出驾驶行为，自监督学习，无需高精地图与人工标注</li>
+<li><strong>Fleet Learning Loop</strong>：车队数据闭环（采集→云端训练→评估→部署），支撑从 eyes-on 到 eyes-off 的能力演进</li>
+<li><strong>Safety 2.0 框架</strong>：面向端到端 AI 的新一代自动驾驶安全方法论</li>
+</ul>
+<h3 id="wayve-labs">Wayve Labs 研究产品线</h3>
+<ul>
+<li><strong>GAIA / GAIA-4</strong>：生成式世界模型，可从文本/动作/视频提示生成逼真驾驶视频；GAIA-4（2026-08）把 AI Driver 放入闭环，用于规模化端到端安全评估</li>
+<li><strong>LINGO-1</strong>：驾驶语言模型，用自然语言解释端到端模型的驾驶决策，提升可解释性</li>
+<li><strong>WayveScenes101</strong>：公开的新视角合成基准数据集</li>
+<li><strong>神经渲染仿真器（Neural Simulator）</strong>：自动生成照片级 4D 仿真场景用于训练测试</li>
+<li><strong>Scenario Intelligence</strong>：场景智能工具，用于数据集内省与管控</li>
+</ul>
+<h3 id="_6">出行产品</h3>
+<ul>
+<li><strong>Wayve X Uber</strong>：与 Uber 合作的自动驾驶乘车服务，已在伦敦上线（supervised autonomous rides）</li>
+</ul>
+<h2 id="_7">三、服务分类</h2>
+<h3 id="_8">软件授权与集成服务</h3>
+<ul>
+<li>面向 OEM 的 AI Driver 授权：量产集成、品牌定制化适配、跨车型平台部署</li>
+<li>OTA 持续升级服务：模型迭代通过空中升级推送，车辆能力随模型进步持续增强</li>
+</ul>
+<h3 id="_9">数据与训练平台服务</h3>
+<ul>
+<li>车队学习闭环运营：从合作车队采集真实驾驶数据，经云端训练基础设施转化为驾驶能力（依托与 Microsoft Azure 合作的超算基础设施）</li>
+</ul>
+<h3 id="_10">出行服务</h3>
+<ul>
+<li>Wayve X Uber 自动驾驶出行：面向消费者的 Robotaxi 乘车服务，2026 年自伦敦起步</li>
+</ul>
+<h2 id="_11">四、解决方案分类</h2>
+<h3 id="l2-l4">车企量产方案（L2+ → L4）</h3>
+<ul>
+<li><strong>Nissan 日产</strong>：AI Driver 集成进下一代 ProPILOT，覆盖日产多款车型，2027 年起面向消费者交付（L2+ 起步）</li>
+<li><strong>Mercedes-Benz</strong>：已签署量产确定性协议（definitive production agreement），含战略投资与多年技术合作</li>
+<li><strong>Stellantis</strong>：战略技术合作，AI Driver 集成进 STLA AutoDrive 平台</li>
+<li><strong>Qualcomm 高通</strong>：AI Driver 作为端到端驾驶智能层登陆 Snapdragon Ride 平台，借芯片生态触达更多 OEM</li>
+</ul>
+<h3 id="robotaxi">Robotaxi 方案</h3>
+<ul>
+<li><strong>Uber 合作</strong>：2026 年伦敦首发，计划扩展至全球 10+ 市场</li>
+</ul>
+<h3 id="_12">全球化验证方案</h3>
+<ul>
+<li><strong>Global Road Trip / AI-500 Roadshow</strong>：单一基础模型在 500 座城市做零样本泛化道路测试，验证无高精地图、无区域重训练的全球扩张能力</li>
+</ul>
+<h3 id="_13">安全与法规方案</h3>
+<ul>
+<li>Safety 2.0 安全框架 + 大规模仿真闭环评估（GAIA-4）</li>
+<li>参与塑造 UNECE 全球首个辅助/自动驾驶协调监管框架（2026-02 通过）</li>
+</ul>
+<h2 id="_14">五、更新记录</h2>
+<h3 id="_15">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_16">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_17">六、总结</h2>
+<h3 id="_18">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Wayve AI Driver 授权模式</strong>：轻资产、跨 OEM 复制的软件平台打法，在智驾赛道中与 Tesla（垂直整合）、Waymo（重资产运营）形成差异化；车队数据网络效应是其复利核心，值得持续跟踪授权车企数量与装车量</li>
+<li><strong>量产管线</strong>：Mercedes-Benz 量产协议 + 日产 ProPILOT（2027）+ Stellantis STLA AutoDrive，是端到端方案中量产兑现度最高的一批合作</li>
+</ul>
+<h3 id="_19">强势战略留意</h3>
+<ul>
+<li><strong>2026 Uber Robotaxi 伦敦落地</strong>：从"监督式自动驾驶"到真正无人化的节奏，决定其 L4 叙事成色；10+ 市场扩张速度是关键指标</li>
+<li><strong>2027 日产 ProPILOT 量产交付</strong>：平台模式能否兑现商业收入的首个硬检验</li>
+<li><strong>端到端路线竞争</strong>：与 Tesla FSD、Momenta 等端到端方案的技术与数据规模对比；AI-500 泛化能力是否转化为 OEM 签约</li>
+<li><strong>$1.5B 融资后的执行</strong>：2026 年 7 月推出 $85M 员工 tender，资金充裕，关注点转向商业化执行而非生存</li>
+<li><strong>具身智能外溢</strong>：GAIA 世界模型、LINGO 等研究栈与赛道 5（具身智能）技术同源，存在向机器人物理 AI 平台延展的想象空间</li>
+</ul>
+<h2 id="_20">信息来源</h2>
+<ul>
+<li>官网 https://wayve.ai（通）：公司定位、Wayve AI Driver、办公地点</li>
+<li>博客/新闻 https://wayve.ai/blog（通；直连抓取返回 520，经代理抓取成功）：GAIA-4 发布、$85M 员工 tender（2026-07）、$1.5B 融资（2026-03）、UNECE 法规（2026-02）、Microsoft Azure 合作（2026-01）、AI-500 Roadshow（2025-12）</li>
+<li>官网子页补充（通）：/technology（AV2.0、Fleet Learning Loop、GAIA、LINGO-1、仿真工具链）、/product（Mercedes-Benz / Nissan / Qualcomm / Stellantis / Uber 合作）、/company/investors（$2.8B 累计融资、1,000+ 员工、商业化时间表）</li>
+<li>公司网站.json 未收录投资者关系链接；Wayve 为私有公司，无公开财报，财务细节公开信息有限</li>
+</ul></div></div></body></html>

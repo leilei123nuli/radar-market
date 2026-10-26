@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LimX Dynamics 逐际动力</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="limx-dynamics">LimX Dynamics 逐际动力</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：5. 具身智能 | <strong>地区</strong>：国内 | <strong>类型</strong>：新型 | <strong>成立</strong>：2022
+<strong>护城河</strong>：足式机器人运动控制见长</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>逐际动力 LimX Dynamics 是一家具身智能机器人主机厂（全球总部：深圳），专注于通用机器人的研发、制造与商业化应用。产品分两层：硬件侧为全尺寸人形机器人 LimX Oli、LimX Luna 与模块化多形态机器人 TRON 系列；平台/软件侧为人形大脑系统 LimX COSA（具身 Agentic OS）、标准化 VLA 工程底座 FluxVLA Engine（已开源）、具身操作算法 VGM、训练范式 DreamActor 等。公司已完成天使轮、Pre-A、A 轮（阿里巴巴战略领投）、B 轮（2 亿美元，京东战略领投）及 Pre-IPO 轮融资（2026-07，半年合计融资 4 亿美元）。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>定位"具身智能主机厂 + 平台"：三大核心技术为本体硬件原创设计与制造、大小脑融合技术、人形大脑系统 COSA</li>
+<li>平台化野心：创始人张巍提出"做具身智能行业的英伟达"，通过开源 FluxVLA Engine、开放 SDK、LandX 开发者社区建设全球开发者生态，释放 AGI 在物理世界的泛化能力</li>
+<li>商业化路径：科研教育（TRON 系列低门槛科研平台）→ 商业服务/文旅表演（Luna 群控表演）→ 工业制造（与上汽北京共建具身智能联合实验室等），远期目标是机器人走进千家万户</li>
+<li>数据方法论：不堆真机数据，提出多元数据配方策略 LimX Data Recipe 与 DreamActor 训练新范式（含"刷视频学操作"方向，CoRL 2025 双收录）</li>
+<li>出海：创始人称三年内向全球交付数千台机器人，Oli 曾亮相 CES 2026 与百度 Create 2026</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">人形机器人（全尺寸）</h3>
+<ul>
+<li><strong>LimX Oli</strong>：全尺寸通用人形机器人，31 自由度，运控/感知双芯片，自研 6 轴 IMU + 深度相机，快拆模块化设计、电池快速换装，完善二开支持；2025-07 开放预订（¥15.8 万起），2026-07 搭载 COSA 0.5 全自主完成长程移动操作</li>
+<li><strong>LimX Luna</strong>：全尺寸交互人形机器人（2026-05-25 发布），160cm、27 自由度，第二代自研高性能运控引擎，织物包覆外观，主打多模态交互与 200+ 台毫秒级集群表演，面向文旅演出/商业服务场景</li>
+</ul>
+<h3 id="tron">多形态模块化机器人（TRON 系列）</h3>
+<ul>
+<li><strong>TRON 1</strong>：首款多形态双足机器人（2024-10 发布），"三合一"模块化足端（双点足/双足/双轮足），主打人形 RL 科研入门，全开放 SDK、支持 Python 全流程开发与 NVIDIA Isaac/MuJoCo/Gazebo 仿真</li>
+<li><strong>TRON 2</strong>：多形态具身机器人（2025-12-18 发布，¥4.98 万起），双臂/双足/双轮足自由组合，单臂 7 自由度、双臂 10kg 负载，定位"一站式 VLA 平台"，含自主移动操作与感知建图套件，双轮足模式支持 30kg 负载与自动回充</li>
+</ul>
+<h3 id="_6">早期/技术验证产品</h3>
+<ul>
+<li><strong>W1</strong>：首款四轮足机器人（2023 发布）</li>
+<li><strong>P1</strong>：双足机器人（2023 年 IROS 发布），2024-03 成为中国首个基于强化学习完成野外徒步的双足机器人</li>
+<li><strong>CL-1</strong>：全尺寸人形机器人技术验证机（2023 首次公开动态测试，2024-08 完成上楼梯/大负载搬运验证），为 Oli 前身</li>
+</ul>
+<h3 id="_7">软件/平台产品</h3>
+<ul>
+<li><strong>LimX COSA</strong>：人形大脑系统（具身 Agentic OS，2026-01 发布，2026-07 更新至 0.5，含人形 VLA V³-0 全身能力升级）</li>
+<li><strong>FluxVLA Engine</strong>：标准化 VLA 工程底座（2026-04-30 开源，有 GitHub 仓库），单一配置文件管理数据/模型/训练/部署，模块解耦，全流程仿真到真机跑通约 30 分钟</li>
+<li><strong>LimX VGM</strong>：具身机器人操作算法（2026-07 发布）</li>
+<li><strong>LimX DreamActor</strong>：基于多元数据的具身智能训练新范式（2025-09 发布，配 Data Recipe 数据配方策略）</li>
+<li><strong>FluxTraining</strong>：训练平台（官网页脚产品位，公开信息有限）</li>
+</ul>
+<h2 id="_8">三、服务分类</h2>
+<h3 id="_9">开发者/科研支持服务</h3>
+<ul>
+<li>全开放 SDK 与底层硬件接口、二次开发指南与代码示例、文档中心/下载中心/视频中心/知识库</li>
+<li><strong>LandX 社区</strong>：面向全球开发者的开放生态社区（landx.limxdynamics.com）</li>
+<li>拓展套件服务：TRON 系列的移动操作/语音交互/感知拓展套件，开箱即用</li>
+</ul>
+<h3 id="_10">商业与售后服务</h3>
+<ul>
+<li>订购咨询与企业支持（contactus@limxdynamics.com / bd@limxdynamics.com）、采购/合作通道</li>
+<li>售后服务体系（service.limxdynamics.com）</li>
+<li>人才招聘（career.limxdynamics.com）</li>
+</ul>
+<h2 id="_11">四、解决方案分类</h2>
+<h3 id="_12">科研教育</h3>
+<ul>
+<li>TRON 1/TRON 2 作为具身智能科研平台：RL 运动控制入门、移动操作、全身控制、三维建图导航等研究方向；配套仿真平台支持（NVIDIA Isaac、MuJoCo、Gazebo）</li>
+</ul>
+<h3 id="_13">商业服务 / 文旅表演</h3>
+<ul>
+<li>Luna 集群表演方案：200+ 台设备群控、毫秒级动作同步、AI 任务编辑器与快速内容创作，面向演出、导览、展会互动</li>
+<li>体育消费场景：与英汉思联合研发的具身网球机器人亮相比利·简·金杯（2026-09）</li>
+</ul>
+<h3 id="_14">工业制造</h3>
+<ul>
+<li>与上汽北京战略合作，共建具身智能联合实验室（2025-07）</li>
+<li>与 ZINOVA 合作探索机器人在复杂建筑施工中的应用（2026-09）</li>
+<li>TRON 2 双轮足 + 感知套件面向园区/厂区/地下管廊巡检场景</li>
+</ul>
+<h2 id="_15">五、更新记录</h2>
+<h3 id="_16">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_17">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_18">六、总结</h2>
+<h3 id="_19">强势业务或产品推荐</h3>
+<ul>
+<li><strong>TRON 系列（科研平台）</strong>：¥4.98 万起的 TRON 2 + 全开放 SDK + FluxVLA Engine 开源底座，构成国内具身智能科研入门的高性价比组合，生态打法清晰</li>
+<li><strong>LimX Oli + COSA 人形大脑</strong>：全尺寸人形全自主长程移动操作已落地演示，是"大小脑融合"路线的代表作</li>
+<li><strong>运动控制基本功</strong>：P1 野外徒步、CL-1 上楼梯等验证记录说明其足式运控为长板，与公司护城河定位一致</li>
+</ul>
+<h3 id="_20">强势战略留意</h3>
+<ul>
+<li>平台化路线（"做具身智能行业的英伟达"）：开源 FluxVLA Engine + LandX 社区能否形成开发者标准，是其从本体厂跃迁为平台厂的关键</li>
+<li>融资节奏极快（半年 4 亿美元，阿里/京东先后战略领投，已进 Pre-IPO）：关注 IPO 进程及资本方产业协同（京东物流场景、阿里算力/云）</li>
+<li>数据方法论差异化（DreamActor/视频学习，不堆真机数据）：若成立将显著降低具身模型训练成本，值得跟踪其开源与论文产出</li>
+<li>商业化兑现：Luna 文旅表演、工业联合实验室、出海交付目标（三年数千台）的实际订单转化</li>
+</ul>
+<h2 id="_21">信息来源</h2>
+<ul>
+<li>官网 https://limxdynamics.com（通，HTTP 200）：公司介绍、发展历程、核心技术、全部产品与新闻</li>
+<li>关于我们 https://www.limxdynamics.com/zh/about（通）：公司定位、融资历程、团队、荣誉</li>
+<li>产品页 /zh/products/oli、/zh/products/luna、/zh/products/tron1、/zh/products/tron2、/zh/products/fluxvla（均通）</li>
+<li>新闻中心 https://www.limxdynamics.com/zh/news（通）：融资、新品发布、合作动态</li>
+<li>公司网站.json 中该公司仅有"官网"一条链接；产品/服务/投资者关系信息均来自官网子页面</li>
+<li>备注：公司未上市，无独立投资者关系页面（官网"关于我们"下设投资者关系锚点，仅列投资机构背书）；具体财务数据公开信息有限</li>
+</ul></div></div></body></html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Together AI</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="together-ai">Together AI</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：新型 | <strong>成立</strong>：2022
+<strong>护城河</strong>：开源模型推理云，推理优化能力强</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Together AI 自我定位为 "The AI Native Cloud"：以开源模型推理云起家，现已扩展为覆盖 AI 开发全流程（experimentation → massive scale）的全栈云平台。核心业务分三层：推理服务（Serverless / Batch / Dedicated Inference）、训练与算力（GPU Clusters / Accelerated Compute、Fine-tuning）、以及 AI 原生平台组件（Code Sandbox、Storage）。底层差异化来自 Together Research 的系统研究能力（FlashAttention 系列、ThunderKittens、Together Kernel Collection 等），把研究成果直接转化为推理/训练性能与成本优势。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>从"开源模型推理 API"升级为"AI Native Cloud"全栈平台：推理 + 训练算力 + 存储 + 开发环境一体化</li>
+<li>研究驱动性能：以 FlashAttention、ThunderKittens、推理加速（推测解码、CPD、ATLAS 等）等自研成果压低单位成本、抬高速度，作为核心竞争力</li>
+<li>绑定开源模型生态：第一时间上架 Llama、DeepSeek、Mixtral 等开源模型，吃开源模型采用率红利</li>
+<li>向生成式媒体（视频/音频/图像）负载与 Agent 开发基础设施（Code Sandbox）扩展，拓宽 TAM</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="inference">推理产品（Inference）</h3>
+<ul>
+<li><strong>Serverless Inference</strong>：按需调用 100+ 开源模型的 API，无需管理基础设施，按量计费</li>
+<li><strong>Batch Inference</strong>：异步大批量处理，单模型可扩展至 300 亿 token，主打低成本离线负载</li>
+<li><strong>Dedicated Model Inference</strong>：专属基础设施部署模型，面向要高速度、强控制与最优经济性的团队；含承诺用量档位（token 计费 + 预留吞吐 + 99% uptime SLA）</li>
+<li><strong>Dedicated Container Inference</strong>：面向生成式媒体（视频/音频/图像模型）的 GPU 推理基础设施，由 Together Research 提供性能加速</li>
+</ul>
+<h3 id="compute">算力产品（Compute）</h3>
+<ul>
+<li><strong>Accelerated Compute / GPU Clusters</strong>：从自助即时集群扩展到数千张 GPU，配 Together Kernel Collection 优化训练性能（客户案例：Pika Labs 从零训练视频模型）</li>
+</ul>
+<h3 id="_5">平台组件</h3>
+<ul>
+<li><strong>Code Sandbox</strong>：面向 AI 应用与 Agent 的大规模安全代码沙箱（整合 CodeSandbox SDK，支持快照/秒级恢复）</li>
+<li><strong>Storage</strong>：AI 原生负载的高性能托管存储（对象存储 + 并行文件系统，零出口流量费）</li>
+</ul>
+<h2 id="_6">三、服务分类</h2>
+<h3 id="_7">模型服务</h3>
+<ul>
+<li>开源模型托管推理 API：100+ 模型，新模型上架速度快（Llama 3 发布当天即可用）</li>
+<li><strong>Fine-tuning</strong>：开源模型托管微调服务，支持全参数微调，私有数据不出域（Together Cloud 或客户 VPC 内）</li>
+</ul>
+<h3 id="_8">企业级服务</h3>
+<ul>
+<li>企业部署：专属实例 / VPC 内私有部署，强调隐私（私有数据不用于改进他人模型）</li>
+<li>专家支持：数据准备、模型训练、上线部署的伴随式服务；自定义模型接入（如 Cartesia 自研 SSM 模型 Sonic 两周内上线）</li>
+</ul>
+<h3 id="_9">研究转化服务</h3>
+<ul>
+<li>Together Research 产出（FlashAttention-3/4、ThunderKittens、推测解码、CPD、量化 QTIP/YAQA 等）持续下沉为平台性能能力</li>
+</ul>
+<h2 id="_10">四、解决方案分类</h2>
+<h3 id="_11">行业解决方案</h3>
+<ul>
+<li>覆盖行业：Software &amp; Technology、Ecommerce、Finance &amp; Insurance、Government、Education、Manufacturing、Media &amp; Design</li>
+<li>典型场景：对话助手/客服、文档信息抽取与摘要、代码理解与审查、情感分析、机器翻译（100+ 语言）、文本转语音、文生图/视频/音频、个性化推荐、预测模型、制造业视觉质检</li>
+</ul>
+<h3 id="_12">标杆客户方案</h3>
+<ul>
+<li><strong>生成式媒体</strong>：Pika（GPU Clusters 训练 + 推理扩至月百万级视频）、Cartesia（Sonic 语音模型 &lt;200ms 端到端延迟）</li>
+<li><strong>AI 应用/游戏</strong>：Latitude.io（AI 驱动游戏，分类器成本降 37 倍）、Wordware（LLM 应用 IDE，成本降 16 倍）</li>
+<li><strong>模型厂商托管</strong>：Upstage（Solar 模型托管分发，峰值 280 万 token/小时）、Arcee AI（迁移至 Dedicated Endpoints，延迟降 95%）</li>
+<li><strong>评测/安全</strong>：Vals.ai（模型评测，单日 2 亿 token）、Nexusflow（网络安全模型训练，成本省 40%）</li>
+</ul>
+<h2 id="_13">五、更新记录</h2>
+<h3 id="_14">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_15">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_16">六、总结</h2>
+<h3 id="_17">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Serverless / Dedicated Inference</strong>：开源模型推理的头部第三方平台，新模型上架速度和推理性能是核心卖点，值得跟踪其模型目录与定价变化</li>
+<li><strong>GPU Clusters + Fine-tuning</strong>：从推理向训练算力延伸的部分，决定其能否吃到模型厂商（而非仅是应用方）的预算</li>
+<li><strong>Together Research</strong>：FlashAttention、ThunderKittens 等成果是全行业基础设施，研究→产品的转化效率是其长期护城河</li>
+</ul>
+<h3 id="_18">强势战略留意</h3>
+<ul>
+<li>"AI Native Cloud" 全栈化：推理云 → 训练算力 + 存储 + Code Sandbox 的平台扩张，正面对标 CoreWeave（算力）与云厂商 AI 平台，需留意资本开支与毛利压力</li>
+<li>生成式媒体专用推理（Dedicated Container Inference）：视频/音频生成负载增长快，是差异化卡位</li>
+<li>Agent 基础设施（Code Sandbox）方向的投入：对应 Agent 负载爆发的提前布局</li>
+<li>开源模型生态依赖度：若开源模型与闭源前沿差距拉大，平台价值会受挤压——这是其商业模式的结构性风险</li>
+</ul>
+<h2 id="_19">信息来源</h2>
+<ul>
+<li>官网 https://www.together.ai（通）：AI Native Cloud 定位、平台产品全貌</li>
+<li>博客/新闻 https://www.together.ai/blog（通）：Together Research 研究成果与产品动态</li>
+<li>产品页 https://www.together.ai/products（通，补充抓取）：Inference / Compute 产品线命名</li>
+<li>解决方案页 https://www.together.ai/solutions（通，补充抓取）：行业方案与客户案例数据</li>
+<li>公司网站.json 中未收录投资者关系/独立产品页链接；财务与融资信息公开信息有限（未上市），本次未展开</li>
+</ul></div></div></body></html>

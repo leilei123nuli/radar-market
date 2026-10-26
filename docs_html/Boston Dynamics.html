@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boston Dynamics</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="boston-dynamics">Boston Dynamics</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：5. 具身智能 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：1992
+<strong>护城河</strong>：Atlas 人形，现代汽车旗下，运动控制技术标杆</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Boston Dynamics 是全球移动机器人与具身智能龙头（Hyundai Motor Group 旗下公司），业务按三条产品线组织：<strong>Spot</strong>（四足移动机器人，主打工业巡检与数据采集）、<strong>Stretch</strong>（仓储移动操作机器人，主打货箱装卸）、<strong>Atlas</strong>（全电动人形机器人，定位企业级工业物料处理），并以 <strong>Orbit</strong> 软件平台统一编排和数据分析，形成"机器人本体 + 机队管理软件"的产品结构。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>从"研究型演示"转向"企业级可规模化产品"：Spot 与 Stretch 已商业化落地，Atlas 处于从首个客户试点（Hyundai 工厂实地测试）走向早期采用者部署的阶段</li>
+<li>人形机器人商业化路线清晰：全电动 Atlas → 客户试点 → 企业版产品 → 技能扩展（part sequencing、machine tending、order building）→ 规模化部署</li>
+<li>软件层增厚：以 Orbit 作为跨 Spot/Stretch/Atlas 的统一机队管理与数据平台，向"智能设施管理"演进，并与 MES/WMS/CMMS 等企业系统集成</li>
+<li>AI 能力外部合作补强：Orbit 的 AIVI-Learning 已集成 Google Gemini Robotics，强化工业场景的视觉-语言推理能力</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">机器人本体</h3>
+<ul>
+<li><strong>Spot</strong>：敏捷四足移动机器人，14kg 负载，支持手动操作与自主任务，提供开放 API，用于巡检、研究、危险响应等场景</li>
+<li><strong>Stretch</strong>：仓储移动操作机器人，处理最高 50 磅货箱，主打 Trailer Unloading 与 Case Picking，数天内即可部署，无需改造仓库基础设施</li>
+<li><strong>Atlas</strong>：全电动人形机器人，企业级工业物料处理定位；56 个自由度，身高 1.9m，体重 90kg，持续负载 30kg，IP67 防护，支持自主换电连续作业，具备机队级技能共享（一台学会、全队部署）</li>
+</ul>
+<h3 id="_6">软件产品</h3>
+<ul>
+<li><strong>Orbit</strong>：跨机器人机队编排与智能平台，连接物理与数字世界，提供巡检数据管理、AI 视觉-语言分析（AIVI-Learning）、任务编辑与调度、远程操作、多站点企业级视图（SSO、SOC2 Type II）</li>
+<li><strong>Spot SDK / API</strong>：开发者接口与完善文档，支持自定义负载与二次开发</li>
+</ul>
+<h2 id="_7">三、服务分类</h2>
+<h3 id="_8">预配置方案包服务</h3>
+<ul>
+<li>Spot 巡检包：面向工业巡检的开箱即用配置</li>
+<li>Spot 研究包：面向科研与学术场景</li>
+<li>Spot 危险响应包：面向 CBRNE、EOD 等危险品处置场景</li>
+</ul>
+<h3 id="_9">部署与支持服务</h3>
+<ul>
+<li>Stretch 快速部署：交付后数天上线，配套培训与操作资源</li>
+<li>Atlas 采用旅程服务：Prepare（应用规划）→ Evaluate（用例评估）→ Train（在岗技能培训）→ Adopt（工作流集成）四阶段导入</li>
+<li>Orbit 部署形态：Cloud（AWS 托管）、Site Hub（机架式本地部署）、Virtual Machine（VMware/Hyper-V/Azure/Google Cloud）</li>
+</ul>
+<h3 id="_10">集成与生态服务</h3>
+<ul>
+<li>企业系统集成：API、Webhooks、低代码工单生成（beta），对接 CMMS/WMS/MES 等系统</li>
+<li>行业支持：按行业（制造、油气、电力、矿业、公共安全、建筑、供应链等）提供落地支持</li>
+</ul>
+<h2 id="_11">四、解决方案分类</h2>
+<h3 id="_12">按应用场景</h3>
+<ul>
+<li><strong>Inspection（巡检）</strong>：视觉/声学/热成像巡检，仪表读数、气体检测，异常实时告警与趋势分析</li>
+<li><strong>Digital Twin（数字孪生）</strong>：Spot 360° 图像（Site View）建立设施可视历史档案，远程查看与巡检任务编写</li>
+<li><strong>Warehouse Automation（仓储自动化）</strong>：Stretch 货箱装卸与拣选，Orbit 提供卸货效率度量</li>
+<li><strong>Safety &amp; Response（安全与应急响应）</strong>：危险品处置、态势感知，让人员远离危险环境</li>
+<li><strong>Research &amp; Development（科研）</strong>：Spot 作为移动操作研究平台</li>
+</ul>
+<h3 id="_13">按行业</h3>
+<ul>
+<li>制造、Oil &amp; Gas、Power &amp; Utilities、Mining、Construction、Public Safety、Supply Chain / Warehousing、Government、Healthcare、Academia、Entertainment、High Tech</li>
+</ul>
+<h2 id="_14">五、更新记录</h2>
+<h3 id="_15">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_16">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_17">六、总结</h2>
+<h3 id="_18">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Spot + Orbit</strong>：工业巡检场景商业化最成熟的组合，客户案例覆盖 Michelin、POSCO 等大型工业企业，值得持续跟踪其订阅与机队扩张数据</li>
+<li><strong>Stretch</strong>：仓储卸货场景卡位清晰（Gap、Arvato、Otto Group 等客户背书），"无需改造基础设施、数天上线"是差异化卖点</li>
+<li><strong>Atlas</strong>：人形机器人商业化进度是赛道风向标，Hyundai 试点与早期采用者扩展节奏值得重点跟踪</li>
+</ul>
+<h3 id="_19">强势战略留意</h3>
+<ul>
+<li>Atlas 从试点到规模化的路线图兑现速度：技能扩展（part sequencing、machine tending、order building）与人形机队经济性是核心验证点</li>
+<li>Orbit 平台化：从单机管理走向"智能设施管理"平台，与 Google Gemini Robotics 的集成表明其 AI 能力走合作补强路线而非全自研</li>
+<li>与母公司 Hyundai Motor Group 的协同：既是首个 Atlas 试点客户，也可能是制造与渠道放量的关键依托</li>
+</ul>
+<h2 id="_20">信息来源</h2>
+<ul>
+<li>官网 https://bostondynamics.com（通）：三大产品线定位与战略方向</li>
+<li>博客/新闻 https://bostondynamics.com/blog（通）：主题覆盖 Safety / Product News / Warehouse Robotics / Trends in Robotics / Innovation</li>
+<li>产品页 https://bostondynamics.com/products/spot/（通）：Spot 负载、API、预配置包</li>
+<li>产品页 https://bostondynamics.com/products/stretch/（通）：Stretch 应用与客户案例</li>
+<li>产品页 https://bostondynamics.com/products/atlas/（通）：Atlas 规格、Hyundai 试点、商业化路线图</li>
+<li>软件页 https://bostondynamics.com/products/orbit/（通）：Orbit 功能、部署形态、Gemini 集成</li>
+<li>解决方案页 https://bostondynamics.com/solutions/（通）：五大解决方案分类</li>
+<li>备注：公司网站.json 中该公司仅有官网与博客/新闻两条链接，无独立投资者关系页（非上市公司，Hyundai Motor Group 旗下）</li>
+</ul></div></div></body></html>

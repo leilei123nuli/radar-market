@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Google Cloud</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="google-cloud">Google Cloud</h1>
+<blockquote>
+<p><strong>版本</strong>：v2 | <strong>建档日期</strong>：2026-10-08 | <strong>最近更新</strong>：2026-10-09
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：2008
+<strong>护城河</strong>：TPU 自供算力 + Gemini 绑定的全栈云</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Google Cloud 是 Google 旗下的云计算与 AI 平台（Alphabet 集团内与 Google (DeepMind) 并列跟踪），提供 150+ 款产品，覆盖 AI/ML、计算、存储、数据库、数据分析、网络、安全、开发者工具与协作生产力。当前战略重心是"agentic cloud"：以 Gemini Enterprise（员工入口 app + 开发者 Agent Platform）为上层，以自研 TPU、Axion（Arm CPU）、GPU 为底层算力，BigQuery / Spanner / AlloyDB 等数据云为中间层，形成"AI 基础设施 → 数据 → 智能体平台"的全栈闭环。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li><strong>AI 优先的全栈云</strong>：把 Gemini 深度绑定进每一层产品（Gemini Code Assist、Gemini for Databases、Gemini Enterprise），主打"AI 基础设施 + AI 平台 + AI 应用"一体化</li>
+<li><strong>企业级智能体（Agent）战略</strong>：Gemini Enterprise 定位"每位员工的 AI 前门"，Agent Platform 提供智能体开发、编排与治理的统一平台，配套 GEAR 计划培养企业智能体开发者</li>
+<li><strong>安全差异化</strong>：依托 Mandiant 与 Google Threat Intelligence，主打"AI 时代主动防御"（Google AI Threat Defense、Agentic SOC）</li>
+<li><strong>行业化与生态</strong>：深耕零售、金融、医疗、电信、政府等行业解决方案，通过 Marketplace、合作伙伴网络与 Google for Startups（最高 $350,000 云额度）扩展生态</li>
+<li><strong>多云/混合云与主权云</strong>：Google Distributed Cloud（含 Air-gapped 离线版）、Cross-Cloud Network，满足数据主权与边缘场景</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="ai">AI 与机器学习</h3>
+<ul>
+<li><strong>Gemini Enterprise Agent Platform</strong>：统一的全托管 AI/智能体开发平台，含 Agent Studio，可访问 200+ 基础模型</li>
+<li><strong>Gemini Enterprise app</strong>：面向员工的安全智能体入口（发现、创建、运行、治理）</li>
+<li><strong>Model Garden</strong>：Google 及合作方 200+ 模型的统一发现入口</li>
+<li><strong>Gemini Code Assist</strong>：AI 辅助编程（IDE 与云端）</li>
+<li><strong>垂直 AI API</strong>：Speech-to-Text（125 种语言）、Text-to-Speech、Translation AI、Vision AI</li>
+<li><strong>Contact Center as a Service</strong>：云原生全渠道联络中心</li>
+<li><strong>Cloud TPUs / Cloud GPUs / Google Axion</strong>：自研 AI 训练推理算力与 Arm 架构 CPU</li>
+</ul>
+<h3 id="_5">计算与容器</h3>
+<ul>
+<li><strong>Compute Engine</strong>：可定制虚拟机（含 Spot VMs、Bare Metal、VMware Engine）</li>
+<li><strong>Google Kubernetes Engine (GKE)</strong>：托管 Kubernetes 容器平台</li>
+<li><strong>Cloud Run / Cloud Run functions / App Engine</strong>：Serverless 计算梯队</li>
+</ul>
+<h3 id="_6">数据与分析</h3>
+<ul>
+<li><strong>BigQuery</strong>：旗舰数据仓库，定位为"autonomous data to AI platform"</li>
+<li><strong>Looker / Data Studio</strong>：BI 与嵌入式分析</li>
+<li><strong>Dataflow / Pub/Sub / Managed Service for Apache Spark/Kafka/Airflow</strong>：流批处理与开源托管服务</li>
+<li><strong>Lakehouse / Knowledge Catalog / Data Analytics Agents</strong>：开放湖仓与数据智能体</li>
+</ul>
+<h3 id="_7">数据库</h3>
+<ul>
+<li><strong>AlloyDB for PostgreSQL</strong>：企业级 PostgreSQL 兼容数据库（近期主打"为智能体而生的 PostgreSQL"）</li>
+<li><strong>Spanner</strong>：全球分布式关系数据库，99.999% 可用性 SLA（新增 Spanner queues 事务消息）</li>
+<li><strong>Cloud SQL</strong>（MySQL/PostgreSQL/SQL Server）、<strong>Firestore</strong>、<strong>Bigtable</strong>、<strong>Memorystore</strong></li>
+</ul>
+<h3 id="_8">存储与网络</h3>
+<ul>
+<li><strong>Cloud Storage</strong>：对象存储（近期上线端到端校验增强持久性）</li>
+<li><strong>Persistent Disk / Filestore / Managed Lustre / NetApp Volumes / Backup and DR</strong></li>
+<li><strong>Cloud CDN / Cloud Armor / Cloud Load Balancing / VPC / Private Service Connect</strong></li>
+</ul>
+<h3 id="_9">安全与身份</h3>
+<ul>
+<li><strong>Google Security Operations / Security Command Center</strong>：威胁检测响应与云资产防护</li>
+<li><strong>Mandiant Managed Defense / Incident Response / Consulting</strong>：Mandiant 安全产品线</li>
+<li><strong>Google Threat Intelligence / Sensitive Data Protection / Cloud KMS / Assured Workloads</strong></li>
+</ul>
+<h3 id="_10">开发者与管理工具</h3>
+<ul>
+<li><strong>Cloud Build / Cloud Deploy / Artifact Registry / Cloud Code / Cloud Workstations</strong>：CI/CD 与开发环境</li>
+<li><strong>Observability（Cloud Monitoring/Logging/Trace）/ Cost Management / Cloud IAM</strong></li>
+</ul>
+<h3 id="_11">生产力与协作</h3>
+<ul>
+<li><strong>Google Workspace / Workspace Essentials</strong>：企业协作套件</li>
+<li><strong>AppSheet</strong>：无代码应用平台</li>
+<li><strong>Chrome Enterprise / Cloud Identity</strong></li>
+</ul>
+<h2 id="_12">三、服务分类</h2>
+<h3 id="_13">云资源服务（按量计费）</h3>
+<ul>
+<li>计算/存储/网络/数据库按量付费，承诺使用折扣；新用户 $300 免费额度 + 20+ 产品免费层级</li>
+</ul>
+<h3 id="managed-services">托管服务（Managed Services）</h3>
+<ul>
+<li>开源托管：Apache Spark / Kafka / Airflow / Prometheus</li>
+<li>迁移服务：Migration Center、Database Migration Service、Storage Transfer Service / Transfer Appliance、Rapid Migration and Modernization Program</li>
+<li>安全托管：Mandiant Managed Defense（24x7 威胁猎杀）</li>
+</ul>
+<h3 id="_14">专业与支持服务</h3>
+<ul>
+<li><strong>Google Cloud Consulting</strong>：官方专家团队咨询服务</li>
+<li><strong>客户支持计划</strong>与培训认证（Google Cloud certification、Google Skills 学习积分）</li>
+</ul>
+<h3 id="_15">生态与市场服务</h3>
+<ul>
+<li><strong>Google Cloud Marketplace</strong>：第三方解决方案一键部署</li>
+<li><strong>合作伙伴网络</strong>（Find a partner）、<strong>Google for Startups Cloud Program</strong>（最高 $350,000 云额度）、<strong>GEAR</strong>（Gemini Enterprise Agent Ready，开发者月度积分）</li>
+</ul>
+<h2 id="_16">四、解决方案分类</h2>
+<h3 id="_17">行业解决方案</h3>
+<ul>
+<li>零售（AI Commerce Search、商品发现）、快消、金融服务（反洗钱 AML AI、U4 超低延迟交易算力）、医疗与生命科学（Cloud Healthcare API、Fitbit Device Connect）、媒体娱乐、电信（Network Automation、Data Fabric、Subscriber Insights、SAS）、游戏、制造、供应链物流、政府、教育、汽车</li>
+</ul>
+<h3 id="_18">技术场景解决方案</h3>
+<ul>
+<li><strong>应用现代化</strong>：CAMP（基于 DORA）、主机/PaaS 迁移、平台工程、多云架构</li>
+<li><strong>人工智能</strong>：Gemini Enterprise for Customer Experience、Physical AI（机器人/自动驾驶仿真训练）</li>
+<li><strong>数据分析</strong>：Data Lakehouse、实时分析、营销分析、地理空间分析（Earth Engine）</li>
+<li><strong>基础设施</strong>：SAP on Google Cloud、Windows/Oracle/Red Hat 工作负载迁移、HPC、AI Infrastructure（AI Hypercomputer）、虚拟桌面</li>
+<li><strong>安全</strong>：Agentic SOC、Web App and API Protection、软件供应链安全、Google Cloud Cybershield（国家级网络防御）</li>
+</ul>
+<h3 id="_19">中小企业与创业方案</h3>
+<ul>
+<li>Startup Program、SMB 建站/AI/分析方案、SaaS 厂商成长方案</li>
+</ul>
+<h2 id="_20">五、更新记录</h2>
+<h3 id="_21">产品/服务/解决方案更新栏</h3>
+<ul>
+<li><strong>2026-10-09</strong>：Gemini at Work 2026 发布「Gemini agent」——单一通用工作智能体（问答、知识工作、媒体生成、编写并运行代码），支持动态创建子智能体编排、coworker agent（拥有独立身份/邮箱/存储）、跨 Gemini 与 Anthropic Claude 的多模型调度，并内嵌进 Workspace 全家桶（Gmail/Drive/Docs/Slides/Sheets/Chat/Calendar）（https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026）</li>
+<li><strong>2026-10-09</strong>：数据与分析能力升级——Gemini 新增数据/ML 工程技能与业务运营报表技能（接 BigQuery + Knowledge Catalog），发布 Smart Storage（非结构化数据就地增强）与 Borderless Lakehouse（免搬迁查询 Amazon S3/Azure Data Lake/Salesforce/SAP/Workday，Iceberg 表联邦跨 Databricks Unity/Snowflake Horizon/AWS Glue）（https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026）</li>
+<li><strong>2026-10-09</strong>：行业智能体与治理落地——Gemini for Financial Services、Gemini for Legal 进入 preview（Government/Healthcare/Retail 随后）；发布 Agent Gateway（AI 网络防火墙）、Agent Sandbox、智能体独立身份与审计等治理能力，及 Smart Routing、Cloud Billing 项目级实时花费上限等成本管控（https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026）</li>
+<li><strong>2026-10-09</strong>：算力与模型栈更新——新一代 TPU 8i 性价比较上代提升 80%；模型阵容公布 Argon（前沿推理）、Flash、Omni（生成媒体）、Gemma（边缘开放权重，NASA JPL 已在轨卫星运行）（https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026）</li>
+<li><strong>2026-10-09</strong>：Data Agent Kit 正式 GA——免费 MCP 工具 + Google 官方技能包，让任意编码 agent（Claude Code、Codex、Antigravity 等）直连 Google Data Cloud；GA 新增 BigQuery Graph、Bigtable、Managed Service for Apache Spark 及开放湖仓联邦（AWS Glue、Databricks Unity Catalog）（https://cloud.google.com/blog/topics/developers-practitioners/data-agent-kit-is-now-ga-bring-google-data-cloud-to-any-coding-agent）</li>
+</ul>
+<h3 id="_22">战略策略与行为更新栏</h3>
+<ul>
+<li><strong>2026-10-09</strong>：与纽约州立大学（SUNY）合作上线 SUNY AI Platform——基于 Google Cloud + Gemini Enterprise 的安全 AI/HPC 科研环境，首批覆盖 9 个研究型校区，并向全校系统师生免费开放 Google AI 认证课程、推动 Google Career Certificates 进学位项目（https://cloud.google.com/blog/topics/public-sector/gps-suny-launch-ai-enabled-platform-to-accelerate-university-research）</li>
+<li><strong>2026-10-09</strong>：生态扩张——Accenture 成立专属 Gemini Enterprise Business Group 加速客户采用；全球咨询伙伴单月完成 10 万+ 开发者/顾问 Gemini hackathon 培训（https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026）</li>
+</ul>
+<h2 id="_23">六、总结</h2>
+<h3 id="_24">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Gemini agent（原 Gemini Enterprise app 的进化）</strong>：2026-10-09 Gemini at Work 发布的单一通用工作智能体成为新旗舰——多模型调度（含 Anthropic Claude）、coworker agent、内嵌 Workspace，配套 Agent Gateway/Sandbox 治理与实时花费上限，是 Google Cloud 争夺企业 agentic AI 预算的核心抓手；Agent Platform 仍为开发者底座</li>
+<li><strong>BigQuery + Data Cloud</strong>：向"autonomous data to AI platform"演进，Data Agent Kit 已 GA 并打通任意编码 agent，Borderless Lakehouse 免搬迁查询跨云数据，数据云粘性最强</li>
+<li><strong>自研算力栈（TPU 8i/Axion/AI Hypercomputer）</strong>：TPU 8i 性价比较上代 +80%，与 NVIDIA 依赖型云厂商形成成本与供给差异化</li>
+<li><strong>Mandiant 安全线 + Agent 治理</strong>：威胁情报 + 托管防御 + Agent Gateway（AI 网络防火墙）的组合在云厂商中稀缺</li>
+</ul>
+<h3 id="_25">强势战略留意</h3>
+<ul>
+<li>Gemini agent 的"通用智能体 + 多模型开放（含 Claude）"路线 vs 微软 Copilot/OpenAI 绑定路线：模型中立 + 成本管控（Smart Routing、花费上限）能否赢得企业付费</li>
+<li>行业智能体（金融、法律已 preview）与 Agent Gateway 治理能否成为受监管行业的采购决定性因素</li>
+<li>AlloyDB/Spanner 等数据库向"agent 实时数据底座"的定位演进（agent memory、事务消息队列等新能力）</li>
+<li>主权云与 Air-gapped 分布式云在政府/受监管行业的扩张（SUNY AI Platform 为公共部门样板）</li>
+<li>与母公司 Gemini 模型节奏（Argon/Flash/Omni/Gemma 新阵容）的联动发布对云收入的拉动</li>
+</ul>
+<h2 id="_26">信息来源</h2>
+<ul>
+<li>官网 https://cloud.google.com（通，FetchURL 失败后经代理 curl 抓取）：主页产品分层、Gemini Enterprise 定位、客户案例（Target、Home Depot、Volkswagen、Estée Lauder、MLB）、行业方案与"Key benefits"战略表述</li>
+<li>产品 https://cloud.google.com/products（通，经代理 curl）：150+ 产品分类目录、产品发布阶段（Preview/GA）说明、Featured Products</li>
+<li>博客/新闻 https://cloud.google.com/blog（通，经代理 curl）：近期动态——Data Agent Kit GA、Gemini 3.8 Live GA、Spanner queues、AlloyDB 智能体定位、AI Hypercomputer 案例、安全威胁报告等</li>
+<li>注：公司网站.json 中该公司无投资者关系链接；财务与营收细节未纳入本次建档</li>
+<li>2026-10-09 更新：5 篇增量博客均 FetchURL 失败后经代理 curl 抓取（Gemini at Work 2026 keynote、Data Agent Kit GA、SUNY 合作、爱尔兰客户合集、SMB 软文）</li>
+</ul></div></div></body></html>

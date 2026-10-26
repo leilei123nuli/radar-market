@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hugging Face</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="hugging-face">Hugging Face</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：新型 | <strong>成立</strong>：2016
+<strong>护城河</strong>：开源模型社区标准，模型分发枢纽</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Hugging Face 是全球开源 AI 社区与模型分发枢纽：核心是 HF Hub 平台，托管 200 万+ 模型、50 万+ 数据集、100 万+ 应用（Spaces），社区以 Git 式协作方式共建模型、数据集与应用。平台之上叠加两层商业化：一是面向个人/团队/企业的订阅（PRO、Team、Enterprise），二是算力与推理服务（Inference Providers、Inference Endpoints、Spaces 硬件、存储）。同时维护 Transformers、Diffusers、Gradio 等开源工具栈，掌握开源 ML 的工程标准。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>定位"AI 界的 GitHub"：以开放平台聚集开发者与模型供给，把社区网络效应转化为分发标准</li>
+<li>商业化走"社区免费 + 企业付费"路线：Hub 基础功能免费，企业级安全/权限/合规（SSO、审计日志、数据驻留区域）和专属支持收费</li>
+<li>从"托管"向"算力与推理"延伸：Inference Providers/Endpoints、按需 GPU、Storage Buckets，直接参与模型推理与存储收入</li>
+<li>向新模态与 Agent/机器人扩展：smolagents（Agent 库）、LeRobot（机器人学习）等新方向持续投入，保持开源栈覆盖面</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="hf-hub">平台产品（HF Hub）</h3>
+<ul>
+<li><strong>Models</strong>：模型托管与分发，覆盖文本、图像、视频、音频、3D 等全模态</li>
+<li><strong>Datasets</strong>：数据集托管，附 Dataset Viewer 在线浏览/查询</li>
+<li><strong>Spaces</strong>：基于 Gradio/Docker 的 ML 应用托管与演示，支持 ZeroGPU 免费算力</li>
+<li><strong>Storage Buckets</strong>（新）：对象存储产品，面向模型/数据资产</li>
+<li><strong>HuggingChat</strong>：开源模型驱动的对话产品（C 端入口）</li>
+</ul>
+<h3 id="_5">开源工具栈</h3>
+<ul>
+<li><strong>Transformers</strong>：PyTorch 系 SOTA 模型库（17 万+ star），事实标准</li>
+<li><strong>Diffusers</strong>：扩散模型库；<strong>Tokenizers</strong>：高性能分词器；<strong>Safetensors</strong>：安全权重格式</li>
+<li><strong>Datasets / PEFT / TRL / Accelerate</strong>：数据、微调、RL 训练、分布式训练工具链</li>
+<li><strong>Text Generation Inference (TGI)</strong>：语言模型生产级推理服务工具</li>
+<li><strong>smolagents</strong>：轻量 Agent 开发库；<strong>Transformers.js</strong>：浏览器内运行 ML</li>
+<li><strong>Hub Python Library</strong>：Hub 的 Python 客户端</li>
+</ul>
+<h3 id="_6">企业平台产品</h3>
+<ul>
+<li><strong>Team &amp; Enterprise 组织版</strong>：SSO（SAML/OIDC）、Storage Regions（美/欧数据驻留）、审计日志、Resource Groups 细粒度权限、Token 集中管控、SCIM 用户同步、分析面板</li>
+</ul>
+<h2 id="_7">三、服务分类</h2>
+<h3 id="_8">订阅服务</h3>
+<ul>
+<li><strong>Free</strong>：公开仓库免费托管（Git 式协作）</li>
+<li><strong>PRO（$9/月）</strong>：个人版，10× 私有存储、每月 $2 推理额度、8× ZeroGPU 配额、PRO 徽章</li>
+<li><strong>Team（$20/人/月）</strong>：组织版，SSO、审计日志、Resource Groups、区域存储</li>
+<li><strong>Enterprise（定制报价，起 $50 量级）</strong>：SCIM、高级安全策略、年度合同计费、专属支持、最高配额</li>
+</ul>
+<h3 id="_9">算力与推理服务</h3>
+<ul>
+<li><strong>Inference Providers</strong>：Serverless 按量推理，聚合多家推理后端</li>
+<li><strong>Inference Endpoints</strong>：专属实例推理（约 $0.033/小时起），自动扩缩容、无冷启动，支持 AWS/Azure/GCP 及 TPU/Inf2/B200 等多硬件</li>
+<li><strong>Spaces Hardware</strong>：按需 GPU（T4 到 H200/B200 不等，按时计费），社区 GPU grants</li>
+<li><strong>存储计费</strong>：公共仓库 $12/TB/月起、私有 $18/TB/月起，按量阶梯降价（500TB+ 低至 $8）</li>
+</ul>
+<h3 id="_10">支持服务</h3>
+<ul>
+<li><strong>Enterprise Support / 专家支持</strong>：协助企业在组织内落地 HF Hub</li>
+</ul>
+<h2 id="_11">四、解决方案分类</h2>
+<h3 id="ai">企业 AI 平台方案</h3>
+<ul>
+<li><strong>Enterprise Hub</strong>：企业私有协作环境 + 安全合规（SSO、审计、数据区域、IP 策略、强制 2FA），客户含 NVIDIA、Microsoft、Google、Meta、IBM、Salesforce、BCG、Shopify、Toyota 等</li>
+<li><strong>生产推理方案</strong>：Inference Endpoints 专属部署 / Inference Providers 组织级计费与限额管理</li>
+<li><strong>企业支持服务</strong>： onboarding、法律合规流程、优先支持</li>
+</ul>
+<h3 id="_12">开发者/社区生态方案</h3>
+<ul>
+<li><strong>开源工具链标准</strong>：Transformers/Diffusers/TGI 等构成事实上的开源 ML 工程底座</li>
+<li><strong>社区与学习</strong>：Blog、Daily Papers、Learn 课程、Discord/Forum；硬件伙伴计划（Hardware 目录）</li>
+</ul>
+<h2 id="_13">五、更新记录</h2>
+<h3 id="_14">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_15">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_16">六、总结</h2>
+<h3 id="_17">强势业务或产品推荐</h3>
+<ul>
+<li><strong>HF Hub（Models/Datasets/Spaces）</strong>：开源模型分发的事实枢纽，200 万+ 模型的网络效应是核心资产</li>
+<li><strong>Transformers 开源栈</strong>：定义开源 ML 工程标准，是社区粘性的根</li>
+<li><strong>Inference Endpoints / Providers</strong>：从"托管"向"推理收入"的变现抓手，值得跟踪其增长</li>
+</ul>
+<h3 id="_18">强势战略留意</h3>
+<ul>
+<li>"社区免费 + 企业付费"的转化效率：Team/Enterprise 与推理/存储计费能否撑起对社区免费成本的覆盖</li>
+<li>推理市场正面竞争：与 Together AI、Fireworks、云厂商推理服务的差异化（绑定 Hub 分发入口）</li>
+<li>新方向扩张：Storage Buckets（存储）、smolagents（Agent）、LeRobot（机器人）能否复制 Hub 的标准化路径</li>
+<li>开源生态治理风险：模型许可、安全（Safetensors 路线）与地缘合规对分发枢纽地位的影响</li>
+</ul>
+<h2 id="_19">信息来源</h2>
+<ul>
+<li>官网 https://huggingface.co（通）：平台规模（2M+ 模型、1M+ 应用、500k+ 数据集）、开源栈、Solutions 导航</li>
+<li>博客/新闻 https://huggingface.co/blog（通）：社区与研究动态（以社区投稿为主，公司官方战略信息披露有限）</li>
+<li>产品/定价 https://huggingface.co/pricing（通，官网导航内页面）：PRO/Team/Enterprise 定价、Spaces 硬件、存储与推理计费</li>
+<li>企业版 https://huggingface.co/enterprise（通，官网导航内页面）：企业功能清单与企业客户名单</li>
+<li>投资者关系：未找到公开 IR 页面（非上市公司，公开信息有限）</li>
+</ul></div></div></body></html>

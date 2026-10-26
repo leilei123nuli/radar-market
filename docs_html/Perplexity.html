@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Perplexity</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="perplexity">Perplexity</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：1. AI / 模型 / AI 平台 | <strong>地区</strong>：国外 | <strong>类型</strong>：新型 | <strong>成立</strong>：2022
+<strong>护城河</strong>：AI 搜索新品类，直接挑战传统搜索入口</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Perplexity 是 2022 年 8 月成立于旧金山的 AI 搜索公司（创始团队来自 OpenAI、Meta AI、Quora、Databricks），核心产品是"答案引擎"（Answer Engine）：用大模型直接给出带引用来源的答案，而非链接列表。截至 2026 年，已从单一搜索框扩展为覆盖消费搜索、AI 浏览器（Comet）、AI 智能体（Perplexity Computer）、开发者 API（Sonar API）与企业版的完整平台。商业化全押订阅 + API：2026 年 2 月正式宣布全面退出广告业务。据公开报道，2026 年中年化收入（ARR）已从年初不足 2.5 亿美元升至超 7.5 亿美元，月活用户约 3000 万级；2026 年 8 月报道英伟达正洽谈参与其新一轮融资，估值将超 300 亿美元。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>定位"答案引擎"独立品类：与 Google 广告模式彻底切割（2026-02 放弃广告），收入全押订阅 + API</li>
+<li>模型层"混合路由"策略：不自建顶级基础模型，约 80% 免费/简单查询由自研 Sonar 系列（基于 Meta Llama 微调、注入实时检索）承接以压低边际成本，高阶查询路由至 GPT、Claude、Gemini、Grok 等第三方顶级模型；判断"基础模型会商品化，差异化在产品层"</li>
+<li>入口扩张：以 Comet AI 浏览器（2026-03 起全平台免费）+ Perplexity Computer 智能体争夺下一代用户入口，从"搜索网站"转向"浏览器 + 代理操作系统"</li>
+<li>企业与开发者市场：Enterprise 版、Sonar API、政府渠道（2025-11 与美国 GSA 签 OneGov 合约）拓展 B 端收入</li>
+<li>生态绑定：引入英伟达（GPU 供应）、Jeff Bezos、Databricks、软银等战略投资人；2026-01 与微软 Azure 签三年 7.5 亿美元 GPU 算力承诺</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">消费级产品</h3>
+<ul>
+<li><strong>Perplexity Search</strong>：基础 AI 答案引擎（2022-12 上线），回答附引用来源，免费</li>
+<li><strong>Comet</strong>：基于 Chromium 的 AI 原生浏览器（2025-07 首发，2026-03 起 Mac/Windows/Android/iOS 全球免费），内置 Comet Assistant 可跨页面执行多步操作</li>
+<li><strong>Perplexity Computer</strong>：云端 AI 智能体（2026-02 推出），面向专业用户自动执行电脑端复杂工作流，为当前营收增长核心引擎（Max 订阅限定）</li>
+</ul>
+<h3 id="_6">研究/生产力功能</h3>
+<ul>
+<li><strong>Deep Research</strong>：多步骤深度研究报告生成</li>
+<li><strong>Model Council</strong>：（2026-02 推出）同一问题并行送多个顶级模型，整合共识与分歧</li>
+<li><strong>Spaces / 文件分析</strong>：协作空间与文档问答（公开细节有限）</li>
+</ul>
+<h3 id="_7">模型与开发者产品</h3>
+<ul>
+<li><strong>Sonar 系列模型</strong>：自研搜索增强模型，承接大部分免费查询</li>
+<li><strong>Sonar API</strong>：开发者 API（2024 推出），搜索 + LLM 一体化、返回带引用答案，按 token 计费（约 $1–15/M tokens），附 SDK 与开源评估框架 search_evals</li>
+</ul>
+<h2 id="_8">三、服务分类</h2>
+<h3 id="_9">个人订阅</h3>
+<ul>
+<li><strong>Free</strong>：基础搜索免费</li>
+<li><strong>Perplexity Pro</strong>（$20/月）：多模型切换、Deep Research、文件分析</li>
+<li><strong>Perplexity Max</strong>（$200/月）：最高个人档，含 Perplexity Computer 代理积分（每月 10,000 积分）</li>
+<li><strong>Comet Plus</strong>（约 $5/月）：Comet 浏览器附加方案</li>
+</ul>
+<h3 id="_10">企业与开发者服务</h3>
+<ul>
+<li><strong>Enterprise Pro</strong>（$40/座/月）：企业协作、SSO、SOC 2 合规</li>
+<li><strong>Enterprise Max</strong>（$325/座/月）：顶级企业版</li>
+<li><strong>Sonar API 按量计费</strong>：搜索增强推理调用，不支持微调（公开信息：此为已知短板）</li>
+</ul>
+<h2 id="_11">四、解决方案分类</h2>
+<h3 id="_12">企业解决方案</h3>
+<ul>
+<li>企业知识搜索与研究：Enterprise Pro/Max，主打带引用的可信答案 + 企业权限管理</li>
+<li>行业场景：金融、法律、咨询等高频研究场景的专业工作流（Computer + Deep Research）；细分行业定制方案的公开信息有限</li>
+</ul>
+<h3 id="_13">政府与生态合作方案</h3>
+<ul>
+<li>政府采购：2025-11 与美国总务管理局（GSA）签署 OneGov 合约，开放联邦机关采购</li>
+<li>终端预装合作：与三星洽谈 Galaxy 设备预装及浏览器集成（2025 年报道）；曾探索与苹果的搜索/AI 合作</li>
+<li>出版商关系：因内容抓取面临 NYT、Dow Jones 等版权诉讼，未来可能转向付费授权模式</li>
+</ul>
+<h2 id="_14">五、更新记录</h2>
+<h3 id="_15">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_16">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_17">六、总结</h2>
+<h3 id="_18">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Perplexity Pro 订阅 + Search</strong>：答案引擎品类的事实领导者，引用透明是真实差异化，订阅收入增长曲线极陡（ARR 15 个月数倍增长）</li>
+<li><strong>Perplexity Computer</strong>：2026 年增长核心引擎，Agent 化的生产力场景付费意愿强，值得重点跟踪</li>
+<li><strong>Sonar API</strong>：搜索 + LLM 一体化、TCO 低，开发者侧差异化清晰（短板：不支持微调）</li>
+<li><strong>Comet 浏览器</strong>：免费策略后快速起量，是争夺下一代入口的期权，但目前是 option value 而非护城河</li>
+</ul>
+<h3 id="_19">强势战略留意</h3>
+<ul>
+<li>放弃广告、全押订阅 + API：品牌差异化清晰但无退路，成败取决于 Enterprise 与 Pro/Max 扩张</li>
+<li>上游依赖的结构性脆弱：高阶体验依赖 OpenAI/Anthropic/Google 模型，而三家同时是竞争对手；断供、涨价或条款收紧都会直接冲击毛利与体验</li>
+<li>入口战：Comet + Computer 能否在 Google AI Overviews 与 ChatGPT 的夹击下成为独立入口；与三星等终端厂商的预装合作进展</li>
+<li>版权诉讼与出版商授权谈判：可能重塑其内容成本结构；英伟达领投的新一轮融资（估值超 300 亿美元）落地情况</li>
+</ul>
+<h2 id="_20">信息来源</h2>
+<ul>
+<li>官网 https://www.perplexity.ai（域名正常，抓取被 Cloudflare 反爬拦截 403，未能取得页面内容）</li>
+<li>博客/新闻 https://www.perplexity.ai/hub（同上，403 反爬拦截）</li>
+<li>网络搜索补充：<a href="https://penchan.co/zh-cn/market/ai/perplexity/pre-ipo-deepdive-2026-q1/">Perplexity 深度研究（小企鹅 Penchan，2026-04，五模型交叉比对）</a>——产品线、订阅价格、融资历史、ARR、放弃广告时间线、竞争格局；<a href="https://www.tmtpost.com/agent/ai-article/19999">英伟达押注 Perplexity（钛媒体，2026-08）</a>、<a href="https://m.jiemian.com/article/14996817.html">界面新闻</a>——新一轮融资与年化收入；<a href="https://www.sorank.com/zh/glossary-geo-seo/perplexity-comet">Perplexity Comet 详解（Sorank，2026-09）</a>、<a href="https://www.ud.hk/zh-Hans/blogs/insight/article/browser-agent-after-atlas-2026-08-31">UD Blockchain（2026-08）</a>——Comet 免费化与各平台覆盖；<a href="https://almcorp.com/zh-CN/blog/perplexity-ai-abandons-advertising-2026-analysis/">Perplexity 停止广告投放分析（2026-02）</a></li>
+<li>标注说明：公司员工规模、精确付费用户数、部分融资细节等公开口径分歧较大，正文取多数来源共识；官网/Hub 因反爬未能直接抓取，后续更新时建议重试官方链接</li>
+</ul></div></div></body></html>

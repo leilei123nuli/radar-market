@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SiliconFlow 硅基流动</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="siliconflow">SiliconFlow 硅基流动</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国内 | <strong>类型</strong>：新型 | <strong>成立</strong>：2022
+<strong>护城河</strong>：第三方开源模型推理云，聚合模型 API</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>硅基流动（北京硅基流动科技股份有限公司）是国内独立第三方大模型推理云（MaaS）厂商，自我定位为"Token 工厂"：以自研推理引擎为底座，把分散、异构的算力转化为标准化的大模型 API（Token）输出。核心产品 SiliconCloud 聚合 100+ 主流开源/商用模型（DeepSeek、Qwen、GLM、Kimi、混元等），官方口径为"中国最大的独立词元（Token）供应平台"，宣称超 1,000 万注册用户、1.3 万家企业客户。业务分层：开箱即用的大模型 API（按量计费）→ 预留实例（企业独占算力）→ 推理加速服务 → 私有化部署。创始人袁进辉（清华博士，曾创办一流科技 OneFlow，后被美团收购）。注：公司.json 记录成立时间为 2022，公开报道多记为 2023 年 8 月。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>使命表述为"加速 AGI 普惠人类"，商业定位是独立中立的 Token 供应平台，不自研基座大模型，专注推理层</li>
+<li>资本市场路径明确：2026-06-30 已向港交所主板递表，冲刺"Token 工厂第一股"；2026 年内累计融资近 29 亿元（6 月 B 轮超 20 亿、投后估值 77.4 亿元；9 月 B+ 轮二期及 C 轮约 8–9 亿元），投资方含中国互联网投资基金、国新基金、中国移动链长基金等国家级/国资背景机构</li>
+<li>国产算力路线：自研推理引擎强调跨芯片、多模型适配，支持国产异构 GPU；与摩尔线程联合发布 PD 分离异构混部白皮书，宣称国产 GPU 可 2:1 等效对标国际高端 GPU</li>
+<li>"Token 经济"生态打法：与算力方联合运营（如数家科技 × 算家计算"算力联合运营、共建 Token 工厂"），并深度参与华为全联接大会、运营商大会，推动算力资源向 Token 服务转化</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="api-siliconcloud">模型 API 产品（SiliconCloud）</h3>
+<ul>
+<li><strong>对话/语言模型 API</strong>：聚合 deepseek-ai、Qwen、Z.ai（GLM，含高速版 GLM-5.3）、Kimi、hunyuan、meituan-longcat、Stepfun-ai、ByteDance、inclusionAI、Baidu、ChinaTelecom、BAAI 等厂商模型，按输入/输出/缓存命中 Token 计价</li>
+<li><strong>生图模型 API</strong>：Tongyi-MAI、Qwen 图像、Kolors 等，按张计价</li>
+<li><strong>语音模型 API</strong>：ChinaTelecom、Qwen、openmoss、FunAudioLLM 等，按千字符计价</li>
+<li><strong>视频模型 API</strong>：Wan 系列，按个计价</li>
+<li><strong>兼容协议</strong>：兼容 OpenAI 与 Anthropic 协议，可无缝对接现有工具链</li>
+</ul>
+<h3 id="_5">企业级产品</h3>
+<ul>
+<li><strong>预留实例（Dedicated Instances）</strong>：面向企业核心推理场景，提供独占算力、精度保障与成本优化</li>
+<li><strong>私有化部署产品</strong>：企业级 MaaS 平台（本地部署）、私有化大模型服务网关（Private LLM Service Gateway）、AI 算力运营服务（AI Compute Operation Services）</li>
+</ul>
+<h2 id="_6">三、服务分类</h2>
+<h3 id="_7">平台服务</h3>
+<ul>
+<li><strong>大模型 API 按量计费</strong>：覆盖语言、语音、图片、视频、Embedding 等模态，1 个 API 调用 100+ 模型</li>
+<li><strong>预留实例服务</strong>：独占算力租赁，支撑关键业务稳定运行</li>
+</ul>
+<h3 id="_8">技术服务</h3>
+<ul>
+<li><strong>高效能模型推理加速服务</strong>：基于自研推理引擎，支持主流模型及客户自有模型接入，提供模型适配到推理部署全流程服务；官方宣称推理延迟最高降 70%、吞吐提升 3–5 倍、动态量化降低推理算力需求 60%–80%</li>
+<li><strong>私有化部署服务</strong>：一站式解决模型性能优化、部署与运维；支持 BYOC（Bring Your Own Cloud）、计算/网络/存储三重隔离、混合云部署</li>
+</ul>
+<h2 id="_9">四、解决方案分类</h2>
+<h3 id="_10">行业解决方案</h3>
+<ul>
+<li><strong>互联网</strong>：内容生成与个性化推荐，快速切换模型、优化 GPU 算力效率</li>
+<li><strong>教育 / 政务 / 智算中心 / AI 硬件</strong>：官网列为重点服务行业，公开细节有限</li>
+<li><strong>工业制造</strong>：已披露电子制造企业 AI 落地客户案例（多样化推理服务）</li>
+</ul>
+<h3 id="_11">场景解决方案</h3>
+<ul>
+<li><strong>Agent &amp; Coding</strong>：一键接入主流 Agent 与编程应用</li>
+<li><strong>AI 应用开发 / 内容创作</strong>：文本、图像、视频生成模型辅助创作</li>
+<li><strong>企业智能化</strong>：私有化部署 + 预留实例满足核心推理需求</li>
+<li><strong>算力联合运营</strong>：与算力持有方共建"Token 工厂"，硅基流动输出引擎与运营能力</li>
+</ul>
+<h2 id="_12">五、更新记录</h2>
+<h3 id="_13">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_14">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_15">六、总结</h2>
+<h3 id="_16">强势业务或产品推荐</h3>
+<ul>
+<li><strong>SiliconCloud 聚合模型 API</strong>：国内独立第三方推理云的头部入口，DeepSeek/Qwen/GLM 新模型"高速版"上新速度快，是观察开源模型落地与 Token 价格走势的最佳样本</li>
+<li><strong>预留实例 + 私有化部署</strong>：毛利结构优于纯 API 按量业务，是其从"亏本卖 Token"（公开报道其 2025 年毛利率为负）走向盈利的关键抓手，值得跟踪</li>
+</ul>
+<h3 id="_17">强势战略留意</h3>
+<ul>
+<li><strong>港股 IPO 进程</strong>：2026-06 递表、9 月再融近 9 亿，上市成败与招股书披露的单位经济模型（每 Token 成本曲线）是该赛道的风向标</li>
+<li><strong>国产算力绑定</strong>：与摩尔线程等国产 GPU 的 PD 分离混部方案若规模化验证，将重塑推理成本结构并强化其政策/国资资源位</li>
+<li><strong>"Token 工厂"联合运营模式</strong>：与算力方分成运营，轻资产扩张算力供给，需留意该模式的稳定性与利益分配</li>
+</ul>
+<h2 id="_18">信息来源</h2>
+<ul>
+<li>官网 https://siliconflow.cn（通）：主营业务、产品矩阵、解决方案、技术优势</li>
+<li>官网新闻 https://siliconflow.cn/news（通）：模型上新（GLM-5.3、DeepSeek-V4-Flash）、摩尔线程白皮书、Token 工厂联合运营、行业活动</li>
+<li>官网价格中心 https://siliconflow.cn/pricing（通）：各模态模型 API 清单与计价方式</li>
+<li>官方文档 https://docs.siliconflow.cn（通）：核心产品矩阵（API / Dedicated Instances / Inference Acceleration / Private Deployment）、Use Cases</li>
+<li>服务 https://cloud.siliconflow.cn（通）：SiliconCloud 平台登录页，"1 个 API，100+ 主流模型"、用户/企业客户规模口径</li>
+<li>公开报道补充（融资与 IPO）：财新网（2026-09-20，B+ 轮二期及 C 轮、年内累计近 29 亿）、InfoQ（投资方名单）、网易/中国经营报（2026-06-30 递表港交所）</li>
+<li>标注：教育/政务/智算中心等行业的具体方案细节公开信息有限；公司成立年份公司.json 记为 2022，公开报道多记为 2023 年 8 月，此处并存待核实</li>
+</ul></div></div></body></html>

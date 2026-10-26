@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moore Threads 摩尔线程</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="moore-threads">Moore Threads 摩尔线程</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：2. 芯片 / AI 基础设施 | <strong>地区</strong>：国内 | <strong>类型</strong>：新型 | <strong>成立</strong>：2020
+<strong>护城河</strong>：全功能国产 GPU（图形 + 计算）</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>摩尔线程成立于 2020 年，以全功能 GPU 为核心，向全球提供加速计算基础设施和一站式解决方案。自研 MUSA 统一系统架构，单颗 GPU 同时支持 AI 计算加速、3D 图形渲染、超高清视频编解码、物理仿真与科学计算等组合工作负载，产品线覆盖"芯片 → 显卡/智算卡 → 整机/模组 → 集群（夸娥 KUAE）"全栈。2025-12-05 正式挂牌科创板（股票代码 688795），成为国内全功能 GPU 第一股之一；截至 2026 年主推 MTT S5000 智算卡与夸娥万卡级智算集群。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li><strong>"AI 工厂"理念</strong>（2025-07 提出）：以系统级工程创新提升大模型训练效率；2026-05 产品发布会进一步提出建设三大"AI 工厂"，打造"全场景 AI 算力基石"</li>
+<li><strong>"云边端"智算矩阵</strong>：云端夸娥智算集群（千卡→万卡，与京东云合作拟建十万卡集群）、边缘 MTT E300 模组、端侧 MTT AIBOOK 算力本与 MTT AICUBE 家庭 AI 中枢</li>
+<li><strong>生态适配抢位</strong>：对 DeepSeek-V4.1-Flash、智谱 GLM-5.3-Flash 等新模型做 Day-0 适配；与中国移动共建 AI 可信计算生态；切入具身智能（S5000 训练对齐国际主流 GPU、MT Lambda 仿真平台）与 AI4S 科学计算（Protenix-v2 药物研发全链路）</li>
+<li><strong>消费端不放弃图形显卡</strong>：MTT S80/S70 游戏显卡持续驱动优化，守住"全功能 GPU"差异化定位</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">融合智算中心</h3>
+<ul>
+<li><strong>MTT KUAE（夸娥）</strong>：基于大模型智算加速卡和训推一体机的一体化交付方案，支持国产全功能 GPU 万卡万亿大模型训练，解决大规模 GPU 算力建设与运营管理问题</li>
+</ul>
+<h3 id="_6">系统与设备</h3>
+<ul>
+<li><strong>MTT SGX5000</strong>：针对大模型训练集群与推理场景深度优化的服务器硬件系统</li>
+<li><strong>MTT AIBOOK</strong>：AI 算力本，面向"超级个体"开发者，搭载国产芯片、支持多系统</li>
+<li><strong>MTT AICUBE</strong>：家庭 AI 中枢，搭载智能体"小麦"（2026-05 发布）</li>
+<li><strong>MTT E300</strong>：GPU/CPU/NPU 多核异构边缘 AI 模组，面向行业边缘智能</li>
+<li><strong>智娱摩方</strong>：面向玩家的整机平台</li>
+</ul>
+<h3 id="gpu">全功能 GPU / 显卡</h3>
+<ul>
+<li><strong>MTT S5000</strong>：旗舰智算卡，面向大模型训练、推理与高性能计算，具身 RL 训练曲线对齐国际主流 GPU</li>
+<li><strong>MTT S4000</strong>：针对万亿规模大模型训练/微调/推理优化，兼具图形渲染与超高清显示</li>
+<li><strong>MTT S3000</strong>：4096 个 MUSA 核心，面向 AI 推理训练、云手机、云渲染、视频云（单卡至高 32 路 vGPU 云电脑）</li>
+<li><strong>MTT S2000</strong>：图形渲染 + AI + 编解码 + 科学计算，适配 x86/Arm/LoongArch</li>
+<li><strong>MTT S80 / S70</strong>：消费级游戏显卡（S80 为首款国潮显卡，PCIe Gen5、16GB 显存）</li>
+<li><strong>MTT X300 / S50</strong>：专业视觉加速卡，面向国产化行业图形与创作场景</li>
+<li><strong>MTT S30 / S10</strong>：数字办公显卡，CAD/GIS 等场景</li>
+</ul>
+<h3 id="_7">软件</h3>
+<ul>
+<li><strong>驱动程序</strong>：月度更新游戏与应用专项优化</li>
+<li><strong>MUSA SDK</strong>：全功能开发平台（编译器、运行时库、调试工具、API）</li>
+<li><strong>Moore Perf System</strong>：可视化性能分析工具</li>
+<li><strong>MUSACODE</strong>：AI 辅助并行编程工具（代码生成、Kernel/TileLang 算子开发）</li>
+<li><strong>KUAE AI 训练套件 / AI 推理套件</strong>：生产级训练微调与推理部署优化</li>
+<li><strong>GPU 虚拟化（vGPU）</strong>：动态弹性切分，高密度 vGPU 并发</li>
+<li><strong>KUAE 云原生套件</strong>：容器化与 Kubernetes 支持，自动部署与弹性调度</li>
+<li><strong>PES 控制中心</strong>：显卡驱动与状态管理客户端</li>
+<li><strong>MTVerse XR</strong>：OpenXR 应用流式传输到 XR 设备</li>
+<li><strong>Smart Media Engine</strong>：视频编解码/转码/直播，面向云游戏、云桌面等</li>
+<li><strong>MUSA 科学计算套件</strong>：底层数学库到行业应用的科学计算支撑</li>
+</ul>
+<h3 id="_8">应用与模型</h3>
+<ul>
+<li><strong>摩笔马良</strong>：基于自研 GPU 的 AI 智能绘画助手</li>
+<li><strong>MooER 摩耳</strong>：语音识别与合成的开源语音工具</li>
+</ul>
+<h2 id="_9">三、服务分类</h2>
+<h3 id="_10">开发者服务</h3>
+<ul>
+<li>MUSA 开发者生态：摩尔学院、开发者社区、技术博客（blog.mthreads.com）、技术文档（docs.mthreads.com）、驱动与 AI 镜像下载</li>
+<li>MUSA 开发者大会（MDC，首届 2025-12）与 RLinf × MUSA Meetup 等社区活动</li>
+<li>开源阵地：GitHub MooreThreads、CSDN 技术博客</li>
+</ul>
+<h3 id="_11">企业服务与支持</h3>
+<ul>
+<li>售后介绍、保修条例、常见问题、信息反馈；400 客服与服务邮箱</li>
+<li>夸娥试用：智算集群试用申请通道</li>
+<li>PES 联盟：游戏/应用兼容性优化合作计划</li>
+</ul>
+<h3 id="_12">销售与渠道服务</h3>
+<ul>
+<li>京东自营旗舰店（moorethreads.jd.com）、渠道伙伴体系</li>
+</ul>
+<h3 id="_13">投资者关系</h3>
+<ul>
+<li>科创板上市（688795），设投资者关系页（临时公告/定期公告），投资者联系由董事会办公室负责（北京望京国际研发园）</li>
+</ul>
+<h2 id="_14">四、解决方案分类</h2>
+<h3 id="_15">人工智能</h3>
+<ul>
+<li><strong>MTT KUAE 融合智算中心</strong>：万卡万亿大模型训练一体化方案</li>
+<li><strong>DigitalME 数字人</strong>：30 秒音色克隆、单图生成数字人形象、全双工交互的全链路定制</li>
+<li><strong>AI Reality</strong>：自研 AI 三维重建与渲染，厘米级精度、十亿级 3DGS 模型重建、城市级实时渲染</li>
+<li><strong>AI 推理</strong>：软硬一体化推理方案，覆盖云端到边缘</li>
+</ul>
+<h3 id="_16">云与数据中心</h3>
+<ul>
+<li><strong>GPU 云电脑</strong>：基于 MTT S3000 + vGPU 虚拟化，单卡至高 32 路云电脑并发</li>
+</ul>
+<h3 id="_17">高性能渲染</h3>
+<ul>
+<li><strong>数字孪生与 GIS</strong>：先进图形 API + 像素流送，兼容主流引擎</li>
+<li><strong>工业设计与制造</strong>：3D 渲染适配国产操作系统与工业软件</li>
+</ul>
+<h3 id="_18">视频加速</h3>
+<ul>
+<li><strong>广播与专业音视频</strong>：GPU 加速广电全流程生产</li>
+<li><strong>视频会议</strong>：端到端视频会议管理方案</li>
+</ul>
+<h2 id="_19">五、更新记录</h2>
+<h3 id="_20">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_21">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_22">六、总结</h2>
+<h3 id="_23">强势业务或产品推荐</h3>
+<ul>
+<li><strong>夸娥 KUAE 智算集群</strong>：从千卡到万卡、再到与京东云合作的十万卡规划，是其承接国产大模型算力需求的核心抓手</li>
+<li><strong>MTT S5000 智算卡</strong>：当前旗舰，具身 RL 训练对齐国际主流 GPU 的验证值得持续跟踪</li>
+<li><strong>MUSA 软件栈 + Day-0 模型适配</strong>：DeepSeek/GLM 新模型 Day-0 适配能力是其生态竞争力的直接体现</li>
+</ul>
+<h3 id="_24">强势战略留意</h3>
+<ul>
+<li><strong>"AI 工厂"与"云边端"矩阵</strong>：从卖卡转向系统级算力交付，AICUBE/AIBOOK 等端侧新品类能否起量待观察</li>
+<li><strong>科创板上市后资本运作</strong>：688795 财报与募资投向是跟踪其扩张节奏的最佳窗口</li>
+<li><strong>具身智能与 AI4S 新赛道</strong>：MT Lambda 仿真平台、Protenix-v2 药物研发链路，属于从通用算力向垂直场景深化的信号</li>
+<li><strong>风险点</strong>：消费级显卡直面国际巨头竞争，图形驱动生态仍需长期投入；国产 GPU 同业（华为昇腾、寒武纪、海光等）在智算中心招标中竞争激烈</li>
+</ul>
+<h2 id="_25">信息来源</h2>
+<ul>
+<li>官网 https://www.mthreads.com（通）：公司动态、首页导航</li>
+<li>公司介绍 https://www.mthreads.com/about（通）：发展沿革、主营定位</li>
+<li>产品中心 https://www.mthreads.com/product/category/all（通）：全部产品线</li>
+<li>解决方案 https://www.mthreads.com/solution（通）：四大类解决方案</li>
+<li>新闻中心 https://www.mthreads.com/news（通）：战略动态（科创板上市、AI 工厂、2026 产品发布会、京东云/中国移动合作、Day-0 模型适配）</li>
+<li>投资者关系 https://www.mthreads.com/investor（通）：公告栏目与投资者联系方式</li>
+<li>说明：公司网站.json 中该公司仅登记官网一条链接（通），其余页面为官网站内导航发现；公开信息充足，无失效链接</li>
+</ul></div></div></body></html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DeepSeek 深度求索</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="deepseek">DeepSeek 深度求索</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：1. AI / 模型 / AI 平台 | <strong>地区</strong>：国内 | <strong>类型</strong>：新型 | <strong>成立</strong>：2023
+<strong>护城河</strong>：极致低成本训练 + 开源，V3/R1 改写成本曲线</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>DeepSeek（杭州深度求索人工智能基础技术研究有限公司）由幻方量化孵化，2023 年 7 月成立于杭州，创始人梁文锋，专注大语言模型与多模态 AI 技术研究。业务分三层：底层是 DeepSeek 系列开源基础模型（V 系列通用模型、R 系列推理模型，当前主力为 V4 系列）；C 端是 DeepSeek 助手（App/Web，chat.deepseek.com）；B 端/开发者是 DeepSeek API 开放平台（platform.deepseek.com），兼容 OpenAI/Anthropic 接口格式。2026 年 6 月完成首轮外部融资约 510 亿元（投后估值近 4000 亿元，投资方含腾讯、宁德时代、京东、网易、IDG、国家 AI 产业投资基金等），7 月被彭博报道已启动 IPO 筹备。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>开源开放为核心战略：模型权重持续开源、免费商用，用开源换生态标准地位与全球影响力</li>
+<li>极致成本效率：从 V3/R1 起以极低训练/推理成本改写行业成本曲线，API 定价维持行业低位（硬盘上下文缓存、峰谷分时定价进一步压价）</li>
+<li>Agent 化转型：V4 系列重点强化 Agent 能力（工具调用、代码智能体），并开源 DeepSeek Harness 智能体框架，从"模型提供方"向"Agent 开发生态"延伸</li>
+<li>长期主义研究导向：使命指向 AGI，早期不融资、不设 KPI 式商业化，2026 年起融资与 IPO 筹备标志商业化提速</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="c">C 端产品</h3>
+<ul>
+<li><strong>DeepSeek 助手（App/Web）</strong>：chat.deepseek.com，免费对话产品，2025 年 1 月 R1 发布后曾登顶美区 App Store 免费榜；第三方报告称月活过亿</li>
+</ul>
+<h3 id="api">模型产品（API 在售）</h3>
+<ul>
+<li><strong>DeepSeek-V4-Pro</strong>（API 名 deepseek-v4-pro，当前版本 V4-Pro-0813）：旗舰通用模型，2026-08-13 GA，Agent 能力大幅强化，支持 thinking 低/高/最高三档推理强度</li>
+<li><strong>DeepSeek-V4.1-Flash</strong>（API 名 deepseek-flash）：2026-09-10 发布，新架构家族最小模型，原生多模态视觉理解，主打高吞吐、低成本；上一代 V4-Flash 与 V4-Flash-Vision-Exp 已退役并路由至该模型</li>
+<li><strong>历史/开源模型线</strong>：DeepSeek-Coder（2023 首个开源代码模型）、V2/V2.5、V3 系列（V3.1 → V3.1-Terminus → V3.2）、R1 / R1-0528 推理模型；旧 API 名 deepseek-chat / deepseek-reasoner 已于 2026-07-24 停用</li>
+</ul>
+<h3 id="_5">开发者工具</h3>
+<ul>
+<li><strong>DeepSeek Harness</strong>：全栈插件化 Agent 框架，2026-08-13 开源开发者预览版，支持 4 种运行模式、多模型接入、跨平台兼容，是其 Agent 生态核心抓手</li>
+</ul>
+<h2 id="_6">三、服务分类</h2>
+<h3 id="api_1">API 平台服务</h3>
+<ul>
+<li><strong>模型推理 API</strong>：兼容 OpenAI Chat Completions / Anthropic 格式，原生支持 Responses API（专项适配 Codex）；1M 上下文，最大输出 384K</li>
+<li><strong>能力接口</strong>：JSON Output、Tool Calls、Chat Prefix Completion（Beta）、FIM Completion（Beta）、Vision（V4.1-Flash）</li>
+<li><strong>定价机制</strong>：按 token 计费，缓存命中大幅折价（硬盘上下文缓存，2024-08 首创），2026-08 起实行峰谷分时定价（低谷半价）</li>
+<li><strong>Agent 工具集成</strong>：官方支持 Claude Code、GitHub Copilot、OpenCode、Codex 等编程/智能体工具直接接入</li>
+</ul>
+<h3 id="_7">企业/生态服务</h3>
+<ul>
+<li>公开信息有限：官网未列出独立的企业服务条目；主要通过开源权重私有化部署 + API 服务覆盖 B 端，第三方云平台（含国产芯片厂商 Day 0 适配）广泛分销其模型</li>
+</ul>
+<h2 id="_8">四、解决方案分类</h2>
+<h3 id="_9">开发者/编程解决方案</h3>
+<ul>
+<li>代码生成与编程智能体：Harness 框架 + V4 系列模型，面向 Code Agent 场景（SWE-bench、Terminal-Bench 类任务为官方主打基准）</li>
+</ul>
+<h3 id="_10">开源私有化部署</h3>
+<ul>
+<li>全系列模型权重开源、免费商用，企业与云厂商可自行部署/微调，构成其"无销售团队"式的行业解决方案路径</li>
+</ul>
+<h3 id="_11">行业解决方案</h3>
+<ul>
+<li>公开信息有限：官方未发布成体系的行业解决方案目录，行业落地主要经由生态伙伴与第三方平台完成</li>
+</ul>
+<h2 id="_12">五、更新记录</h2>
+<h3 id="_13">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_14">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_15">六、总结</h2>
+<h3 id="_16">强势业务或产品推荐</h3>
+<ul>
+<li><strong>DeepSeek API 平台</strong>：国内开发者调用量第一梯队，低价 + OpenAI/Anthropic 双兼容 + 峰谷定价，开发者粘性最强的一环</li>
+<li><strong>V4 系列模型</strong>：V4.1-Flash 以"新架构最小模型"打出极致性价比，V4-Pro 主打 Agent 生产环境能力，开源第一梯队位置稳固</li>
+<li><strong>DeepSeek Harness</strong>：Agent 框架生态卡位动作，值得跟踪其开发者采用率</li>
+</ul>
+<h3 id="_17">强势战略留意</h3>
+<ul>
+<li>IPO 进程：若 2026 年内递交申请，将从"幻方输血"转向公开资本市场，商业化压力与披露透明度同步上升</li>
+<li>Agent 化转型：模型评测与定价体系全面向 Agent 场景倾斜，Harness 能否成为事实标准决定其生态上限</li>
+<li>融资后股东结构（腾讯/宁德时代/京东/国家队）对中立性与云厂商合作关系的长期影响</li>
+<li>开源策略的可持续性：商业化提速后是否维持权重全开源，是与 Meta Llama 路线同频的关键观察点</li>
+</ul>
+<h2 id="_18">信息来源</h2>
+<ul>
+<li>官网 https://www.deepseek.com（通）：公司主体信息（页面内容极简）</li>
+<li>产品 https://chat.deepseek.com（通，429 限流 + JS 渲染，未能抓取正文内容）</li>
+<li>服务 https://platform.deepseek.com（通，429 限流 + JS 渲染，未能抓取正文内容）</li>
+<li>博客/新闻 https://api-docs.deepseek.com（通）：Models &amp; Pricing 页、Change Log（2024-05 至 2026-09 完整模型发布与 API 变更时间线）、DeepSeek Harness 开发者预览</li>
+<li>网络搜索补充：<a href="https://www.ithome.com/0/965/686.htm">IT之家/华尔街见闻：首轮外部融资 510 亿元、估值近 4000 亿元</a>、<a href="https://k.sina.com.cn/article_5953466437_162dab0450670b19ee.html">新浪：彭博报道 IPO 筹备</a>、<a href="https://k.sina.com.cn/article_7880068204_1d5b04c6c06801g8oy.html">新浪：Harness 开源报道</a>、<a href="https://mappingstudio.ai/companies/deepseek">MappingStudio 公司档案（员工规模）</a></li>
+<li>说明：企业服务条目与行业解决方案公开信息有限，已如实标注；融资/IPO 等数字来自媒体与第三方报告，非官方披露</li>
+</ul></div></div></body></html>

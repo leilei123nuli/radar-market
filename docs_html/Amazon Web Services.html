@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amazon Web Services</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="amazon-web-services">Amazon Web Services</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：2006
+<strong>护城河</strong>：全球云份额第一，自研 Trainium/Inferentia 降本</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Amazon Web Services（AWS）是 Amazon 旗下的云计算业务，全球云市场份额第一。业务覆盖从基础设施（计算 EC2、存储 S3、数据库 Aurora/RDS、网络）到 AI 全栈（自研 Trainium/Inferentia 芯片、Amazon SageMaker AI、Amazon Bedrock 模型平台、Kiro/Amazon Quick 等智能体应用）的完整产品体系。据 Amazon 2026 年 Q2 财报（经财经媒体报道），AWS 季度收入 422 亿美元、同比增长约 37%（五年来最快增速），年化收入 run rate 约 1690 亿美元，在手订单（backlog）约 4960 亿美元。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li><strong>AI 全栈垂直整合</strong>：从自研芯片（Trainium 宣称比同级 GPU 性价比高 30–40%）→ 模型平台（Bedrock 聚合 Anthropic、OpenAI、Google、Meta、Amazon 等数百个模型）→ 智能体（AgentCore、Strands 开源框架）→ 应用（Kiro 编程、Amazon Quick 办公、Amazon Connect 客服），"From chips to agentic solutions" 是当前官方叙事主线</li>
+<li><strong>Agentic AI 落地</strong>：官网主推"生产级 AI 智能体"，强调安全、治理、数据主权（数据不出客户指定的边界），主打企业级可信 AI</li>
+<li><strong>超大规模资本开支</strong>：Amazon 2026 年资本开支指引上调至约 2200 亿美元，绝大部分投向 AWS 的 AI 数据中心，管理层称需求到 2027 年都将超过产能</li>
+<li><strong>数据与分析补强</strong>：2026-08-26 签署协议收购 DuckDB 背后的 DuckLabs，强化分析型数据库与 AI 数据底座</li>
+<li><strong>中立模型超市定位</strong>：不绑定单一模型，以"多模型可选 + 不被锁定"对抗微软-OpenAI、谷歌-Gemini 的垂直绑定</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<p>官网产品目录共分 19 大类：Analytics、Application Integration、Artificial Intelligence、Business Applications、Compute、Customer Experience、Databases、Developer Tools、End User Computing、Game Tech、Management Tools、Media Services、Migration &amp; Modernization、Multicloud &amp; Hybrid、Networking &amp; Content Delivery、Operations、Security &amp; Identity、Storage、Supply Chain。重点如下：</p>
+<h3 id="ai">AI 与机器学习</h3>
+<ul>
+<li><strong>Amazon Bedrock</strong>：生成式 AI 应用与智能体的端到端平台，聚合数百个基础模型（Anthropic、OpenAI、Google、Meta、Amazon Nova 等）</li>
+<li><strong>Amazon SageMaker AI</strong>：自定义模型训练、微调与部署平台</li>
+<li><strong>Amazon Nova</strong>：自研基础模型系列（经 Bedrock 分发）</li>
+<li><strong>AgentCore / Strands</strong>：智能体构建运行组件与开源 SDK，走开放标准路线</li>
+<li><strong>Trainium / Inferentia</strong>：自研 AI 训练/推理芯片，主打性价比（宣称高 30–40%）</li>
+</ul>
+<h3 id="ai_1">应用层 AI 产品</h3>
+<ul>
+<li><strong>Kiro</strong>：AI 编程/智能体工程工具（agentic engineering）</li>
+<li><strong>Amazon Quick</strong>：面向办公场景的 AI 助手（业务数据问答、自动化、无代码建应用）</li>
+<li><strong>Amazon Connect</strong>：AI 原生的客户联络中心解决方案</li>
+</ul>
+<h3 id="_5">计算 / 存储 / 数据库（基本盘）</h3>
+<ul>
+<li><strong>Amazon EC2</strong>：弹性计算，旗舰基础服务</li>
+<li><strong>Amazon S3</strong>：对象存储事实标准</li>
+<li><strong>Amazon Aurora</strong>：Serverless 关系数据库（兼容 PostgreSQL/MySQL/DSQL）</li>
+<li><strong>Amazon RDS</strong>：托管关系数据库</li>
+<li><strong>AWS Lambda 等 Serverless 与容器产品线</strong>（App Runner、App Mesh 等）</li>
+</ul>
+<h3 id="_6">数据与分析</h3>
+<ul>
+<li>收购 DuckLabs（DuckDB）后强化分析数据库布局；另有 Redshift 等分析产品（公开信息有限，本次未逐一核验）</li>
+</ul>
+<h2 id="_7">三、服务分类</h2>
+<h3 id="_8">客户支持服务</h3>
+<ul>
+<li><strong>AWS Support</strong>：分层技术支持体系</li>
+<li><strong>AWS Professional Services</strong>：专家咨询与打包实施服务，加速企业上云转型</li>
+<li><strong>AWS Training &amp; Certification</strong>：云技能培训与认证体系</li>
+</ul>
+<h3 id="_9">生态与市场服务</h3>
+<ul>
+<li><strong>AWS Marketplace</strong>：第三方软件与 AI 智能体交易市场（官方称已有 4,000+ AI 智能体和解决方案可部署）</li>
+<li><strong>AWS Partner Network</strong>：合作伙伴网络</li>
+<li><strong>AWS Free Tier / Savings Plans / Offers</strong>：免费试用与灵活计费计划</li>
+</ul>
+<h3 id="_10">开发者服务</h3>
+<ul>
+<li><strong>SDKs &amp; Tools</strong>：.NET / Python / Java / PHP / JavaScript 等多语言开发工具</li>
+<li><strong>Agent Toolkit</strong>：给 AI 编程智能体提供最新文档与 AWS 资源访问的工具包</li>
+<li><strong>Builder Center / re:Post</strong>：开发者社区与问答</li>
+</ul>
+<h2 id="_11">四、解决方案分类</h2>
+<h3 id="solutions-library">按用例（Solutions Library）</h3>
+<ul>
+<li><strong>AI Solutions</strong>：生成式 AI 与智能体场景方案集</li>
+<li><strong>Analytics Solutions</strong>：数据分析场景方案集</li>
+<li><strong>Migration &amp; Modernization Solutions</strong>：迁移与现代化改造方案集</li>
+<li><strong>Transformation Hubs</strong>：官方方法论主线"Migrate to modernize → Modernize to unlock data → unlock data to run AI"（迁移 → 数据 → AI 三步走）</li>
+</ul>
+<h3 id="_12">按行业</h3>
+<ul>
+<li><strong>金融服务（FSI）</strong>：欺诈检测、风险建模、合规自动化</li>
+<li><strong>公共部门</strong>：GovCloud / FedRAMP 合规的政务与国防 AI</li>
+<li><strong>汽车与制造</strong>：预测性维护、供应链优化、自动驾驶系统</li>
+<li><strong>媒体、娱乐与游戏</strong>：内容生成、个性化推荐、实时互动（案例：Bundesliga 实时赛事洞察）</li>
+<li><strong>零售</strong>：零售分析、需求预测、库存管理（Solutions Library 中有零售智能平台类方案）</li>
+</ul>
+<h3 id="_13">按组织类型</h3>
+<ul>
+<li>初创公司到大型企业的分层方案（Startup / Enterprise / ISV 独立软件开发商专项）</li>
+</ul>
+<h2 id="_14">五、更新记录</h2>
+<h3 id="_15">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_16">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_17">六、总结</h2>
+<h3 id="_18">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Amazon Bedrock + AgentCore</strong>：多模型聚合 + 智能体生产化平台，是 AWS 对抗微软/谷歌垂直绑定的核心武器，企业采纳度值得持续跟踪</li>
+<li><strong>Trainium/Inferentia 自研芯片</strong>：30–40% 性价比宣称若兑现，是云 AI 成本曲线的关键变量</li>
+<li><strong>EC2/S3/Aurora 基本盘</strong>：份额第一的现金流业务，为 AI 资本开支供血</li>
+<li><strong>Amazon Connect / Quick / Kiro</strong>：AI 应用层三件套，直接对标微软 Copilot 体系</li>
+</ul>
+<h3 id="_19">强势战略留意</h3>
+<ul>
+<li><strong>2200 亿美元级资本开支</strong>：需求超产能至少到 2027 年，押注规模空前，关注折旧对 AWS 利润率的侵蚀（Q2 2026 折旧已约占 AWS 收入 19%）</li>
+<li><strong>"中立模型超市"策略的边界</strong>：Bedrock 同时分发 OpenAI 与 Anthropic 模型，与微软关系微妙；自研 Nova 模型的竞争力存疑</li>
+<li><strong>收购 DuckLabs（DuckDB）</strong>：分析型数据库与 AI 数据底座整合动作，可能冲击 Snowflake/Databricks 阵营</li>
+<li><strong>Agentic AI 叙事能否转化为收入</strong>：官方承认"88% 的智能体试点会停滞"，既推工具也暴露落地难度</li>
+</ul>
+<h2 id="_20">信息来源</h2>
+<ul>
+<li>官网 https://aws.amazon.com（通，FetchURL 抓取，页面为 JS 渲染、内容有限）</li>
+<li>产品 https://aws.amazon.com/products（通，代理 curl 抓取完整页面，含 19 大产品分类）</li>
+<li>AI 专题页 https://aws.amazon.com/ai/（通，代理 curl 抓取；战略叙事与 AI 产品主要来源）</li>
+<li>解决方案 https://aws.amazon.com/solutions（通，FetchURL 抓取，页面为 JS 渲染、内容有限）</li>
+<li>博客/新闻 https://aws.amazon.com/blogs（通，FetchURL 抓取；含收购 DuckLabs 公告）</li>
+<li>投资者关系 https://ir.aboutamazon.com（链接本身有效，但抓取被反爬拦截：FetchURL 429、代理 curl 403；财务数据改用财经媒体对 Amazon Q2 2026 财报的报道补充）</li>
+<li>网络搜索补充：Amazon Q2 2026 财报数据（AWS 收入 422 亿美元、+37%、run rate 1690 亿美元、backlog 4960 亿美元、2026 资本开支指引 2200 亿美元），来源为 Yahoo Finance、DatacenterDynamics 等财经媒体报道</li>
+<li>注：部分产品细节（如 Redshift 等分析产品线现状）本次未逐一核验，相关条目已标注"公开信息有限"</li>
+</ul></div></div></body></html>

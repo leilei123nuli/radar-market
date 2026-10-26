@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galbot 银河通用</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="galbot">Galbot 银河通用</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：5. 具身智能 | <strong>地区</strong>：国内 | <strong>类型</strong>：新型 | <strong>成立</strong>：2023
+<strong>护城河</strong>：轮式双臂 + 仿真数据驱动，宁德时代/美团投资</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>北京银河通用机器人有限公司成立于 2023 年 5 月（创始人王鹤），是一家以具身大模型为核心的通用机器人公司。底层是自研端到端具身大模型「银河星脑 AstraBrain」（集大脑—小脑—神经控制于一模）与虚实融合数据基建「银河星数 AstraData」（百亿级数据集），向上形成「本体硬件（ET1 / G1 / S1）→ 二次开发平台（GalbotSDK / 场景包 / 定制方案）→ 行业解决方案（零售、工业、教育、医疗、家庭）」的完整产品与服务体系。据公开报道，公司两年累计融资超 24 亿元（截至 2025-06 的 11 亿元 A 轮由宁德时代领投），2026 年报道估值超 200 亿元，2026-09 中标宁德时代 2.36 亿元项目。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>模型优先：以 AstraBrain 大模型 + AstraData 仿真数据基座走「仿真合成数据驱动」路线，强调 Sim2Real 零样本迁移，与依赖真机采集的路线形成差异化</li>
+<li>场景闭环：从数据基座构建、模型学习到真实场景落地全链条闭环，零售（银河太空舱、美团买药无人药店）与工业（宁德时代产线）为两大先行场景</li>
+<li>全本体覆盖：轮式双臂（G1）、工业重载（S1）、人形演艺（ET1）三线产品，模型跨本体适配</li>
+<li>生态化：开放二次开发平台与开发者订阅体系，争夺具身智能开发者生态入口；牵头获批具身智能大模型重点实验室（官网称"中国唯一"）</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">机器人本体</h3>
+<ul>
+<li><strong>Galbot G1</strong>：通用轮式双臂具身机器人，1730mm 高、单臂负载 5kg、4 轮全向底盘、末端可在灵巧手/吸盘/夹爪间更换，面向零售、工业、康养、教育等场景；另有 G1 Lite 变体</li>
+<li><strong>Galbot S1</strong>：工业重载具身机器人，双臂最高负载 50kg，作业高度 0–2.3m，电池热插拔支持 24/7 连续作业，面向工业、仓储、物流</li>
+<li><strong>Galbot ET1「银河星仔」</strong>：面向娱乐演艺的人形机器人（1250mm、32kg、26 自由度，可配 12 自由度灵巧手），主打实时多模态交互与运动，2026-09 开启预订，官网自称"物理世界原生智能体"</li>
+</ul>
+<h3 id="astrabrain">具身大模型（AstraBrain 银河星脑体系）</h3>
+<ul>
+<li><strong>AstraBrain-WAM（通用大脑）</strong>：全域数据、跨本体隐式世界-动作基座模型（3B–13B），解决异构数据割裂难题</li>
+<li><strong>AstraBrain-WBC（通用小脑）</strong>：全球首个人形机器人通用小脑 GPT 基础模型，8040 万参数、2 万小时人类动作语料训练</li>
+<li><strong>AstraBrain-Dex / DexNDM</strong>：灵巧手世界模型与神经动力学模型，实现任意姿态下手内旋转等灵巧操作</li>
+<li><strong>GraspVLA</strong>：端到端抓取基座大模型，十亿帧合成「视觉-语言-动作」对预训练，Sim2Real 零样本迁移</li>
+<li><strong>TrackVLA / NavFoM</strong>：端到端具身导航与全域环视导航基座模型，支持自主导航与智能跟随</li>
+<li><strong>WAM-TTT</strong>：后训练部署技术，仅凭无标注人类视频完成模型部署适配</li>
+<li><strong>Any2Track</strong>：人形机器人通用全身追踪系统，已开源通用动作跟踪框架 OpenTrack</li>
+</ul>
+<h2 id="_6">三、服务分类</h2>
+<h3 id="developergalbotcom">二次开发平台（developer.galbot.com）</h3>
+<ul>
+<li><strong>L1 · GalbotSDK</strong>：基础开发工具，覆盖感知、规划、控制、导航、交互五大能力，高低双层接口</li>
+<li><strong>L2 · 场景开发包</strong>：垂直场景半解决方案，已上线迎宾导览方案包，物料分拣、场地巡检方案包规划中</li>
+<li><strong>开发者订阅</strong>：FREE（¥0）/ PRO（¥5万/机/年）/ ENTERPRISE（¥20万/机/年）三档，含训练营认证、SLA 支持、在线仿真与真机部署权益</li>
+</ul>
+<h3 id="_7">交付与运营服务</h3>
+<ul>
+<li><strong>L3 · 端到端定制方案</strong>：需求评估 → 方案设计 → 实施 → 长期运维的五阶段交付</li>
+<li><strong>银河开拓者训练营</strong>：初/中/高级集训与认证，线上线下公开课</li>
+<li><strong>仿真资产服务</strong>：高保真场景与物品仿真资产、机器人数字模型（URDF / MJCF / USD）</li>
+</ul>
+<h2 id="_8">四、解决方案分类</h2>
+<h3 id="_9">零售</h3>
+<ul>
+<li><strong>银河太空舱</strong>：无人零售舱，官网称已在全国 40 余个城市落地超 170 个点位</li>
+<li><strong>商超零售</strong>：取货交付、盘点补货全天候自动化</li>
+<li><strong>即时零售仓储物流</strong>：取货、打包、出仓全流程自主运行，官网称百家即时零售仓 7×24 小时值守、连续作业超一年半；与美团买药合作无人药店</li>
+</ul>
+<h3 id="_10">工业</h3>
+<ul>
+<li><strong>工业搬运/制造</strong>：零部件分拣、物料搬运、组装与上下料；已中标宁德时代 2.36 亿元项目（2026-09，公开报道）</li>
+</ul>
+<h3 id="_11">教育</h3>
+<ul>
+<li>面向院校实验室的教育方案，从课程到设备全程交付</li>
+</ul>
+<h3 id="_12">其他场景</h3>
+<ul>
+<li><strong>家庭服务</strong>：清洁、整理、取物、拿快递（G1 场景展示）</li>
+<li><strong>医疗服务</strong>：官网称机器人已在医疗服务场景持续运行（公开信息有限，未披露细节）</li>
+<li><strong>娱乐演艺</strong>：ET1 游乐场互动、门店迎宾、舞台表演等</li>
+</ul>
+<h2 id="_13">五、更新记录</h2>
+<h3 id="_14">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_15">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_16">六、总结</h2>
+<h3 id="_17">强势业务或产品推荐</h3>
+<ul>
+<li><strong>G1 + 银河太空舱零售闭环</strong>：城市级规模化运营（170+ 点位）在国内具身智能商业化中属第一梯队，值得跟踪单点经济模型</li>
+<li><strong>AstraBrain / GraspVLA 模型体系</strong>：仿真合成数据路线论文产出密集（WAM-TTT、DexNDM 等），技术辨识度强</li>
+<li><strong>二次开发平台</strong>：三层产品 + 订阅制定价在同类公司中少见，是观察其生态野心的窗口</li>
+</ul>
+<h3 id="_18">强势战略留意</h3>
+<ul>
+<li><strong>宁德时代深度绑定</strong>：既是领投方又是大客户（2.36 亿元中标），股东与客户高度重合已引发媒体对其营收质量的质疑（虎嗅 2026-09），需持续观察</li>
+<li><strong>ET1 演艺人形</strong>：从轮式实用路线切入人形演艺市场，预订量与交付情况待验证</li>
+<li><strong>资本与 IPO 节奏</strong>：三年累计融资约 70 亿元、估值超 200 亿元，媒体多次提及 IPO 动向，上市进展值得跟踪</li>
+</ul>
+<h2 id="_19">信息来源</h2>
+<ul>
+<li>官网 https://www.galbot.com（通）：首页、AstraBrain 体系、新闻动态</li>
+<li>官网子页 https://www.galbot.com/about（通）：公司介绍、核心技术全列表</li>
+<li>官网子页 https://www.galbot.com/g1、/s1、/et1（通）：三款本体规格与场景</li>
+<li>官网子页 https://www.galbot.com/news（通）：新闻动态（截至 2026-08）</li>
+<li>开发者平台 https://developer.galbot.com（通）：二次开发三层产品、订阅定价</li>
+<li>补充来源（网络搜索）：<a href="http://www.news.cn/digital/20250623/00657ee2fbde4b4d8c005ea667b31737/c.html">新华网·11亿元融资</a>、<a href="https://finance.sina.com.cn/roll/2026-03-05/doc-inhpwzrx3276868.shtml">新浪财经·25亿元新一轮融资与估值</a>、<a href="https://www.huxiu.com/article/4894444.html">虎嗅·中标宁德时代项目与营收质疑</a>（融资与争议信息均来自公开媒体报道，官网未披露具体融资数据）</li>
+<li>官网「投资机构」一栏为图片展示，无法提取文字，投资机构名单以媒体报道为准</li>
+</ul></div></div></body></html>

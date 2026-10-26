@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mistral AI</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="mistral-ai">Mistral AI</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：1. AI / 模型 / AI 平台 | <strong>地区</strong>：国外 | <strong>类型</strong>：新型 | <strong>成立</strong>：2023
+<strong>护城河</strong>：欧洲开源模型代表，高效小模型路线</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Mistral AI 是欧洲头部基础模型公司，自我定位为"Sovereign AI 第一"（#1 in Sovereign AI）：以开放权重（open-weight）模型为底座，向上提供模型定制（Forge）、智能体平台（Studio）、终端 AI 助手（Vibe，前身 Le Chat）与欧洲本土算力云（Inference / Compute），形成"模型 → 定制 → 平台 → 基础设施"的全栈结构。2026-10-06 发布旗舰模型 Mistral Large 4（ML4）公开预览：1 万亿总参数、520 亿激活参数的原生多模态 MoE，在自有欧洲数据中心以 3,800 块 NVIDIA Grace Blackwell GPU 从零训练，权重计划当月底开放。2026-09-08 宣布完成 €3B D 轮融资，投后估值超 €21B。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>核心叙事是"主权 AI"（Sovereign AI）：主张组织对数据、智能（模型权重与适配）、算力、运营四层保持控制，"我们造模型，你拥有模型"（We make the models. You keep them.）</li>
+<li>开放权重 + 自部署作为差异化路线，直接对标闭源美系厂商；强调闭源模型的供应商级拒答在网络安全等场景构成风险，开放权重让客户可在自有政策下运行高能力模型</li>
+<li>基础设施自主化：在欧洲自建数据中心与 Mistral Compute（欧洲本土 GPU 云），推动"in-region inference"，降低对美国云厂商依赖</li>
+<li>企业化与行业化：主攻能源、制造、金融、公共部门四大行业，标杆客户包括 TotalEnergies、ASML、Airbus、BNP Paribas、NATO、欧洲专利局、CMA CGM、Amadeus 等</li>
+<li>地缘扩张与合作：2026-09 设立德国慕尼黑中心推进工业 AI；与 NVIDIA 合作加速开放前沿模型，与 Mozilla（Firefox 浏览器内置）、Cloudera、HUMAIN（沙特）等达成合作</li>
+<li>前沿研究多线布局：除通用模型外，持续投入文档智能（OCR）、语音（Voxtral）、形式化证明（Leanstral）、机器人导航（Robostral）与物理 AI（Physics AI，工程仿真的神经代理模型）</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">通用大模型（开放权重）</h3>
+<ul>
+<li><strong>Mistral Large 4（ML4）</strong>：旗舰模型（2026-10-06 公开预览），1T 总参数 / 52B 激活的原生多模态 MoE，统一指令、推理与智能体能力，官方称在网络安全、金融、法律等企业负载上为开放权重模型 SOTA，支持 160+ 语言</li>
+<li><strong>Mistral Medium 3.5</strong>：128B 合并稠密模型，统一指令/推理/编码，可配置推理强度，多模态输入</li>
+<li><strong>Mistral Small 4</strong>：119B 总参 / 6.5B 激活的 MoE，将 Instruct、Magistral（推理）、Devstral（编码）统一为单一模型</li>
+<li><strong>Ministral 3</strong>：3B / 8B / 14B 紧凑模型系列（Cascade Distillation），含 base/instruct/reasoning 变体与图像理解，延续高效小模型路线</li>
+</ul>
+<h3 id="specialist">专用模型（Specialist）</h3>
+<ul>
+<li><strong>Mistral OCR 4.1</strong>：文档提取与理解模型，官方称"世界最佳 OCR"</li>
+<li><strong>Voxtral 系列</strong>：语音模型家族——Voxtral TTS（4B 语音生成，参考音色克隆）、Voxtral Mini Transcribe Realtime（4B 流式转写）、Voxtral Small（24B 音频理解，转写/翻译/语音问答）</li>
+<li><strong>Codestral / Codestral Embed</strong>：代码补全（Fill-in-the-Middle）与代码嵌入检索模型</li>
+<li><strong>Devstral</strong>：面向编码智能体的小模型（已并入 Small 4 体系）</li>
+<li><strong>Shieldstral</strong>：3B 文本+图像安全分类模型，按自然语言策略做内容护栏</li>
+<li><strong>Leanstral 1.5</strong>：Lean 4 形式化证明工程模型</li>
+<li><strong>Robostral Navigate</strong>：首个具身导航模型，纯视觉跨机器人平台导航</li>
+<li><strong>Physics AI 系列</strong>：面向工程仿真的神经代理模型（AB-UPT 汽车/航空 CFD、NeuralDEM 工业颗粒流、GyroSwin 等离子体湍流、Universal Physics Transformers 等）</li>
+</ul>
+<h3 id="_6">平台与终端产品</h3>
+<ul>
+<li><strong>Vibe（前身 Le Chat）</strong>：面向工作与编码的 AI 智能体，支持长任务（Work 模式 / Code 模式）、远程编码智能体、VS Code 扩展与 CLI，Free / Pro / Team / Enterprise 分层</li>
+<li><strong>Studio</strong>：企业级智能体与应用构建治理平台（2025-10 推出），覆盖 Build（Workflows / Agents / Connectors）、Iterate（Experiments / Campaigns / Judges / Datasets）、Deploy（混合/专属/自托管）、Govern（Observability / Guardrails / Moderation）与 AI registry 资产目录</li>
+<li><strong>Forge</strong>：企业定制模型系统（2026-03 推出），从数据准备、预训练/后训练（RLHF、LoRA、SFT、DPO）到 KPI 对齐评估、生命周期管理与推理部署的全流程定制训练</li>
+</ul>
+<h3 id="_7">云基础设施</h3>
+<ul>
+<li><strong>Inference（Mistral Cloud API）</strong>：统一 API 承载 Mistral 及第三方开放权重/专用模型，支持欧洲区域内推理</li>
+<li><strong>Compute</strong>：欧洲本土专属 GPU 预留服务（Managed Slurm / Managed Kubernetes），面向训练与 HPC 负载，企业级 SLA 与安全合规（BYOK、网络隔离）</li>
+</ul>
+<h2 id="_8">三、服务分类</h2>
+<h3 id="_9">订阅服务</h3>
+<ul>
+<li>Vibe Free / Pro / Team / Enterprise：个人到企业的分层订阅（Enterprise 含定制部署、模型训练与专属支持）</li>
+</ul>
+<h3 id="api">平台/API 服务</h3>
+<ul>
+<li>模型推理 API（chat completions、嵌入、OCR、转写、语音合成）、Agents API、Batch API 等按量计费</li>
+<li>Studio 平台能力：连接器、工作流编排、评测（Judges / Campaigns）、可观测与护栏，作为企业 AI 运营系统</li>
+</ul>
+<h3 id="_10">定制与专家服务</h3>
+<ul>
+<li>Forge 定制训练：基于企业专有数据训练前沿级私有模型</li>
+<li>Applied AI services：Mistral 专家团队与客户共创，覆盖用例设计、PoV 到规模化落地、私有化编码助手等深度集成</li>
+</ul>
+<h3 id="_11">基础设施服务</h3>
+<ul>
+<li>Mistral Compute：欧洲本土专属 GPU 容量预留，含托管调度（Slurm/Kubernetes）、可观测、安全治理与专家支持</li>
+</ul>
+<h2 id="_12">四、解决方案分类</h2>
+<h3 id="_13">按能力场景</h3>
+<ul>
+<li><strong>Coding</strong>：面向企业 SDLC 的编码方案——Codestral 补全、Codestral Embed 代码库理解、Vibe/Code 模式智能体、遗留代码现代化（官网披露 40,000 行 Fortran 迁移案例）</li>
+<li><strong>Document AI</strong>：基于 Mistral OCR 的合同/表格/发票/手写体结构化抽取，服务 KYC、物流单据、P&amp;ID 图纸分析等场景</li>
+<li><strong>Speech</strong>：语音智能体（银行/保险/现场运维）、TTS 与 STT 三大语音方案，面向客服与语音交互</li>
+<li><strong>Agentic Search / Search Toolkit</strong>：复杂文档内导航、阅读与核验的检索层及生产级搜索管线</li>
+</ul>
+<h3 id="_14">按行业</h3>
+<ul>
+<li><strong>能源与公用事业</strong>："全球最大能源企业中的 5 家"为其客户，TotalEnergies 用于加速油藏勘探</li>
+<li><strong>制造业</strong>：全球最大半导体设备与飞机制造商为客户，ASML 子系统错误识别提速 70%</li>
+<li><strong>金融服务</strong>："欧洲三大银行"为客户，BNP Paribas 将 KYC 流程从数周压缩到数天</li>
+<li><strong>公共部门</strong>：NATO 及 20+ 国家政府实体客户，欧洲专利局转写从数天缩至数分钟，新加坡 HTX 公共安全合作</li>
+<li>用例库另覆盖消费零售、医疗生命科学、科技、交通物流等行业，含渗透测试、信用分析、直播事实核查、注塑仿真等 16 类公开用例</li>
+</ul>
+<h2 id="_15">五、更新记录</h2>
+<h3 id="_16">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_17">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_18">六、总结</h2>
+<h3 id="_19">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Mistral Large 4</strong>：当前开放权重阵营的旗舰级模型（1T MoE、网络安全/金融/法律企业负载 SOTA 主张），权重将于 2026 年 10 月底开放，是检验其"开放前沿"叙事的关键节点，值得重点跟踪</li>
+<li><strong>Forge + Studio</strong>：企业"私有前沿模型 + 智能体运营平台"组合，是其从模型授权转向企业深度绑定的核心抓手</li>
+<li><strong>欧洲政企基本盘</strong>：NATO、欧洲三大银行、ASML/空客等标杆客户构成强背书，主权 AI 需求在欧洲政策环境下具备结构性顺风</li>
+</ul>
+<h3 id="_20">强势战略留意</h3>
+<ul>
+<li>"模型 + 平台 + 算力"全栈化：€3B D 轮（估值 &gt;€21B）支撑自建欧洲数据中心与 Mistral Compute，资本开支与利用率是长期成本曲线的关键变量</li>
+<li>开放权重 vs 闭源旗舰的能力差：ML4 直接对标 GPT-6/Claude 级别，若权重开放后生态采用不及预期，差异化叙事承压；反之则强化其"主权 AI 第一"定位</li>
+<li>地缘扩张路线：德国慕尼黑中心（工业 AI）、与 HUMAIN（沙特）合作、Mozilla 浏览器入口合作——欧洲之外的收入结构与政治风险值得持续观察</li>
+<li>高效小模型传统的延续：Ministral/Small 系列 + Physics AI、Leanstral、Robostral 等专用模型矩阵，是其区别于"只做通用大模型"厂商的第二曲线</li>
+</ul>
+<h2 id="_21">信息来源</h2>
+<ul>
+<li>官网 https://mistral.ai（通，直连失败后经代理抓取成功）：Sovereign AI 定位、ML4 发布、四大行业客户案例</li>
+<li>产品 https://mistral.ai/products（通，经代理）：Vibe / Studio / Inference / Compute / Forge 产品体系</li>
+<li>博客/新闻 https://mistral.ai/news（通，经代理）：89 篇文章，含 €3B D 轮融资（2026-09-08）、慕尼黑中心、Mozilla/Cloudera/HUMAIN 合作、历代模型发布</li>
+<li>补充抓取（官网子页面，均通，经代理）：/news/mistral-large-4（ML4 参数与基准细节）、/products/vibe、/products/studio、/products/forge、/cloud/inference、/cloud/compute、/research（模型全集）、/solutions/coding、/solutions/document-ai、/solutions/speech、/sovereign-ai、/use-cases</li>
+<li>无投资者关系页面（非上市公司）；公司网站.json 中三条链接全部有效，无需标记"不通"</li>
+</ul></div></div></body></html>

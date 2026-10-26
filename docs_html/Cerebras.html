@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cerebras</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="cerebras">Cerebras</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：2. 芯片 / AI 基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：新型 | <strong>成立</strong>：2016
+<strong>护城河</strong>：晶圆级 WSE 芯片，推理专用架构</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Cerebras Systems（总部加州 Sunnyvale，2026 年 5 月在 Nasdaq 上市，代码 CBRS）是晶圆级（wafer-scale）AI 芯片公司：底层是 Wafer-Scale Engine（WSE）系列超大芯片（当前主力 WSE-3 / WSE-3 Turbo，单芯片 4 万亿晶体管、90 万个 AI 核心），向上分为整机系统（CS-3、CS-4 机架级方案）与云服务（Inference Cloud 推理 API、Training Cloud 训练云）两层收入结构，主打"全球最快 AI 推理"（官方宣称比 GPU 方案快至 30 倍）。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>从"训练用晶圆级超算"转型为"推理优先"：CS-4（2026-08 发布）明确面向 frontier 模型推理与 agentic AI 负载</li>
+<li>云化分发：Inference Cloud 按 token 计费、OpenAI API 兼容，同时提供 Dedicated 与 On-Prem 部署，覆盖数据主权/合规场景</li>
+<li>生态借力：与 OpenAI（GPT-5.6 Sol Ultrafast、Codex-Spark 上 Cerebras）、Meta（Llama API）、AWS（Trainium + CS-3 分离式推理）、AMD（Helios + WSE 分离式推理）等头部方结盟，借其渠道进入主流市场</li>
+<li>产能扩张：与 Flex 合作在硅谷 Milpitas 扩产 CS-3（预期产能提升 7 倍），并在北美/欧洲扩建数据中心（如芬兰 Mikkeli 165MW 项目）</li>
+<li>Sovereign AI：以整机 + 云服务帮助国家/地区建自主 AI 算力（G42 Condor Galaxy、韩国 Upstage 合作等）</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">整机系统</h3>
+<ul>
+<li><strong>CS-4</strong>：2026-08 发布的新一代机架级方案，集成 3 颗 WSE-3 Turbo，主打超大规模推理（官方称比 GPU 快至 30 倍），2026 年三季度开始出货</li>
+<li><strong>CS-3</strong>：现役 AI 超算系统（WSE-3 驱动），支持训练与推理，由 Flex 在硅谷代工扩产</li>
+<li><strong>Condor Galaxy</strong>：与 G42 合作的超算集群网络（CG-1 达 4 exaFLOPs FP16）</li>
+</ul>
+<h3 id="_6">芯片</h3>
+<ul>
+<li><strong>WSE-3 Turbo（WSE-3T）</strong>：当前旗舰晶圆级处理器，4 万亿晶体管、90 万 AI 核心、250 PFLOPS 算力、43.2 PB/s 片内内存带宽</li>
+<li><strong>WSE-3</strong>：上一代旗舰，支撑 CS-3 系统</li>
+<li><strong>Wafer Scale Engine SDK</strong>：面向底层的开发工具包</li>
+</ul>
+<h3 id="_7">云平台产品</h3>
+<ul>
+<li><strong>Inference Cloud</strong>：推理 API 服务，按 token 计费，OpenAI API 兼容，上架 GPT-5.6 Sol Ultrafast、Kimi K2.6、GLM-4.7、Gemma 4、Qwen、Llama 等模型（GPT-5.6 Sol Ultrafast 官方称达 750 token/s）</li>
+<li><strong>Training Cloud</strong>：训练/微调云，宣称无需 sharding 与模型并行改写即可训练 1B 至数十万亿参数模型</li>
+</ul>
+<h2 id="_8">三、服务分类</h2>
+<h3 id="_9">推理服务</h3>
+<ul>
+<li>公共端点按量计费（pay-as-you-go），免费试用，&lt;30 秒接入</li>
+<li>Dedicated 专属实例与 On-Prem 本地部署，满足延迟、数据驻留与合规要求</li>
+<li>Multi-LoRA 等多租户微调模型服务能力</li>
+</ul>
+<h3 id="_10">训练与模型服务</h3>
+<ul>
+<li>Training Cloud：按训练需求弹性计量，含预配置环境、安全存储与网络</li>
+<li>Model Development（AI Model Services）：由 Cerebras 专家团队为客户定制设计、训练、微调 SOTA 模型（"数周交付定制模型"）</li>
+<li>数据与模型所有权承诺：客户数据/模型不被存储、记录或复用</li>
+</ul>
+<h3 id="_11">开发者支持</h3>
+<ul>
+<li>Inference Docs / Training Docs、Cerebras Model Zoo、Hugging Face 集成、OpenRouter 等第三方分发</li>
+</ul>
+<h2 id="_12">四、解决方案分类</h2>
+<h3 id="agentic-ai">Agentic AI / 编程场景</h3>
+<ul>
+<li>Agentic coding：Cognition（案例）、Lovable、General Compute（neocloud 多年期部署协议，2027 Q1 起供算力）</li>
+<li>企业智能体：AlphaSense（金融研究）、NinjaTech、StackAI、Rox（销售工作流）</li>
+</ul>
+<h3 id="_13">行业解决方案</h3>
+<ul>
+<li>医药/医疗：GSK（智能研究智能体）、Mayo Clinic（基因组辅助诊疗）、ExomeBench 临床变异解读基准</li>
+<li>网络安全：与 Armis 合作，主打"更快推理支撑网络防御"</li>
+<li>语音/实时交互：Tavus（数字人）、LiveKit（边缘网络低延迟语音）</li>
+</ul>
+<h3 id="sovereign-ai">Sovereign AI / 国家级算力</h3>
+<ul>
+<li>国家主权 AI 方案：整机 + 云帮助国家自建算力（G42 Condor Galaxy、韩国 Upstage 合作、Jais 2 阿语模型、芬兰 Mikkeli 165MW 数据中心）</li>
+</ul>
+<h3 id="_14">生态合作方案</h3>
+<ul>
+<li>OpenAI：GPT-5.6 Sol Ultrafast 与 Codex-Spark 由 Cerebras 提供超高速推理（2026-01 官宣合作）</li>
+<li>AWS：Cerebras 登陆 AWS，Trainium 负责 prefill + CS-3 负责 token 生成的分离式推理</li>
+<li>AMD：Helios（高吞吐 prefill）+ WSE（超快 token 生成）的分离式推理合作</li>
+<li>Meta Llama API、Perplexity、Mistral、Hugging Face 等模型/平台分发集成</li>
+</ul>
+<h2 id="_15">五、更新记录</h2>
+<h3 id="_16">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_17">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_18">六、总结</h2>
+<h3 id="_19">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Inference Cloud</strong>：推理速度是其最锋利卖点，OpenAI API 兼容 + 免费试用降低尝试门槛，上架模型覆盖主流开源与 OpenAI 旗舰，值得跟踪其 token 价格与模型上新节奏</li>
+<li><strong>CS-4 / WSE-3T</strong>：晶圆级硬件代际优势明确（带宽、延迟、整机简化），分离式推理（与 AMD、AWS 合作）是其切入数据中心推理市场的关键打法</li>
+</ul>
+<h3 id="_20">强势战略留意</h3>
+<ul>
+<li>与 OpenAI 的绑定深度：GPT-5.6 Sol Ultrafast / Codex-Spark 上 Cerebras 是里程碑式背书，需留意合作是否扩大为长期算力采购</li>
+<li>2026-05 上市（CBRS）后的资本开支与数据中心扩张（北美、欧洲、芬兰 165MW），决定其云收入兑现能力</li>
+<li>训练→推理的战略重心转移是否持续：训练云与 Model Development 服务仍在，但传播口径已全面转向推理</li>
+<li>与 AMD、AWS 的分离式推理若跑通，等于承认"prefill 用 GPU/ASIC、解码用 WSE"的混合架构，对其"全替代 GPU"叙事是修正也是放量机会</li>
+</ul>
+<h2 id="_21">信息来源</h2>
+<ul>
+<li>官网 https://cerebras.ai（通，FetchURL 仅取得页脚，改用代理 curl 抓取成功）：CS-4 发布、OpenAI/AMD/Lovable 合作动态、客户证言（OpenAI、Meta、GSK、Mayo Clinic、Cognition 等）</li>
+<li>博客/新闻 https://cerebras.ai/blog（通，代理 curl 抓取成功）：GPT-5.6 Sol Ultrafast 上线、Kimi K2.6 / GLM-4.7 / Gemma 4 上架、Sovereign AI、Multi-LoRA 等</li>
+<li>产品/系统页 https://cerebras.ai/cs4（通，代理 curl）：CS-4 与 WSE-3T 规格</li>
+<li>云服务页 https://cerebras.ai/cloud（通，代理 curl）：Training Cloud 服务形态与数据所有权承诺</li>
+<li>公司页 https://cerebras.ai/company（通，代理 curl）：发展时间线（2016 创立 → WSE-1/CS-1 → Condor Galaxy → WSE-3/CS-3 → 2026-05 上市 CBRS → 2026-08 CS-4）</li>
+<li>伙伴页 https://cerebras.ai/partners（通，代理 curl）：Flex 扩产、General Compute、Gimlet Labs 等渠道</li>
+<li>投资者关系 https://investors.cerebras.ai（通，HTTP 200）：Nasdaq 上市确认、2026 Q2 财报会、CS-4 新闻稿（公司网站.json 未收录此链接，本次仅作补充来源）</li>
+<li>备注：https://cerebras.ai/products 实际返回 404（该地址不在公司网站.json 中，无需标记）；公司网站.json 中 Cerebras 两条链接均通，无失效链接需写回</li>
+</ul></div></div></body></html>

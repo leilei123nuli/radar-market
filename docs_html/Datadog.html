@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Datadog</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="datadog">Datadog</h1>
+<blockquote>
+<p><strong>版本</strong>：v2 | <strong>建档日期</strong>：2026-10-08 | <strong>最近更新</strong>：2026-10-09
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：2010
+<strong>护城河</strong>：云原生可观测性，AI 负载监控刚需</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Datadog（NASDAQ: DDOG，总部纽约，CEO 为联合创始人 Olivier Pomel）是全球云原生可观测性（Observability）与安全平台龙头，官方定位为"the leading AI-powered observability and security platform"。以 SaaS 订阅模式向开发者、IT 运维和业务团队提供统一平台，覆盖基础设施监控、APM、日志、安全、数字体验、软件交付与 AI Agent 等全栈场景。财务体量：2026 Q2（截至 2026-06-30）营收 11.2 亿美元、同比 +36%，Non-GAAP 运营利润率 23%，自由现金流 2.79 亿美元，账上现金及有价证券 50 亿美元；ARR 超 10 万美元的大客户约 4,720 家（同比 +23%）；2026 全年营收指引 44.5–44.7 亿美元。连续第六年（2026）入选 Gartner 可观测性平台魔力象限领导者。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li><strong>统一平台战略</strong>：把 Observability 与 Security 合并在同一数据平台上交叉销售，用大客户扩张（$100k+ ARR 客户数）驱动增长</li>
+<li><strong>AI 双向布局</strong>：一方面监控客户的 AI 负载（GPU Monitoring、Datadog for AI、Agent Observability），吃"AI 负载监控刚需"；另一方面把 AI 做进产品本身——Bits AI 系列（Investigation/Chat/Agent Builder/Code/Security Analyst）走向全自主事故检测、调查与修复（autonomous remediation）</li>
+<li><strong>Agentic 运营</strong>：2026 年 DASH 大会发布 100+ 项能力，核心是 Bits AI 全自主化、AI Guard（防 prompt injection/投毒）、Bits Agent Builder（客户自建 AI Agent）</li>
+<li><strong>AI 研究纵深</strong>：收购 Adaptive ML（强化学习运营平台初创），投入 world models 与 agentic LLM post-training</li>
+<li><strong>部署灵活化</strong>：推出 Bring Your Own Cloud（BYOC），支持在客户自有环境内部署 Datadog</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="observability">Observability（可观测性）</h3>
+<ul>
+<li><strong>Infrastructure Monitoring</strong>：核心基础设施监控，含 Custom Metrics、Container Monitoring、Kubernetes Autoscaling、Serverless Monitoring、Storage Management</li>
+<li><strong>GPU Monitoring</strong>：面向 AI 训练/推理负载的 GPU 监控</li>
+<li><strong>Cloud Cost Management</strong>：云成本管理（FinOps 方向）</li>
+<li><strong>APM（Application Performance Monitoring）</strong>：应用性能监控，含 Universal Service Monitoring、Continuous Profiler、Dynamic Instrumentation</li>
+<li><strong>Database / Data Monitoring</strong>：Database Monitoring、Data Observability、Data Streams Monitoring</li>
+<li><strong>Log Management</strong>：日志管理，含 Audit Trail、Observability Pipelines、Error Tracking、Bring Your Own Cloud Log Management</li>
+<li><strong>Network Monitoring</strong>：跨云/混合/本地环境的网络流量监控</li>
+</ul>
+<h3 id="security">Security（安全）</h3>
+<ul>
+<li><strong>Code Security</strong>：Software Composition Analysis、Static/Runtime Code Analysis、IaC Security、Secret Scanning</li>
+<li><strong>Cloud Security</strong>：Cloud Security Posture Management（CSPM）、Cloud Infrastructure Entitlement Management（CIEM）、Vulnerability Management、Cloud Workload Protection、Compliance、Sensitive Data Scanner</li>
+<li><strong>App &amp; API Protection</strong>：应用与 API 运行时防护</li>
+<li><strong>Cloud SIEM</strong>：云原生安全信息与事件管理</li>
+<li><strong>AI Guard</strong>：保护 AI Agent 免受 prompt injection 与投毒攻击（DASH 2026 发布）</li>
+</ul>
+<h3 id="digital-experience">Digital Experience（数字体验）</h3>
+<ul>
+<li><strong>Real User Monitoring（RUM）</strong>：Browser / Mobile 真实用户监控</li>
+<li><strong>Session Replay</strong>：用户会话回放</li>
+<li><strong>Synthetic Monitoring</strong>：AI 驱动的主动式拨测</li>
+<li><strong>Product Analytics / Experiments</strong>：产品分析与实验</li>
+<li><strong>Mobile App Testing</strong>：移动应用测试</li>
+</ul>
+<h3 id="software-delivery">Software Delivery（软件交付）</h3>
+<ul>
+<li><strong>CI Visibility / Continuous Testing / Test Optimization</strong>：CI 流水线可见性与测试优化</li>
+<li><strong>Feature Flags</strong>：功能开关</li>
+<li><strong>Internal Developer Portal（IDP）</strong>：内部开发者门户</li>
+<li><strong>Code Coverage / DORA Metrics + AI Impact</strong>：交付质量度量</li>
+</ul>
+<h3 id="service-management">Service Management（服务管理）</h3>
+<ul>
+<li><strong>Incident Management / Incident Response</strong>：事故管理与响应</li>
+<li><strong>Workflow Automation / Actions</strong>：运维自动化</li>
+<li><strong>Software Catalog / Context Graph / Event Management</strong>：服务目录与事件管理</li>
+</ul>
+<h3 id="ai">AI 产品</h3>
+<ul>
+<li><strong>Bits AI</strong>：AI Agent 家族——Bits Investigation（事故调查）、Bits Chat（对话式运维）、Bits Agent Builder（自建 Agent，2026 Q2 GA）、Bits Code、Bits Security Analyst</li>
+<li><strong>Datadog for AI / Agent Observability</strong>：监控 LLM 与 AI Agent 应用</li>
+<li><strong>MCP Server / Pup CLI</strong>：AI 工具链接口与命令行</li>
+</ul>
+<h2 id="_5">三、服务分类</h2>
+<h3 id="saas">平台订阅服务（SaaS）</h3>
+<ul>
+<li>按产品模块订阅、按用量计费：各监控/安全模块独立计价，支持交叉销售扩张</li>
+<li>Marketplace / Integrations：1000+ 集成生态（含 OpenTelemetry、IDE Plugins、API）</li>
+</ul>
+<h3 id="_6">支持与赋能服务</h3>
+<ul>
+<li><strong>Support</strong>：分级技术支持</li>
+<li><strong>Services &amp; Enablement</strong>：实施与客户成功服务</li>
+<li><strong>Certification</strong>：官方认证体系</li>
+<li><strong>Product Preview Program</strong>：新功能预览计划</li>
+</ul>
+<h3 id="_7">部署形态服务</h3>
+<ul>
+<li>标准 SaaS 多租户</li>
+<li><strong>Bring Your Own Cloud（BYOC）</strong>：部署在客户自有云环境内（DASH 2026 推出）</li>
+</ul>
+<h2 id="_8">四、解决方案分类</h2>
+<h3 id="_9">按场景</h3>
+<ul>
+<li><strong>云与多云监控</strong>：跨 AWS/Azure/GCP、混合云与本地环境的统一可观测性</li>
+<li><strong>AI 应用监控与安全</strong>：GPU/LLM/AI Agent 负载的可观测性 + AI Guard 安全防护，直接承接"AI 负载监控刚需"</li>
+<li><strong>安全运营（SecOps）</strong>：Security 与 Observability 融合，AI 辅助调查（官方称可将调查时间缩短至 93%）</li>
+<li><strong>DevOps 与软件交付</strong>：CI/CD 可见性、测试优化、事故响应一体化</li>
+<li><strong>FinOps 云成本治理</strong>：Cloud Cost Management</li>
+</ul>
+<h3 id="_10">按客户规模</h3>
+<ul>
+<li>大客户/企业：$100k+ ARR 客户约 4,720 家且高速增长，企业级治理（Access Control、Governance、Audit Trail）完善</li>
+<li>开发者与中小团队：免费层 + 按需扩展的产品驱动增长（PLG）模式</li>
+</ul>
+<p>（官网 Solutions 页抓取内容与首页一致，按行业细分的方案矩阵公开信息有限，待后续更新补充）</p>
+<h2 id="_11">五、更新记录</h2>
+<h3 id="_12">产品/服务/解决方案更新栏</h3>
+<ul>
+<li><strong>2026-10-09</strong>：Incident Response 进入 FedRAMP High 认证的政府云环境 US1-FED（Datadog for Government），官方称为当前唯一获 FedRAMP High 认证的事故响应平台，联邦政府高敏感负载可在认证边界内完成 paging、协调、自动化与复盘（https://www.datadoghq.com/blog/fedramp-high-incident-response/）</li>
+<li><strong>2026-10-09</strong>：Product Analytics 的 Action Management 推出 Visual Labeler 并 GA——经 Chrome 扩展无代码圈选页面元素定义业务级事件，支持登录后/门禁页面，标签回溯应用于 15 个月保留期内已采集数据，可直接用于漏斗/趋势分析（https://www.datadoghq.com/blog/product-analytics-visual-labeling/）</li>
+</ul>
+<h3 id="_13">战略策略与行为更新栏</h3>
+<p>（暂无更新）</p>
+<h2 id="_14">六、总结</h2>
+<h3 id="_15">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Infrastructure Monitoring + APM + Log Management</strong>：可观测性三大支柱，基本盘稳固，Gartner MQ 六连冠领导者</li>
+<li><strong>Bits AI 系列</strong>：AI Agent 化运维是差异化最猛的方向，Bits Code/Chat/Agent Builder 已 GA，值得跟踪其自主修复（autonomous remediation）的实际落地率</li>
+<li><strong>Security（Cloud Security + SIEM + AI Guard）</strong>：与可观测性同平台售卖，交叉销售弹性大，是第二增长曲线</li>
+<li><strong>GPU Monitoring / Datadog for AI</strong>：AI 负载爆发的直接受益者</li>
+</ul>
+<h3 id="_16">强势战略留意</h3>
+<ul>
+<li><strong>AI 负载监控的兑现度</strong>：管理层称"客户在构建和部署 AI 并用 Datadog 观测、保护和行动"，需跟踪 AI 相关收入占比披露</li>
+<li><strong>Bits AI 从辅助到自主</strong>：若全自主事故处理成立，将重塑运维人力结构，也是其对抗开源/竞品的护城河加深动作</li>
+<li><strong>收购 Adaptive ML</strong>：向 RL Ops / world models 延伸，信号是 Datadog 想做"运维 AI 的模型层"而不只是数据平台</li>
+<li><strong>BYOC 部署形态</strong>：打开对数据主权敏感的大型企业与受监管行业市场</li>
+<li><strong>政府市场纵深</strong>：FedRAMP High 认证扩展到 Incident Response（US1-FED），事故响应品类暂无同等级认证竞品，与 BYOC 一起构成对政府/受监管行业的双层渗透</li>
+<li>财务面：36% 增速 + 23% Non-GAAP 运营利润率 + 50 亿现金，属于"高增长且已盈利"的稀缺组合，留意 GAAP 利润率（Q2 仅 0%）与股权激励稀释</li>
+</ul>
+<h2 id="_17">信息来源</h2>
+<ul>
+<li>官网 https://www.datadoghq.com（通，FetchURL 直连成功）：产品线总览、Security+Observability 统一叙事</li>
+<li>博客/新闻 https://www.datadoghq.com/blog（通，FetchURL 直连成功）：The Monitor / Engineering / AI / Security Labs 四大栏目，近期聚焦 Databricks 监控、Agent 漏洞扫描、勒索软件恢复</li>
+<li>投资者关系 https://investors.datadoghq.com（通；FetchURL 直连失败，经代理 curl 返回 200）：完整产品导航目录、Q2 2026 财报（2026-08-06 发布，营收 11.2 亿美元、+36%）、DASH 2026 发布要点、Adaptive ML 收购、Gartner MQ 六连冠</li>
+<li>公司.json：赛道（3. 云 / 开发者基础设施）、region/type/moat/founded 字段</li>
+</ul></div></div></body></html>

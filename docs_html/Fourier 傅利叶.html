@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fourier 傅利叶</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="fourier">Fourier 傅利叶</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：5. 具身智能 | <strong>地区</strong>：国内 | <strong>类型</strong>：新型 | <strong>成立</strong>：2015
+<strong>护城河</strong>：GR 系列人形，康复医疗外骨骼技术积累</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>傅利叶（上海傅利叶智能科技股份有限公司）是一家以康复机器人起家的 AI 机器人企业，定位"全球领先的 AI 机器人企业"，以全栈式机器人技术覆盖两条主线：一是 GRx 系列通用人形机器人（含双足人形与轮式双臂形态），二是智能康复产品矩阵（40 多款康复设备 + 智能康复港 RehabHub 解决方案 + 伽利略系统）。官方口径：已为全球 40 多个国家和地区的 2000 余家机构与医院提供服务，与全球 20 多家顶尖高校及科研机构开展合作（含 ETH、上海交通大学、清华大学等）。总部位于上海浦东，另设珠海、新加坡、马来西亚等站点。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>从康复场景出发做"以人为本、有温度"的机器人：GR-3 以"Care-bot"概念主打情感交互，与宇树等硬件性能路线形成差异化</li>
+<li><strong>"1+3+X"应用生态发展战略</strong>：1 个战略自营场景（康养陪伴）+ 3 个生态共建场景（商业服务、工业协作、科研教育）+ X 前沿创新孵化（主动式交互等）</li>
+<li><strong>Fourier Nexus 通用机器人生态网络</strong>：以硬件开发、算法开源、数据共享三维架构降低行业研发门槛，配套开源人形机器人 Fourier N1 与开源数据集 Fourier ActionNet</li>
+<li><strong>脑机接口布局</strong>：已发布脑机具身智能康复港解决方案，并启动"脑机具身・数据引擎"联合创新计划</li>
+<li><strong>IPO 推进中</strong>：2025 年完成股份制改造（媒体口径 2025-07），官网已搭建投资者关系板块（招股文件/公告通函/业绩报告框架，截至建档日内容尚未实质填充，企业管治页仍含占位数据）；媒体普遍报道其正加速推进 IPO，具体板块与时间以官方披露为准</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="grx">人形机器人（GRx 系列，双足）</h3>
+<ul>
+<li><strong>GR-3 系列</strong>（第三代，已量产）：GR-3"猫猫头"为傅利叶首款"Care-bot"概念人形，主打全感交互系统（听觉/视觉/触觉三模态，31 个触觉传感器）与情感交互；GR-3C"宇航员"为功能服务型，配备激光雷达与增强硬质外壳，面向复杂环境高精度作业</li>
+<li><strong>GR-2</strong>（第二代通用人形，已量产）：基于 GR-1 数据与技术积累，强化上肢灵巧操作、动力系统与开发平台开放性</li>
+<li><strong>GR-1</strong>（第一代）：官方称"第一台实现量产交付的双足人形机器人"，搭载全自研 FSA 执行器，覆盖人体主要自由度</li>
+</ul>
+<h3 id="_5">轮式双臂机器人</h3>
+<ul>
+<li><strong>GRW 轮式双臂机器人</strong>：辅助型交互机器人，≤16kg 双臂稳定负载、≈2m 作业空间、≤0.1mm 重复定位精度，支持全向自主导航避障、热插拔换电与多种末端（三指/两指夹爪、夹板、灵巧手）快换，面向康复训练、养老照护、仓储物流、轻工制造</li>
+</ul>
+<h3 id="_6">开源产品</h3>
+<ul>
+<li><strong>Fourier N1 开源人形机器人</strong>：面向具身智能科研，全身 23 个自由度，支持快走、奔跑、上下楼梯，开放完整物料清单、结构图纸、装配指南及基础操作软件代码</li>
+<li><strong>Fourier ActionNet 开源数据集</strong>：针对全尺寸人形机器人的大型开源数据集，含 30,000 条多自由度灵巧手训练数据及手部任务模仿学习样本，覆盖 GRx 系列全部机型，配套数据处理工具链</li>
+</ul>
+<h3 id="40">智能康复产品矩阵（40 多款）</h3>
+<ul>
+<li><strong>ArmMotus™ EMU</strong>：三维上肢康复机器人；<strong>ArmMotus™ M2 Pro</strong>：上肢康复机器人</li>
+<li><strong>ExoMotus™ M4</strong>：下肢外骨骼机器人（康复外骨骼技术起点，早期曾发布国内首款商业化下肢外骨骼 X1）</li>
+<li><strong>AnkleMotus™ M1A</strong>（踝关节）、<strong>WristMotus™ M1</strong>（腕关节）、<strong>CycleMotus™</strong> 系列（上下肢主被动训练）</li>
+<li><strong>PelmaMotus™</strong>：足底压力分布评估与训练系统；<strong>OTParvos™ Pro</strong>：数字 OT 评估与训练系统</li>
+<li><strong>Fortis™</strong>：物理因子治疗系列；<strong>EXOPS™</strong>：外骨骼机器人开放平台系统</li>
+</ul>
+<h3 id="_7">其他产品</h3>
+<ul>
+<li><strong>伽利略系统</strong>：自主研发、国内首创的生物力学分析与训练系统，融合虚拟现实与机器人技术（180° 柔性环形 LED 屏、六维测力台、悬吊减重、运动捕捉等），横跨生物力学、康复医学、运动科学、机器人学四大领域</li>
+<li><strong>GR Mini 系列</strong>：官网导航中列出的产品线，公开信息有限</li>
+<li><strong>核心零部件</strong>：自研 FSA 执行器等（官网列入产品矩阵，细节公开信息有限）</li>
+</ul>
+<h2 id="_8">三、服务分类</h2>
+<h3 id="_9">销售与咨询服务</h3>
+<ul>
+<li>各产品线均提供购买咨询与业务咨询通道（官网表单、热线、微信生态）</li>
+</ul>
+<h3 id="_10">康复解决方案服务</h3>
+<ul>
+<li>智能康复港 RehabHub 一站式部署：多台功能互补、数据互联的康复机器人组合，覆盖神经、骨科、疼痛等康复类型</li>
+<li>基层医疗帮扶：旗下瑞和康团队自 2015 年起深入县市，开展乡村康复义诊、培训基层康复人员</li>
+</ul>
+<h3 id="_11">科研教育服务</h3>
+<ul>
+<li>标准化机器人实训基地、联合实验室、配套教材与师资、技能认证与行业竞赛</li>
+<li>机器人创新营（已办两届）：面向年轻开发者的技术实操项目</li>
+</ul>
+<h3 id="_12">生态与开发者服务</h3>
+<ul>
+<li>Fourier Nexus 生态网络：开源硬件资源包、开源数据集、技术模块开放计划</li>
+<li>下载中心：产品彩页与技术资料（GRW、GR-3、N1、GR-2、RehabHub 等）</li>
+</ul>
+<h2 id="_13">四、解决方案分类</h2>
+<h3 id="_14">康养陪伴（战略自营场景）</h3>
+<ul>
+<li>人形机器人应用于导诊咨询、物理与作业治疗、远程康复等医疗专业场景</li>
+<li>路径：优先落地商业化大模型于康复训练与交互引导，同步验证世界模型、脑机接口前沿技术；通过遥操作与 Copilot 机制积累数据，从医院/专业机构逐步向社区及养老场景拓展</li>
+<li>脑机具身智能康复港：脑机接口 + 具身智能结合的康复解决方案</li>
+</ul>
+<h3 id="_15">商业服务（生态共建）</h3>
+<ul>
+<li>迎宾接待、导览讲解、信息咨询、零售导购、互动营销；多语言交互、自主导航，并基于多模态感知匿名采集客流热力等数据辅助决策</li>
+</ul>
+<h3 id="_16">工业协作（生态共建）</h3>
+<ul>
+<li>物品搬运、自动码垛、产线上下料、智能分拣、视觉质检；主打柔性换线、人力增效与危特作业保障</li>
+</ul>
+<h3 id="_17">科研教育（生态共建）</h3>
+<ul>
+<li>与高校共建实训基地与联合实验室（ETH、上海交大、清华等），N1 开源本体 + ActionNet 数据集构成科研底座</li>
+</ul>
+<h2 id="_18">五、更新记录</h2>
+<h3 id="_19">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_20">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_21">六、总结</h2>
+<h3 id="_22">强势业务或产品推荐</h3>
+<ul>
+<li><strong>智能康复业务（RehabHub + 40 款康复产品矩阵 + 伽利略系统）</strong>：康复医疗渠道是其最实的护城河——40+ 国家、2000+ 机构与医院的存量网络，国内同行中罕见；伽利略系统参与国家重点研发计划，属差异化高端平台</li>
+<li><strong>GRx 人形机器人量产迭代能力</strong>：GR-1→GR-2→GR-3 三代均量产交付，自研 FSA 执行器起家，硬件全栈能力扎实</li>
+<li><strong>开源组合拳（N1 本体 + ActionNet 数据集）</strong>：3 万条真机灵巧手数据在开源社区属稀缺资产，利于绑定科研生态</li>
+</ul>
+<h3 id="_23">强势战略留意</h3>
+<ul>
+<li><strong>"Care-bot"情感交互路线</strong>：GR-3 押注温度感与情感连接，与主流"进厂打工"叙事分叉，成败取决于康养陪伴场景的付费验证</li>
+<li><strong>"1+3+X"收敛场景</strong>：自营康养 + 生态共建商服/工业/科研，资源聚焦程度高于多数同行，值得跟踪其商业闭环进展</li>
+<li><strong>脑机接口 + 具身智能</strong>：与康复主业协同性强，属长期期权</li>
+<li><strong>IPO 进程</strong>：已完成股改并预搭投资者关系框架，若 2026 年落地将改变其资金与治理结构；官网 IR 板块目前内容未填充、治理页含占位数据，说明披露体系仍在建设中</li>
+</ul>
+<h2 id="_24">信息来源</h2>
+<ul>
+<li>官网 https://www.fourierintelligence.com（<strong>不通</strong>：HTTPS 返回 526 证书错误，代理重试亦失败；域名实际已迁移至 fftai.com，已在 公司网站.json 将该条 status 改为"不通"）</li>
+<li>实际官网 https://fftai.com（通）：公司概况、发展历程、产品矩阵、"1+3+X"战略、Fourier Nexus、康复产品线、投资者关系框架（SPA 站点，正文取自其语言包与接口）</li>
+<li>新闻中心 https://fftai.com/fourier/newsroom（通，但接口返回内容为空）：新闻数据公开信息有限</li>
+<li>网络搜索补充：股改与 IPO 进展（新浪财经、投中网、第一财经等媒体报道）；创始人/高管信息官网治理页为占位数据，公开信息有限，未采信</li>
+</ul></div></div></body></html>

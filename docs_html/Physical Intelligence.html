@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Physical Intelligence</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="physical-intelligence">Physical Intelligence</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：5. 具身智能 | <strong>地区</strong>：国外 | <strong>类型</strong>：新型 | <strong>成立</strong>：2024
+<strong>护城河</strong>：π 系列通用机器人基础模型</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Physical Intelligence（自称 π）是一家机器人基础模型公司，使命是"把通用 AI 带进物理世界"：研发学习型算法，目标是做出一个能控制任何机器人完成任何任务的模型。公司不做机器人本体，走纯"模型层"路线，核心产出是 π 系列 VLA（vision-language-action）通用机器人策略模型（π0 → π0.5 → π*0.6 → π0.7），并以开源（π0 权重与代码）+ 合作伙伴落地两种方式外溢。截至建档日，无公开的标准化产品、API 或订阅服务，商业化信息有限。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>模型迭代为主线：约每 5-6 个月一代 generalist policy，沿"泛化能力 → 开放世界 → RL 自我改进 → 可引导（steerable）"路线推进</li>
+<li>技术栈自研闭环：动作 tokenization（FAST）、长短期记忆（MEM）、在线 RL（RL Token）、实时推理（Real-Time Action Chunking）等配套方法均为自研并公开发表</li>
+<li>生态打法：2025-02 开源 π0 建立研究者生态；2026-02 提出 "The Physical Intelligence Layer" 叙事，强调通过合作伙伴把模型落到真实场景（伙伴名单与商业模式公开信息有限）</li>
+<li>资本背景：投资方包括 Bond、Jeff Bezos、Khosla Ventures、Lux Capital、OpenAI、Redpoint Ventures、Sequoia Capital、CapitalG、Thrive Capital</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="vla">通用机器人基础模型（VLA）</h3>
+<ul>
+<li><strong>π0</strong>：首个 generalist policy（2024-10-31 发布），大规模多任务、多机器人数据 + 新网络架构；2025-02-04 开源权重与代码</li>
+<li><strong>π0-FAST</strong>：基于 FAST 动作 tokenizer 的自回归模型，与 π0 同期开源</li>
+<li><strong>π0.5</strong>：开放世界泛化（2025-04-22），可控制移动操作臂收拾完全陌生的厨房或卧室</li>
+<li><strong>π*0.6</strong>：用 RL 从经验中学习的 VLA（2025-11-17），提升真实任务成功率与吞吐</li>
+<li><strong>π0.7</strong>：可引导（steerable）机器人基础模型（2026-04-16，当前最新），官方称泛化能力出现阶跃式提升</li>
+</ul>
+<h3 id="_5">关键模型技术与组件</h3>
+<ul>
+<li><strong>FAST</strong>：机器人动作 tokenizer（2025-01），使 generalist policy 训练速度提升约 5 倍</li>
+<li><strong>Hi Robot</strong>（Teaching Robots to Listen and Think Harder，2025-02）：分层逐步推理 + 人类反馈介入</li>
+<li><strong>Real-Time Action Chunking</strong>（2025-06）：大 VLA 实时推理系统，高延迟下保持精度与速度</li>
+<li><strong>MEM（Multi-Scale Embodied Memory）</strong>（2026-03）：长短时记忆，支持超过 10 分钟的复杂长程任务</li>
+<li><strong>RL Token</strong>（2026-03）：从 VLA 中提取 RL token，数小时数据即可完成精密任务的快速在线 RL</li>
+</ul>
+<h2 id="_6">三、服务分类</h2>
+<h3 id="_7">开源发布</h3>
+<ul>
+<li>π0 / π0-FAST 模型权重与代码开源（2025-02-04），面向研究与开发者社区</li>
+</ul>
+<h3 id="_8">商业服务</h3>
+<ul>
+<li>无公开的标准化服务（无 API、无订阅套餐）；对外合作模式公开信息有限</li>
+</ul>
+<h2 id="_9">四、解决方案分类</h2>
+<h3 id="_10">合作伙伴落地</h3>
+<ul>
+<li><strong>The Physical Intelligence Layer</strong>（2026-02-24）：官方提出"通用物理智能模型将引发机器人应用的寒武纪爆发"，并称合作伙伴已在用其模型解决真实世界问题；具体伙伴名单、行业方案与收费模式公开信息有限</li>
+</ul>
+<h2 id="_11">五、更新记录</h2>
+<h3 id="_12">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_13">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_14">六、总结</h2>
+<h3 id="_15">强势业务或产品推荐</h3>
+<ul>
+<li><strong>π 系列模型主线</strong>：从 π0 到 π0.7 约 18 个月迭代 5 代，是通用机器人基础模型赛道公开节奏最快的玩家之一，每一代的能力跃迁（开放世界泛化、RL 自改进、可引导性）都值得逐代跟踪</li>
+<li><strong>π0 开源权重</strong>：具身模型领域少有的旗舰级开源，生态影响力与人才吸附力强</li>
+</ul>
+<h3 id="_16">强势战略留意</h3>
+<ul>
+<li>"Physical Intelligence Layer" 的平台化叙事：若伙伴落地跑通，意味着纯模型层商业模式成立（类比"机器人版 OpenAI API"），反之则可能被全栈玩家（Tesla Optimus、Figure）挤压</li>
+<li>与 OpenAI 的资本绑定关系及其对模型技术路线的影响</li>
+<li>不造本体的轻资产路线：数据获取依赖合作机器人平台，需跟踪其数据来源与本体适配广度</li>
+</ul>
+<h2 id="_17">信息来源</h2>
+<ul>
+<li>官网 https://www.physicalintelligence.company（通）：公司使命、π0–π0.7 全部模型发布线、技术博文、投资方名单</li>
+<li>博客/研究索引 https://www.physicalintelligence.company/blog（通，与官网同源）：各代模型与技术方法发布日期</li>
+<li>公司网站.json 中该公司仅收录官网一条链接，无产品/服务/投资者关系条目；尝试抓取单篇博文详情页遇 429 限流，伙伴名单等细节未获取，相关部分已标注"公开信息有限"</li>
+</ul></div></div></body></html>

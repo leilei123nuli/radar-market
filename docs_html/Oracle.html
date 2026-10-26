@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oracle</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="oracle">Oracle</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：1977
+<strong>护城河</strong>：OCI 拿下大模型训练大单，数据库基本盘稳固</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Oracle（NYSE: ORCL，总部 Austin, Texas）是企业级软件与云计算双料巨头，业务分四层：云基础设施（OCI，IaaS）、云应用（Fusion Cloud Applications + NetSuite，SaaS）、数据库与数据平台（Oracle AI Database 26ai、Exadata，全球第一企业数据库）、传统本地软件授权与硬件。收入结构正快速向云迁移：FY2027 Q1（截至 2026-08-31，2026-09-10 发布）总营收 $19.3B（+30%），其中云收入 $11.6B（+62%，IaaS $7.4B +121%、SaaS $4.2B +10%），本地软件 $5.5B（-3%），服务 $1.4B、硬件 $0.8B。RPO（剩余履约义务）达 $664B，同比 +$209B，主要由 AI 云训练/推理大单驱动。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li><strong>All-in AI 云基础设施</strong>：激进扩产 GPU 数据中心——Q1 新增 850MW 数据中心容量，Q4 FY26 以来向 AI 云客户交付超 30 万块 GPU（约为 Q4 交付量的 3 倍）；Q1 资本开支 $28.5B，自由现金流 -$5.4B，靠发债 + $20B ATM 股权增发 + 客户预付款（$11.4B）支撑扩产。公开报道显示 Oracle 是 Stargate 计划的核心算力合作方</li>
+<li><strong>全线产品 AI 化</strong>：数据库更名 Oracle AI Database 26ai，AI 原生进数据库（AI Vector Search、Select AI、Private Agent Factory）；应用软件转向 Agentic 形态（Fusion Claw 运行时 + 75 个 Agentic Applications）</li>
+<li><strong>AI Data Platform 正面切入 Palantir 领地</strong>：自动生成企业本体（Enterprise Ontology），让企业用前沿大模型推理私有数据</li>
+<li><strong>Multicloud 分发</strong>：Oracle AI Database 进入 AWS / Microsoft Azure / Google Cloud，辅以 Cloud@Customer 混合云与 Exadata 本地部署，避免客户锁定、扩大数据库触达面</li>
+<li><strong>行业云纵深</strong>：医疗（Oracle Health，全新 100% Agentic 电子病历/健康管理系统）、金融、零售等 22 个行业方案</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="oci">云基础设施（OCI）</h3>
+<ul>
+<li><strong>OCI Compute</strong>：虚拟机/裸金属实例（AMD EPYC、Intel、Ampere Arm，基于 Oracle Acceleron 平台），主打同配置比 AWS/Azure/GCP 低约 51–57% 的价格</li>
+<li><strong>GPU 实例</strong>：NVIDIA H100/H200/B200、GH200/GB200 超级芯片、AMD MI300X，裸金属 + RDMA 集群网络，面向大模型训练与推理</li>
+<li><strong>OCI Kubernetes Engine (OKE) / Functions / Container Registry</strong>：云原生与 Serverless 计算</li>
+<li><strong>Oracle Cloud VMware Solution</strong>：VMware 工作负载整体上云</li>
+<li><strong>OCI Full Stack Disaster Recovery</strong>：跨 region 一键容灾</li>
+</ul>
+<h3 id="_5">数据库与数据平台</h3>
+<ul>
+<li><strong>Oracle AI Database 26ai</strong>：旗舰数据库，AI 原生架构（AI Vector Search、JSON-Relational Duality）</li>
+<li><strong>Autonomous AI Database / Autonomous AI Lakehouse</strong>：自治数据库与湖仓</li>
+<li><strong>Oracle AI Data Platform</strong>：自动生成 Enterprise Ontology，支撑企业私有数据上的 AI 推理与智能体（2026-09 随 Q1 财报发布）</li>
+<li><strong>Exadata</strong>：数据库一体机（本地/Cloud@Customer）</li>
+<li><strong>MySQL / Java</strong>：开源数据库与开发生态基本盘</li>
+</ul>
+<h3 id="saas">企业应用软件（SaaS）</h3>
+<ul>
+<li><strong>Oracle Fusion Cloud ERP / HCM / CX / SCM</strong>：财务、供应链、人力、营销销售服务一体化套件，15 项 Gartner 魔力象限领导者</li>
+<li><strong>Fusion Agentic Applications + Fusion Claw</strong>：2026-09-29 发布的受治理智能体执行运行时（AI 推理 + 确定性企业计算），新推 25 个 Claw 驱动的 Agentic Applications，总数达 75 个</li>
+<li><strong>Oracle AI Agent Studio</strong>：Agentic 应用构建平台（no-code/pro-code）</li>
+<li><strong>NetSuite</strong>：面向中小型企业的云 ERP（SuiteWorld 2026 于 10/25–28 举行）</li>
+</ul>
+<h3 id="_6">传统本地软件</h3>
+<ul>
+<li><strong>E-Business Suite / JD Edwards / PeopleSoft / Siebel</strong>：存量本地应用，持续向 Fusion Cloud 迁移</li>
+</ul>
+<h3 id="_7">行业产品</h3>
+<ul>
+<li><strong>Oracle Health</strong>：100% Agentic 的 AI 医疗管理与电子病历（EHR）系统，按专科（全科到肿瘤、放射）配置 AI 智能体</li>
+<li>金融、零售、通信等行业应用与 Industry Playbooks（覆盖 22 个行业）</li>
+</ul>
+<h2 id="_8">三、服务分类</h2>
+<h3 id="_9">云服务</h3>
+<ul>
+<li><strong>IaaS 订阅</strong>：OCI 计算/存储/网络/GPU 按量或订阅计费，全球统一低价；Free Tier（20+ 永久免费服务 + $300 试用额度）</li>
+<li><strong>SaaS 订阅</strong>：Fusion Cloud 套件每 90 天滚动更新；NetSuite 订阅</li>
+</ul>
+<h3 id="_10">软件支持服务</h3>
+<ul>
+<li><strong>Software Support</strong>：本地软件授权的支持续约，Q1 收入 $4.9B（-1%），高毛利现金流基本盘</li>
+</ul>
+<h3 id="_11">咨询与实施服务</h3>
+<ul>
+<li>Services 收入 Q1 $1.4B（+5%），规模相对小，主要为实施与咨询</li>
+</ul>
+<h3 id="ai">开发者与 AI 服务</h3>
+<ul>
+<li><strong>OCI AI Services / Generative AI / ML Services</strong>：模型调用、模型路由、AI Agent 开发（与 DeepLearning.AI 合作 Agent Memory 课程）</li>
+</ul>
+<h2 id="_12">四、解决方案分类</h2>
+<h3 id="ai_1">AI 基础设施解决方案</h3>
+<ul>
+<li>AI 云训练/推理集群（RDMA 网络 + 裸金属 GPU），需求持续供不应求；Q1 新签超 $30B AI 云合同</li>
+<li>主权/隔离场景：Compute Cloud@Customer Isolated</li>
+</ul>
+<h3 id="ai_2">企业 AI 落地解决方案</h3>
+<ul>
+<li>AI Data Platform + AI Database：在企业私有数据上构建 AI 应用与智能体（Private Agent Factory）</li>
+<li>Fusion Agentic Applications：ERP/HCM/CX/SCM 流程的端到端智能体自动化</li>
+</ul>
+<h3 id="_13">部署形态解决方案</h3>
+<ul>
+<li><strong>Multicloud</strong>：Oracle AI Database @ AWS / Azure / Google Cloud</li>
+<li><strong>Hybrid</strong>：Oracle Cloud@Customer（公有云服务搬进客户机房）</li>
+<li><strong>On-premises</strong>：Exadata、Oracle Database Appliance</li>
+</ul>
+<h3 id="_14">行业解决方案</h3>
+<ul>
+<li>医疗健康（Agentic EHR）、金融、零售等 22 个行业的模块化应用 + 行业实验室（Industry Labs）</li>
+</ul>
+<h2 id="_15">五、更新记录</h2>
+<h3 id="_16">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_17">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_18">六、总结</h2>
+<h3 id="_19">强势业务或产品推荐</h3>
+<ul>
+<li><strong>OCI GPU 云</strong>：IaaS +121% 的增速与 $664B RPO 是当前 AI 算力卖方市场最直接的受益者，值得持续跟踪其产能交付（MW/GPU 数）与大单签约节奏</li>
+<li><strong>Oracle AI Database 26ai + Multicloud</strong>：数据库基本盘借 AI 化与多云分发重新扩张，Gartner OLTP 关键能力第一</li>
+<li><strong>Fusion Agentic Applications + Fusion Claw</strong>：企业软件 Agentic 化最激进的大厂路线（75 个 Agentic 应用），正面竞争 Salesforce/ServiceNow</li>
+</ul>
+<h3 id="_20">强势战略留意</h3>
+<ul>
+<li><strong>资本开支与资金链</strong>：FY27 资本开支规模（单季 $28.5B、FCF 持续为负）靠发债 + $20B ATM 增发 + 客户预付款支撑，是大胆的杠杆化扩张，留意 RPO 客户集中度与履约风险</li>
+<li><strong>AI Data Platform 对标 Palantir</strong>：自动生成本体的打法若成立，将重塑企业 AI 数据层竞争格局</li>
+<li><strong>Oracle Health 的 100% Agentic EHR</strong>：医疗行业云的差异化赌注</li>
+<li><strong>即将举行的 Oracle AI World（2026-10-25~28，拉斯维加斯）</strong>：原 CloudWorld 更名而来，届时预计发布全年最重要的 AI 产品更新，是下一版档案的重点信息源</li>
+</ul>
+<h2 id="_21">信息来源</h2>
+<ul>
+<li>官网 https://www.oracle.com（抓取 403 反爬，改用子页面获取信息；域名正常，不改状态）</li>
+<li>产品 https://www.oracle.com/cloud（抓取 403 反爬；以 /cloud/compute、/applications、/database、/artificial-intelligence 等子页替代）</li>
+<li>博客/新闻 https://www.oracle.com/news（通；含 Q1 FY27 财报新闻稿、Fusion Claw 公告）</li>
+<li>投资者关系 https://investor.oracle.com（首页 429/403 限流，公告子页抓取成功；域名正常，不改状态）</li>
+<li>补充抓取：oracle.com/products、/applications、/database、/artificial-intelligence、/industries、/cloud/compute（均通）</li>
+<li>网络搜索补充：FY2027 Q1 财报细节、Fusion Claw 发布报道（Nasdaq、TechTarget、diginomica 等）</li>
+</ul></div></div></body></html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AMD</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="amd">AMD</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：2. 芯片 / AI 基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：1969
+<strong>护城河</strong>：MI 系列 GPU 第二供应源 + EPYC CPU 协同</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>AMD 是全球少数同时覆盖 CPU、GPU 与自适应计算（FPGA/SoC）的芯片公司，当前战略重心全面转向 AI 计算底座：数据中心侧是 EPYC 服务器 CPU + Instinct GPU 加速器 + Pensando DPU 的组合，客户端侧是 Ryzen（含 Ryzen AI）处理器与 Radeon 显卡，嵌入式侧是 Versal 自适应 SoC、FPGA 与 Kria SOM，并以 ROCm 开源软件栈和 AMD Silo AI 实验室补齐软件与服务层。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>定位"AI 时代全栈计算供应商"：官网主打"CPU + GPU + 自适应计算"的开放、灵活计算底座，强调开放生态与 TCO 优势，对标 NVIDIA 的封闭体系</li>
+<li>数据中心 AI 是主战场：2026 年连续签下超大 GPU 部署协议——Anthropic（最高 2GW Instinct MI450）、Meta（6GW GPU）、Microsoft（下一代 Instinct + EPYC 扩大长期合作）</li>
+<li>通过收购补 AI 能力：2026 年收购 World Labs（AI 计算）、Taalas（AI 推理），此前收购的 Silo AI 已成为其企业 AI 服务品牌</li>
+<li>制造与生态投资：EPYC"Venice"在 TSMC 2nm 投产；承诺英国最高 20 亿英镑、台湾超 100 亿美元生态投资</li>
+<li>边缘与终端：Ryzen AI PC（AI 400 系列）、Ryzen AI Embedded（汽车/工业/Physical AI），主打"AI Everywhere, for Everyone"</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">数据中心处理器与加速器</h3>
+<ul>
+<li><strong>EPYC CPU</strong>：服务器处理器，覆盖数据中心/云/AI、网络与边缘场景；下一代"Venice"已宣布在 TSMC 2nm 工艺投产</li>
+<li><strong>Instinct GPU 加速器</strong>：AI 训练与推理主力（当前主推 MI450 系列），配套 Helios 机架级（rack-scale）系统方案</li>
+<li><strong>Pensando DPU / Salina / AI NIC</strong>：数据中心网络与基础设施加速</li>
+<li><strong>Alveo 加速卡</strong>：自适应数据中心加速（含电信加速卡、X3 系列）</li>
+</ul>
+<h3 id="_6">客户端处理器与显卡</h3>
+<ul>
+<li><strong>Ryzen / Ryzen AI</strong>：消费与游戏笔记本、台式机处理器，Ryzen AI 400 系列面向 AI PC；Ryzen Z 系列面向掌机</li>
+<li><strong>Ryzen PRO</strong>：商用笔记本/台式机，含 PRO 安全与管理技术</li>
+<li><strong>Radeon RX / Radeon PRO / 移动显卡</strong>：游戏显卡与专业工作站可视化</li>
+</ul>
+<h3 id="xilinx">自适应与嵌入式计算（原 Xilinx 体系）</h3>
+<ul>
+<li><strong>Versal 自适应 SoC</strong>：AI Engine 加持的可编程平台</li>
+<li><strong>FPGA 与 SoC 产品线</strong>、<strong>Kria SOM</strong>：工业、汽车、机器人、边缘 AI 的模块化方案</li>
+</ul>
+<h3 id="_7">软件</h3>
+<ul>
+<li><strong>ROCm</strong>：开源 AI/GPU 计算软件栈，对标 CUDA</li>
+<li><strong>Ryzen AI Software / ZenDNN / Vitis AI</strong>：端侧与嵌入式 AI 推理软件</li>
+<li><strong>Adrenalin / PRO Edition 驱动、FidelityFX / FSR、Vivado / Vitis 开发工具</strong></li>
+</ul>
+<h2 id="_8">三、服务分类</h2>
+<h3 id="ai">AI 服务</h3>
+<ul>
+<li><strong>AMD Silo AI</strong>：企业级 AI 实验室，提供模型定制与 AI 落地咨询服务（源自 2024 年收购的 Silo AI）</li>
+<li><strong>Enterprise AI Reference Stack / Infinity Hub</strong>：企业 AI 参考软件栈与容器化部署资源</li>
+</ul>
+<h3 id="_9">开发者与生态服务</h3>
+<ul>
+<li><strong>AI Developer Program / AI Academy</strong>：开发者计划与培训</li>
+<li><strong>ROCm / Vitis / Ryzen AI 开发者中心</strong>：跨产品线工具、文档与支持</li>
+<li><strong>PRO Technologies 企业服务</strong>：商用 PC 的安全、可管理性支持与 ISV 认证</li>
+</ul>
+<h2 id="_10">四、解决方案分类</h2>
+<h3 id="_11">按场景/工作负载</h3>
+<ul>
+<li><strong>AI 解决方案</strong>：数据中心与云 AI（GPU 加速器、Helios 机架方案、EPYC）、Sovereign AI（主权 AI，如与 Cisco/HUMAIN 在沙特的部署）、Physical AI 与机器人、科研（Advancing Science）</li>
+<li><strong>通用数据中心负载</strong>：云计算、数据库与分析、HCI 与虚拟化、基础设施加速、网络（含量子计算方向）</li>
+<li><strong>游戏方案</strong>：Advantage 游戏整机、FSR / FreeSync / HYPR-RX 技术体系</li>
+</ul>
+<h3 id="_12">按行业</h3>
+<ul>
+<li>航空航天与国防、汽车、金融、医疗、工业/制造、电信与网络、高性能计算（HPC）、零售电商、公共部门、半导体仿真与测试测量等</li>
+</ul>
+<h2 id="_13">五、更新记录</h2>
+<h3 id="_14">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_15">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_16">六、总结</h2>
+<h3 id="_17">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Instinct GPU（MI450 系列）</strong>：作为 NVIDIA 之外事实上的第二供应源，2026 年接连拿下 Anthropic、Meta、Microsoft 的 GW 级大单，是跟踪 AMD 的第一主线</li>
+<li><strong>EPYC CPU</strong>：服务器份额持续扩张，"Venice"上 TSMC 2nm 节奏领先，与 GPU 打包（Helios 机架）形成协同</li>
+<li><strong>ROCm 开放生态</strong>：其对 CUDA 的替代进度直接决定 GPU 大单的可持续性</li>
+</ul>
+<h3 id="_18">强势战略留意</h3>
+<ul>
+<li>GW 级订单的执行与收入兑现节奏（产能、CoWoS/先进封装供给是瓶颈变量）</li>
+<li>收购整合：World Labs、Taalas（推理）、Silo AI 能否拼出对标 NVIDIA 全栈的软硬一体能力</li>
+<li>Sovereign AI（主权 AI）出海：沙特 HUMAIN、英国、台湾、印度（TCS/Helios）的国家级订单模式</li>
+<li>AI PC / 边缘 AI（Ryzen AI、嵌入式）能否在端侧复制数据中心的增长故事</li>
+</ul>
+<h2 id="_19">信息来源</h2>
+<ul>
+<li>官网 https://www.amd.com（通）：AI 解决方案定位、产品线全景、Silo AI</li>
+<li>产品 https://www.amd.com/en/products.html（通）：产品分类体系（处理器/显卡/加速器/自适应 SoC/网络/软件）</li>
+<li>投资者关系 https://ir.amd.com（通）：2026 年战略动态（Anthropic/Meta/Microsoft 大单、收购 World Labs 与 Taalas、EPYC Venice 2nm、英国/台湾投资等）</li>
+<li>解决方案页 https://www.amd.com/en/solutions.html（通，JS 渲染重，经 curl 抓取补充行业/工作负载分类）</li>
+<li>各产品的具体出货数据、营收拆分本次未从官网抓取到明细，相关量化指标公开信息有限，留待后续版本从财报补充</li>
+</ul></div></div></body></html>

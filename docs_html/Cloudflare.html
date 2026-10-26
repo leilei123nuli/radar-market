@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloudflare</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="cloudflare">Cloudflare</h1>
+<blockquote>
+<p><strong>版本</strong>：v2 | <strong>建档日期</strong>：2026-10-08 | <strong>最近更新</strong>：2026-10-09
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：2009
+<strong>护城河</strong>：全球边缘网络 + Workers AI 推理，按用量计费</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Cloudflare 是全球连接云（connectivity cloud）龙头：底层是覆盖 335+ 城市、距全球 95% 人口 50ms 以内的边缘网络，向上分为三层业务——应用服务（CDN/DNS/WAF/DDoS 等安全与加速）、Zero Trust / SASE（Cloudflare One）、开发者平台（Workers 无服务器计算 + R2/D1/KV 等存储 + Workers AI 边缘推理）。官网称服务 45% 的 Fortune 500、保护约 20% 的全球网站，前 50 大 GenAI 公司约 80% 跑在 Cloudflare 上。2026 Q2 营收 $696.1M（同比 +36%），年付超 $10 万大客户 4,698 家（+27%），平台开发者超 740 万（公开财报报道）。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>从"CDN/安全厂商"升级为"connectivity cloud"：安全、连接、代码跑在同一张全球网络上，一个控制台、一份账单</li>
+<li>全力押注"agentic internet"（智能体互联网）：把 Workers 定位为 AI Agent 的首选运行环境，提供内置推理、MCP 门户安全、身份感知访问，让生产级 AI 一键部署</li>
+<li>商业模式差异化：按用量/按席位计费，免 egress 流量费（R2），"只为代码实际运行付费"，以此打传统云厂商</li>
+<li>普惠策略：持续推进"消除两层产品准入"，把 Logpush、多账号治理等企业级能力下放给所有套餐</li>
+<li>主权 AI 立场：支持各国本地开源模型 + 模型无关的安全工具，争取政府与受监管行业</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="compute">计算（Compute）</h3>
+<ul>
+<li><strong>Workers</strong>：全球无服务器函数，开发者平台核心</li>
+<li><strong>Cloudflare Pages</strong>：前端站点构建与部署</li>
+<li><strong>Containers / Sandboxes</strong>：任意语言容器运行、安全代码执行环境</li>
+<li><strong>Durable Objects</strong>：有状态计算</li>
+<li><strong>Workflows</strong>：多步骤流程编排</li>
+<li><strong>Workers for Platforms</strong>：可编程平台（让客户在自己产品上开放 Workers）</li>
+<li><strong>Browser Run</strong>：托管自动化浏览器</li>
+<li><strong>Email Service</strong>：邮件收发</li>
+<li><strong>Workers Observability</strong>：Workers 原生可观测性</li>
+</ul>
+<h3 id="storage">存储与数据（Storage）</h3>
+<ul>
+<li><strong>R2</strong>：免 egress 费对象存储</li>
+<li><strong>D1</strong>：无服务器 SQL 数据库</li>
+<li><strong>KV / KV Instant</strong>：超快键值存储（KV Instant 为 2026 Birthday Week 发布，p99 读延迟 &lt;2ms）</li>
+<li><strong>K2</strong>：基于 R2 的无服务器事件流（2026 Birthday Week 发布）</li>
+<li><strong>Queues</strong>：消息队列处理</li>
+<li><strong>Hyperdrive</strong>：全局数据库加速</li>
+<li><strong>Artifacts / Basin / Cache Reserve</strong>：Git 原生版本化存储、数据摄取编目查询、静态内容持久缓存</li>
+</ul>
+<h3 id="ai">AI</h3>
+<ul>
+<li><strong>Workers AI</strong>：全球 GPU 网络上的边缘模型推理（按用量计费，护城河核心）</li>
+<li><strong>Agents</strong>：构建有状态 AI 智能体</li>
+<li><strong>AI Gateway</strong>：AI 可观测与治理网关，2026-10 新增原生 Web Search API（合作方 Ceramic.ai、Exa、Linkup）</li>
+<li><strong>AI Search</strong>：即时检索</li>
+<li><strong>Vectorize</strong>：向量数据库</li>
+<li><strong>Clef / Clef-flash</strong>：自研开源决策模型，托管于 Workers AI，配 RL 微调平台（2026-10 发布）</li>
+<li><strong>Web3</strong>：Web3 基础设施</li>
+</ul>
+<h3 id="media">媒体（Media）</h3>
+<ul>
+<li><strong>Stream</strong>：视频流媒体</li>
+<li><strong>Images</strong>：图像优化</li>
+<li><strong>RealtimeKit</strong>：实时通信</li>
+</ul>
+<h3 id="security">安全（Security）</h3>
+<ul>
+<li><strong>DDoS Protection / Magic Transit</strong>：DDoS 缓解（含网络层）</li>
+<li><strong>WAF</strong>：Web 应用防火墙</li>
+<li><strong>Bot Management</strong>：恶意 Bot 拦截</li>
+<li><strong>SSL / Turnstile</strong>：证书与 CAPTCHA 替代方案</li>
+<li><strong>Rate Limiting / Client-Side Security / Network Firewall</strong>：滥用防护、浏览器供应链防护、企业 WAN 云原生防火墙</li>
+</ul>
+<h3 id="network">网络（Network）</h3>
+<ul>
+<li><strong>CDN / DNS</strong>：核心加速与解析服务（1.1.1.1 公共 DNS）</li>
+<li><strong>Argo Smart Routing</strong>：智能路由加速</li>
+<li><strong>API Shield</strong>：API 安全与监控</li>
+<li><strong>Load Balancing / Waiting Room</strong>：负载均衡与流量排队</li>
+<li><strong>Spectrum</strong>：TCP/UDP 应用 DDoS 防护</li>
+<li><strong>Network Interconnect</strong>：直连/伙伴互联</li>
+<li><strong>China Network</strong>：中国区高性能方案</li>
+</ul>
+<h3 id="sase-zero-trustcloudflare-one">SASE / Zero Trust（Cloudflare One）</h3>
+<ul>
+<li><strong>Access</strong>：零信任访问私有资源</li>
+<li><strong>Gateway / Secure Web Gateway</strong>：Web 过滤与 DNS 过滤</li>
+<li><strong>CASB</strong>：SaaS 与云姿态管理</li>
+<li><strong>Data Loss Prevention</strong>：敏感数据防泄漏</li>
+<li><strong>Email Security</strong>：AI 反钓鱼邮件安全</li>
+<li><strong>Browser Isolation</strong>：安全浏览隔离</li>
+<li><strong>Mesh</strong>：私有网络组网</li>
+<li><strong>AI Security for Apps</strong>：AI 应用安全防护</li>
+</ul>
+<h2 id="_5">三、服务分类</h2>
+<h3 id="_6">应用服务订阅（按站点分层）</h3>
+<ul>
+<li>Free / Pro（$20/月）/ Business（$200/月）/ Contract（定制）：同一套 CDN+DDoS+SSL+WAF+Bot 底座，付费层级增加防护深度与服务等级</li>
+</ul>
+<h3 id="_7">开发者平台服务（按用量计费）</h3>
+<ul>
+<li>Workers 请求/计算时长计费，"代码不运行不付费"</li>
+<li>R2/D1/KV/Queues/Vectorize 等存储与数据服务按量计费，R2 免 egress</li>
+<li>Workers AI 推理按用量计费</li>
+</ul>
+<h3 id="_8">企业安全服务（按席位/套餐）</h3>
+<ul>
+<li>Cloudflare One SASE 套餐（Interna packages）：按用户席位计价，免带宽费，含 CASB、DEM 等</li>
+<li>企业级合同：网络优先级、24/7 支持、定制合同</li>
+</ul>
+<h2 id="_9">四、解决方案分类</h2>
+<h3 id="_10">按场景</h3>
+<ul>
+<li><strong>AI / AI Security</strong>：边缘构建 AI 应用；治理 GenAI 采用（prompt 检查、敏感数据脱敏、MCP 服务器连接安全）</li>
+<li><strong>Agentic Commerce</strong>：面向智能体商务的解决方案（2026 新增）</li>
+<li><strong>Frontends / Platforms / Workflows</strong>：前端全球化部署、在 Cloudflare 上构建平台、复杂流程编排</li>
+<li><strong>Security / Network</strong>：应用威胁防护、全球网络性能与可靠性</li>
+</ul>
+<h3 id="_11">按行业</h3>
+<ul>
+<li><strong>Financial Services</strong>：金融数字基础设施安全</li>
+<li><strong>Healthcare</strong>：医疗交付安全与加速</li>
+<li><strong>Retail / SASE for Retail / SASE for Airlines</strong>：零售体验与行业化 SASE</li>
+<li><strong>Public Sector</strong>：政府网络韧性、性能与 AI 创新</li>
+</ul>
+<h3 id="2026-birthday-week46">标志性动作（2026 Birthday Week，46 项发布）</h3>
+<ul>
+<li>覆盖开源、后量子安全、AI Agent、开发者平台升级四大方向</li>
+<li>Cloudflare OS：面向企业的托管 Agent 工作空间（waitlist 阶段）</li>
+<li>1.1.1.1 实习生计划：一年招 750+ 早期职业工程师，印证"AI 放大人力"立场</li>
+</ul>
+<h2 id="_12">五、更新记录</h2>
+<h3 id="_13">产品/服务/解决方案更新栏</h3>
+<ul>
+<li><strong>2026-10-09</strong>：Cloudflare Radar 全面改版上线——首页改为以地图为核心（顶部展示全球流量与断网事件），旧 bento 卡片改为标签页式引导浏览，组件迁移至 Kumo 产品体系，目标是把 Radar 从技术用户扩展到记者、政策制定者等大众受众（https://blog.cloudflare.com/radar-redesign/）</li>
+</ul>
+<h3 id="_14">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_15">六、总结</h2>
+<h3 id="_16">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Workers 开发者平台 + Workers AI</strong>：增长飞轮核心，Q2 单季新增约 200 万开发者；Agent 时代"轻量、低成本、可扩展"的运行环境卡位清晰</li>
+<li><strong>Cloudflare One（SASE/Zero Trust）</strong>：Gartner 2025 SASE 魔力象限 Visionary，Forrester Zero Trust Wave 战略分第二；对 AI 采用治理（MCP 安全、prompt DLP）的差异化切入值得跟踪</li>
+<li><strong>AI Gateway + Clef 开源决策模型</strong>：AI 流量治理层的入口级产品</li>
+</ul>
+<h3 id="_17">强势战略留意</h3>
+<ul>
+<li>"Agentic internet"叙事正在兑现为财报数字：2026 Q2 营收 +36% 加速增长、DBNR 回升至 120%，盘后股价 +17%——验证 AI Agent 流量能否持续驱动企业预算迁移</li>
+<li>Cloudflare OS（托管 Agent 工作空间）：若落地将把平台从开发者扩展到全员，打开新客群</li>
+<li>按用量计费 + 免 egress 的定价对传统云厂商的侵蚀速度</li>
+<li>主权 AI 与后量子安全投入：政府/受监管行业订单的前瞻信号</li>
+</ul>
+<h2 id="_18">信息来源</h2>
+<ul>
+<li>官网 https://www.cloudflare.com（通）：网络规模、客户结构、套餐定价、AI 战略表述</li>
+<li>产品 https://www.cloudflare.com/products（通，FetchURL 正文为空，经代理 curl 重试获得完整产品清单）</li>
+<li>博客/新闻 https://blog.cloudflare.com（通）：2026 Birthday Week 46 项发布、KV Instant / K2 / Clef / Cloudflare OS / AI Gateway Web Search API 等</li>
+<li>补充抓取（不在 公司网站.json）：https://www.cloudflare.com/developer-platform/（通）、https://www.cloudflare.com/zero-trust/（通，Cloudflare One / SASE 详情）、https://www.cloudflare.com/solutions/（通，解决方案清单）</li>
+<li>投资者关系 https://cloudflare.net 被反爬拦截（403，未列入 公司网站.json，无需标记）；财务数据改用公开报道补充：<a href="https://finance.yahoo.com/technology/ai/articles/cloudflare-inc-net-q2-2026-050349210.html">Q2 2026 财报电话会要点（Yahoo Finance）</a>、<a href="https://www.investing.com/news/company-news/cloudflare-q2-2026-slides-agentic-internet-drives-36-revenue-growth-93CH-4844865">Q2 2026 投资者演示（Investing.com）</a></li>
+<li>公开信息有限的部分：各产品线单独收入拆分（公司未披露，CEO 在财报电话会明确说明）</li>
+</ul></div></div></body></html>

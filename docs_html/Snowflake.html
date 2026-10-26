@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Snowflake</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="snowflake">Snowflake</h1>
+<blockquote>
+<p><strong>版本</strong>：v2 | <strong>更新日期</strong>：2026-10-09
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：2012
+<strong>护城河</strong>：企业数据云入口 + Cortex AI</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Snowflake 是"AI Data Cloud"（AI 数据云）厂商：核心是全托管、跨云（AWS / Azure / GCP）的企业数据平台，向上叠加 Cortex AI（在 SQL / API 内直接调用业界主流大模型）与 Snowflake Intelligence（企业级自然语言智能体），并通过 Snowflake Marketplace 形成数据 / 应用 / agent 的分发生态。商业模式为按量计费（compute 按消耗 + storage 按 TB/月）。</p>
+<p>经营近况（据公开财报报道，FY2026 至 FY2027 上半年）：FY2026 Q4 产品收入约 12.3 亿美元（同比 +30%），净收入留存率（NRR）125%，剩余履约义务（RPO）97.7 亿美元（同比 +42%）；FY2027 Q1 产品收入增速回升至 +34%，并与 AWS 签下约 60 亿美元多年期协议；FY2027 Q2 产品收入约 14.9 亿美元（同比 +37%），超 9100 个账户使用其 AI 功能，Snowflake Intelligence 上线三个月获近 2500 个账户采用。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>定位从"云数据仓库"→"数据云"→"AI Data Cloud"，主打把企业数据直接变成 AI / agent 可用的资产</li>
+<li>Agent 化入口：Snowflake Intelligence（企业智能体）+ CoWork（个人 AI agent）+ CoCo（编码 agent），争夺"企业 AI 入口"</li>
+<li>模型中立：Cortex AI 托管多家主流模型（Claude、GPT、Kimi 等），不与单一模型厂绑定</li>
+<li>开放互操作：支持开放表格式（Iceberg），以 Marketplace 生态强化网络效应</li>
+<li>向事务型扩展：推出 Snowflake Postgres，把生产级 Postgres 纳入 AI Data Cloud，模糊 OLTP/OLAP 边界</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">数据平台核心</h3>
+<ul>
+<li><strong>Snowflake Platform</strong>：全托管跨云数据平台，serverless 能力，免基础设施运维</li>
+<li><strong>Snowgrid</strong>：跨云、跨区域的数据共享与复制，支撑业务连续性</li>
+<li><strong>Snowflake Postgres</strong>：新推出的生产级 Postgres，与分析负载同平台运行</li>
+<li><strong>Horizon Catalog</strong>：统一治理目录（数据发现、合规、访问历史、对象标签）</li>
+</ul>
+<h3 id="ai-agent">AI / Agent 产品</h3>
+<ul>
+<li><strong>Snowflake Intelligence</strong>：企业智能体，全员用自然语言查询企业数据并采取行动</li>
+<li><strong>Cortex AI</strong>：在 SQL / API 内调用业界主流 LLM（近期上架 Anthropic Claude Sonnet 5.5 / Opus 5.5、OpenAI GPT-6 Sol / Luna、Moonshot Kimi K3），支持多模态数据分析与 agent 构建，全程在 Snowflake 安全边界内运行</li>
+<li><strong>Snowflake CoWork</strong>：个人 AI agent（官网解决方案页展示的新产品）</li>
+<li><strong>Snowflake CoCo</strong>：治理化的 AI 编码 agent（官网解决方案页展示的新产品）</li>
+</ul>
+<h3 id="_6">开发者产品</h3>
+<ul>
+<li><strong>Snowpark</strong>：开发者数据处理框架</li>
+<li><strong>Streamlit in Snowflake</strong>：数据应用构建</li>
+<li><strong>Native Apps</strong>：在平台内构建与分发应用</li>
+<li><strong>Hybrid Tables / Iceberg 支持</strong>：混合负载与开放表格式</li>
+</ul>
+<h3 id="_7">生态产品</h3>
+<ul>
+<li><strong>Snowflake Marketplace</strong>：连接 820+ 提供商、3400+ 个 AI-ready 的数据 / agent / SaaS 产品，支持企业自建内部 Marketplace</li>
+</ul>
+<h2 id="_8">三、服务分类</h2>
+<h3 id="_9">平台云服务</h3>
+<ul>
+<li>全托管数据云服务：计算按量计费、存储按 TB/月计费</li>
+<li>跨云部署与灾备：AWS / Azure / GCP 多区域，Snowgrid 复制保障业务连续性</li>
+<li>Cost Management Interface：内置 FinOps 成本可视、控制与优化</li>
+</ul>
+<h3 id="_10">安全与治理服务</h3>
+<ul>
+<li>端到端加密、RBAC、网络策略、多因素认证、数据脱敏</li>
+<li>Horizon Catalog 统一治理与合规工具</li>
+</ul>
+<h3 id="_11">可观测性服务</h3>
+<ul>
+<li>基础可观测性：metrics / traces / logs / 通知告警</li>
+<li>基础设施、数据管道、应用、AI 四层可观测性（含 AI agent 评估与改进）</li>
+</ul>
+<h2 id="_12">四、解决方案分类</h2>
+<h3 id="_13">行业解决方案</h3>
+<ul>
+<li>制造（Toyota Motor Europe 统一数据平台案例）、旅游（Booking.com 用 Cortex AI 统一 3100 万条房源数据）、金融、公共部门（Mission AI 规模化）等</li>
+</ul>
+<h3 id="_14">场景解决方案</h3>
+<ul>
+<li>数据工程、分析（BI）、AI/ML、数据应用（Data Apps）、数据平台现代化（按开发者门户的场景分类）</li>
+</ul>
+<h3 id="_15">生态合作方案</h3>
+<ul>
+<li>与 AWS 的多年期约 60 亿美元战略协议（既是底层云供应商又是分发渠道，竞合并存）</li>
+<li>Marketplace 数据 / 应用 / agent 分发与商业化</li>
+<li>开放表格式（Iceberg）互操作，连接外部数据生态</li>
+</ul>
+<h2 id="_16">五、更新记录</h2>
+<h3 id="_17">产品/服务/解决方案更新栏</h3>
+<ul>
+<li><strong>2026-10-09</strong>：发布自研决策模型 Snowflake Decision（私有预览），经 AI_COMPLETE 在 SQL 内调用，一次调用即可完成分类 / 评分 / 是否判断等结构化决策，面向高并发、低成本场景，与通用 LLM 互补（https://www.snowflake.com/en/blog/snowflake-decision-cortex-ai-functions）</li>
+</ul>
+<h3 id="_18">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_19">六、总结</h2>
+<h3 id="_20">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Cortex AI</strong>：模型中立的"数据旁 AI"路线，直接变现存量企业数据；多家前沿模型上架速度快（Claude 5.5 系、GPT-6、Kimi K3 同期上线），是 AI 收入增长的核心引擎（9100+ AI 账户）</li>
+<li><strong>Snowflake Intelligence</strong>：企业 agent 入口级产品，上线三个月近 2500 账户采用，渗透速度值得持续跟踪</li>
+<li><strong>Snowflake Marketplace</strong>：820+ 提供商的网络效应，数据云护城河的主要来源</li>
+</ul>
+<h3 id="_21">强势战略留意</h3>
+<ul>
+<li>增速重新加速（FY27Q2 产品收入 +37%）验证"AI 拉动数据云"逻辑；留意 NRR 125% 与 RPO 高增能否持续</li>
+<li>Agent 产品线（Intelligence / CoWork / CoCo）：从"数据平台"向"企业 AI 入口"跃迁的关键动作，与微软 Copilot、OpenAI 企业版正面竞争</li>
+<li>与 AWS 的 60 亿美元协议：深度绑定底层云的同时保持跨云叙事，竞合关系演变值得留意</li>
+<li>Snowflake Postgres：向事务型数据库扩张，若成功将显著扩大 TAM，也会加剧与 Postgres 生态厂商的竞争</li>
+<li>开始上线自研模型（Snowflake Decision 决策模型，私有预览）：在"模型中立托管"之外补自研专用模型，覆盖高并发低成本决策场景，与托管第三方模型形成互补，留意自研与中立定位的平衡</li>
+</ul>
+<h2 id="_22">信息来源</h2>
+<ul>
+<li>官网 https://www.snowflake.com（通）：AI Data Cloud 定位、Snowflake Intelligence</li>
+<li>博客/新闻 https://www.snowflake.com/blog（通）：Cortex AI 模型上架动态（Claude 5.5 系 / GPT-6 Sol/Luna / Kimi K3，2026-09）</li>
+<li>投资者关系 https://investors.snowflake.com（抓取被 429 / Cloudflare 人机验证拦截，域名正常、非失效；财务数据改用公开财报报道补充：富途、华尔街见闻、新浪财经等）</li>
+<li>解决方案页 https://www.snowflake.com/en/solutions/（通，本次额外抓取）：Snowflake CoWork / CoCo、Snowflake Postgres、Toyota 案例</li>
+<li>Cortex AI 页 https://www.snowflake.com/en/data-cloud/cortex/（通，本次额外抓取）：Cortex AI 能力、Booking.com 案例</li>
+<li>Marketplace 页 https://www.snowflake.com/en/data-cloud/marketplace/（通，本次额外抓取）：820+ 提供商、3400+ 产品</li>
+<li>开发者门户 https://www.snowflake.com/en/developers/（通，本次额外抓取）：Snowpark / Streamlit / Native Apps / Hybrid Tables / Iceberg</li>
+<li>产品特性页 https://www.snowflake.com/en/product/features/（通，本次额外抓取）：计费模式、Horizon Catalog、可观测性体系</li>
+</ul></div></div></body></html>

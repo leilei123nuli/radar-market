@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Groq</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="groq">Groq</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：2. 芯片 / AI 基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：新型 | <strong>成立</strong>：2016
+<strong>护城河</strong>：LPU 确定性低延迟推理芯片</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Groq 是专注 AI 推理（inference）的芯片与云计算公司，2016 年成立之初即自研 LPU（Language Processing Unit）推理芯片，现已转型为"面向快速推理的 neocloud"：底层是 LPU 硬件（单机架 256 颗 LPU、FP8 算力 315 PFLOPS、单用户可达 1,000 tokens/秒），向上是 GroqCloud 推理云平台（托管主流开源模型并提供 API），并提供 GroqRack 本地部署形态。目前已在全球四大洲运营 13 个数据中心，并持续建设数百兆瓦级算力。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>定位为推理而生："训练创造可能，推理创造价值"，不做训练芯片，全部资源押注推理侧瓶颈</li>
+<li>从芯片公司升级为 AI 推理云（neocloud）：平台分层为 GroqMetal（裸金属基础设施）→ GroqCore（推理栈）→ GroqAssured（企业管控）</li>
+<li>与 NVIDIA 深度绑定：2025-12 达成非独占推理技术授权协议，2026-08 成为 NVIDIA Cloud Partner，新一代 NVIDIA Groq 3 LPX 机架与 NVIDIA Vera Rubin NVL72 协同交付低延迟大上下文推理</li>
+<li>全球化算力扩张：沙特（Aramco/HUMAIN，2025-02 宣布 15 亿美元扩建）、芬兰赫尔辛基（欧洲）、澳大利亚悉尼（亚太）、加拿大（Bell AI Network 独家推理供应商）</li>
+<li>资本动作频繁：官方博客披露 2026-06 完成 6.5 亿美元融资、2026-08 完成 3.5 亿美元 Series A，用于扩建推理云</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">芯片与硬件</h3>
+<ul>
+<li><strong>LPU（Language Processing Unit）</strong>：自研确定性架构推理芯片，主打低延迟、高吞吐，单机架 128 GB 片上 SRAM、40 PB/s SRAM 带宽</li>
+<li><strong>NVIDIA Groq 3 LPX</strong>：新一代机架级产品，256 颗 LPU 与 NVIDIA Vera Rubin 平台互联（2026-08 宣布首批上市）</li>
+<li><strong>GroqRack</strong>：本地/私有化部署形态，面向受监管行业与物理隔离（air-gapped）环境，可与云端无缝切换</li>
+</ul>
+<h3 id="_6">云平台产品</h3>
+<ul>
+<li><strong>GroqCloud</strong>：开发者推理云平台，托管 Llama、GPT-OSS、Whisper 等模型，支持 LLM、STT、TTS、图像理解等模态</li>
+<li><strong>GroqPlatform 分层</strong>：GroqMetal（专属裸金属基础设施）、GroqCore（托管推理栈）、GroqAssured（企业级治理、审计与管控）</li>
+</ul>
+<h3 id="groqcloud">托管模型服务（GroqCloud 上）</h3>
+<ul>
+<li><strong>Llama 3.1 8B / 3.3 70B Enterprise</strong>：Meta 开源模型的高速推理托管</li>
+<li><strong>GPT-OSS 120B / 20B</strong>：OpenAI 开放权重模型，内置浏览器搜索与代码执行能力</li>
+<li><strong>Whisper large-v3 / large-v3-turbo</strong>：语音转文字</li>
+<li><strong>Orpheus TTS（Canopy Labs）</strong>：文字转语音</li>
+<li><strong>Llama Prompt Guard 2</strong>：提示安全护栏模型</li>
+</ul>
+<h2 id="_7">三、服务分类</h2>
+<h3 id="_8">订阅/套餐服务</h3>
+<ul>
+<li><strong>Free</strong>：免费入门档，含社区支持与可选零数据保留</li>
+<li><strong>Developer</strong>：按量付费，更高 token 限额、Flex 服务等级、批处理、Prompt Caching、支出限额</li>
+<li><strong>Enterprise</strong>：定制模型、区域端点选择、Performance 服务等级、专属支持、LoRA 微调</li>
+</ul>
+<h3 id="api">API 推理服务</h3>
+<ul>
+<li>文本生成、语音转文字（STT）、文字转语音（TTS）、OCR 与图像识别、推理（Reasoning）、内容审核、结构化输出</li>
+<li>工具调用生态：代码执行、浏览器搜索（GPT-OSS 模型）、MCP 连接器、本地工具调用</li>
+<li>服务等级：Performance / Flex / Batch（批处理）三档，兼容 OpenAI API 与 Responses API</li>
+</ul>
+<h3 id="_9">部署服务</h3>
+<ul>
+<li>公有云（GroqCloud 共享实例）、私有云、co-cloud 实例三种形态</li>
+<li>GroqRack 本地部署，面向合规与隔离场景</li>
+</ul>
+<h2 id="_10">四、解决方案分类</h2>
+<h3 id="_11">企业解决方案</h3>
+<ul>
+<li>Enterprise 套餐 + GroqAssured：企业级治理、审计、管控与可扩展容量</li>
+<li>行业落地：支付（与 Paytm 合作印度实时 AI）、赛车（McLaren F1 官方合作伙伴）、电信（Bell AI Network 独家推理供应商）</li>
+</ul>
+<h3 id="_12">政府与公共部门方案</h3>
+<ul>
+<li>与美国能源部（DOE）合作推进 AI 推理与下一代计算基础设施（2025-12）</li>
+<li>通过 Carahsoft 向美国政府机构交付推理服务；参与 NAIRR Pilot</li>
+<li>入选美国十大国家安全科技公司（2025-07，官方博客口径）</li>
+</ul>
+<h3 id="ai">主权/区域 AI 基础设施方案</h3>
+<ul>
+<li>沙特：与 Aramco 共建超大规模推理数据中心，支撑 HUMAIN One 实时 AI 操作系统</li>
+<li>区域分销：与 Aljammaz Technologies 合作覆盖 MENA 地区</li>
+</ul>
+<h2 id="_13">五、更新记录</h2>
+<h3 id="_14">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_15">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_16">六、总结</h2>
+<h3 id="_17">强势业务或产品推荐</h3>
+<ul>
+<li><strong>GroqCloud 推理 API</strong>：速度是最锋利的卖点（GPT-OSS 120B 约 500 tps、20B 约 1,000 tps），开发者规模已破百万（2025-03），是开源模型推理的首选之一</li>
+<li><strong>LPU + LPX 硬件线</strong>：确定性架构在延迟敏感场景（语音 Agent、实时支付）有差异化优势，GroqRack 打开受监管行业市场</li>
+</ul>
+<h3 id="_18">强势战略留意</h3>
+<ul>
+<li>与 NVIDIA 的关系演变：从潜在对手变成授权伙伴 + Cloud Partner + 联合机架（LPX × Vera Rubin），既降低生存风险也可能压缩独立性，值得持续跟踪</li>
+<li>推理云重资产扩张（数百兆瓦、13 数据中心、沙特 15 亿美元）的资本开支与利用率匹配度</li>
+<li>主权 AI 订单（沙特 HUMAIN、Bell、DOE）是其区别于其他推理云的关键收入结构</li>
+</ul>
+<h2 id="_19">信息来源</h2>
+<ul>
+<li>官网 https://groq.com（通）：公司定位、LPX 与 NVIDIA 协同、算力扩张口径</li>
+<li>产品 https://groq.com/products（通，实际跳转 Groq Cloud 页）：GroqMetal/GroqCore/GroqAssured 平台分层、LPU 机架规格、13 个数据中心</li>
+<li>技术 https://groq.com/technology（通）：GroqCloud Free/Developer/Enterprise 套餐、GroqRack</li>
+<li>博客/新闻 https://groq.com/blog（通）：融资、NVIDIA 合作、数据中心扩张、行业合作等动态</li>
+<li>服务 https://console.groq.com（通，FetchURL 直连返回 403，经代理 curl 抓取成功）：托管模型清单、价格、API 能力、服务等级</li>
+<li>注：/solutions 路径不存在（404），解决方案一节依据官网新闻与合作公告归纳；公司未披露详细财务数据，相关分析以官方博客口径为准</li>
+</ul></div></div></body></html>

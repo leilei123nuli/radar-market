@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arm</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="arm">Arm</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-08
+<strong>赛道</strong>：2. 芯片 / AI 基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：1990
+<strong>护城河</strong>：CPU IP 授权标准，向数据中心和自研芯片延伸</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Arm（NASDAQ: ARM，总部英国剑桥，软银集团为控股股东）是全球 CPU IP 授权的事实标准：传统商业模式为 IP 授权（licensing）+ 按芯片出货量抽版税（royalty），累计出货 3500 亿+ 颗 Arm 架构芯片，覆盖 99% 智能手机，软件开发者超 2200 万。产品体系按"IP → Compute Subsystems (CSS) → 自研芯片"三层展开：CPU（Cortex-A/R/M/X、Neoverse）、GPU（Mali）、NPU（Ethos）、系统/安全 IP，以及 2026-03-24 历史性推出的首款 Arm 自研数据中心芯片 Arm AGI CPU。最新财季（Q1 FYE27，截至 2026-06-30）总营收 12.9 亿美元，同比 +22%，创单季纪录。业务叙事按三大市场组织：Cloud AI、Edge AI、Physical AI，各由一位 EVP 负责。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>"From IP to Platform"：从卖 IP 升级为平台公司，授权 IP、CSS 子系统、自研 silicon 三层并行，让客户按需求选择集成深度</li>
+<li>数据中心 agentic AI：押注"agentic AI 推高 CPU 需求"判断，以 AGI CPU（自研）+ Neoverse CSS（客户定制）双路径进攻；IDC 报告 Arm 架构加速服务器平台支出已超 x86</li>
+<li>自研芯片落地：AGI CPU 由 Meta 任联合开发 lead partner，TSMC 3nm 代工，客户需求管道已超 20 亿美元（FYE27+FYE28），2026 下半年起规模上市</li>
+<li>Physical AI 生态卡位：Arm Total Design 扩展至 physical AI（80+ 公司加入），推出 Robotics Capability Framework 试图定义机器人能力分级标准</li>
+<li>边缘 AI：CSS for Mobile 2 + Arm Neural Technology（神经图形）巩固移动端，并向 AI PC（NVIDIA RTX Spark 基于 Arm CSS）延伸</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="cloud-data-center">数据中心（Cloud &amp; Data Center）</h3>
+<ul>
+<li><strong>Arm AGI CPU</strong>：首款 Arm 自研数据中心 CPU/SoC，最多 136 个 Neoverse V3 核、300W TDP，主打 agentic AI 基础设施，宣称每机架性能 2 倍于 x86 平台</li>
+<li><strong>Neoverse CSS N4</strong>：可配置度最高的计算子系统，单 die 最多 128 核，支持 LPDDR6 与 PCIe Gen7，面向客户自研数据中心芯片（DPU、网络、定制计算等）</li>
+<li><strong>Neoverse CPU 平台</strong>：云厂商自研芯片底座（AWS Graviton、Google Axion、Microsoft Cobalt、NVIDIA Vera 等均基于此），累计出货超 15 亿核</li>
+</ul>
+<h3 id="pcmobile-pc">移动与 PC（Mobile &amp; PC）</h3>
+<ul>
+<li><strong>CSS for Mobile 2</strong>：AI 原生移动计算平台（2026-09 发布），整合 CPU/GPU/系统 IP 与软件栈</li>
+<li><strong>Arm C2 CPU cluster</strong>：C2-Ultra + C2-Pro 移动 CPU 集群，双 SME2 单元，C2-Ultra 对比上代 AI 性能最高 1.7 倍</li>
+<li><strong>Mali GPUs</strong>：移动 GPU 系列；最新 Mali G2-Ultra NX 为首款集成专用神经加速器的 Mali GPU，配合 Arm Neural Technology 实现神经图形</li>
+</ul>
+<h3 id="autonomous-machines">汽车与机器人（Autonomous Machines）</h3>
+<ul>
+<li><strong>Zena CSS</strong>：面向 AI-defined 汽车与机器人的计算子系统</li>
+<li><strong>AE technologies</strong>：面向自主负载的功能安全与实时计算技术</li>
+</ul>
+<h3 id="_5">嵌入式与物联网</h3>
+<ul>
+<li><strong>Cortex-A / Cortex-R / Cortex-M / Cortex-X</strong>：应用、实时、微控制器、高性能移动 CPU IP 系列</li>
+<li><strong>Ethos NPUs</strong>：端侧 AI/ML 推理 NPU（如 Ethos-U85 用于超低功耗边缘 AI SoC）</li>
+</ul>
+<h3 id="ip">架构与系统 IP</h3>
+<ul>
+<li><strong>Arm 架构</strong>（当前主力 Armv9，版税率更高）：指令集与架构授权</li>
+<li><strong>System IP / Security IP / Subsystem IP</strong>：互连、安全、子系统级 IP 模块</li>
+</ul>
+<h2 id="_6">三、服务分类</h2>
+<h3 id="ip_1">IP 授权服务</h3>
+<ul>
+<li><strong>Arm Total Access</strong>：最全量 IP + 工具 + 支持 + 培训的订阅式授权包</li>
+<li><strong>Arm Flexible Access</strong>：低成本准入，tape-out 时才付授权费，面向中小芯片公司</li>
+</ul>
+<h3 id="_7">支持与培训服务</h3>
+<ul>
+<li>产品支持：文档、下载、support cases、产品安全中心、生命周期状态查询</li>
+<li>培训与认证：讲师/按需技术培训、design checklists &amp; reviews（SoC 设计专家评审）</li>
+<li>Arm Approved Partners：认证设计/ISP/培训合作伙伴体系</li>
+</ul>
+<h3 id="_8">开发者服务</h3>
+<ul>
+<li><strong>Arm Developer Program / Arm Community</strong>：2200 万开发者生态</li>
+<li><strong>Arm AI Portal</strong>：模型、代码与工具的统一入口（2026-09 发布）</li>
+<li><strong>Arm Performix</strong>：面向 Arm 基础设施的工作负载分析与优化工具（Microsoft、MongoDB、Redis、SAP 支持）</li>
+<li>开发工具链：Keil MDK、KleidiAI、Arm Neural Graphics Development Kit、Arm MCP Server</li>
+</ul>
+<h2 id="_9">四、解决方案分类</h2>
+<h3 id="cloud-ai">Cloud AI</h3>
+<ul>
+<li>云计算 / 数据中心 AI / HPC / 电信网络：Neoverse 平台 + AGI CPU + Neoverse CSS，配套 <strong>Arm Total Design</strong> 生态协作计划（加速定制芯片从设计到量产）</li>
+</ul>
+<h3 id="edge-ai">Edge AI</h3>
+<ul>
+<li>智能手机、AI PC、游戏、工业、智慧城市/家居、可穿戴、XR/AR/VR：CSS for Mobile 2、Cortex + Ethos 组合、神经图形方案（Neural Dawn 演示，与 Sumo Digital、腾讯、网易等合作落地）</li>
+</ul>
+<h3 id="physical-ai">Physical AI</h3>
+<ul>
+<li>AI-defined 汽车：Zena CSS + 数字座舱参考方案（与 AWS、Google、Siemens 等合作，硅前软件开发）</li>
+<li>机器人：Arm Total Design for Physical AI（80+ 成员含 AWS、NXP、QNX、Unitree、Hugging Face 等）+ Robotics Capability Framework 能力分级框架</li>
+</ul>
+<h3 id="_10">生态合作方案</h3>
+<ul>
+<li>超大规模客户联合开发：Meta（AGI CPU 多代路线图）、NVIDIA（Vera CPU 量产、RTX Spark）、AWS/Google/Microsoft 自研 Arm 芯片</li>
+<li>与 Qualcomm 等授权客户并存竞合：Qualcomm 宣布基于 Arm 进入数据中心 CPU 市场（Dragonfly C1000）</li>
+</ul>
+<h2 id="_11">五、更新记录</h2>
+<h3 id="_12">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_13">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_14">六、总结</h2>
+<h3 id="_15">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Neoverse 数据中心平台</strong>：版税同比翻倍以上增长，15 亿核出货且增速加快，是版税结构升级的核心引擎</li>
+<li><strong>Arm AGI CPU</strong>：公司史上首款自研芯片，需求管道超 20 亿美元，决定未来两年营收弹性</li>
+<li><strong>CSS（Compute Subsystems）全线产品</strong>：授权单价与版税率双高的载体，云/移动/汽车三线均已落地</li>
+</ul>
+<h3 id="_16">强势战略留意</h3>
+<ul>
+<li>自研 silicon 与授权客户的竞合边界：AGI CPU 让 Arm 从"卖图纸"变成"卖芯片"，与 Qualcomm、Marvell 等客户部分市场正面重叠，生态反噬风险值得持续跟踪</li>
+<li>"agentic AI 吃 CPU"的叙事兑现度：该逻辑是 AGI CPU 与 Neoverse 增长的共同前提，关注云厂商实际部署数据</li>
+<li>Physical AI 标准卡位：Robotics Capability Framework 若成为行业语言，将复制其在移动端的架构话语权</li>
+<li>软银控股结构与资本运作：控股股东利益与其他股东的潜在冲突（公司在 20-F 风险因素中自列）</li>
+</ul>
+<h2 id="_17">信息来源</h2>
+<ul>
+<li>官网 https://www.arm.com（通）：产品体系与市场分类导航、产品矩阵</li>
+<li>博客/新闻 https://newsroom.arm.com（通）：AGI CPU 发布（2026-03-24）、Neoverse CSS N4 / CSS for Mobile 2 / Physical AI 生态（2026-09-08）、Q1 FYE27 财报解读（2026-07-29）</li>
+<li>投资者关系 https://investors.arm.com（通，FetchURL 直连失败，经代理 curl 抓取成功）：公司 profile、累计出货 3500 亿+ 芯片、99% 智能手机份额、2200 万+ 开发者</li>
+</ul></div></div></body></html>
