@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Databricks</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+.top{padding:14px 24px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+.top a{color:var(--accent);text-decoration:none;font-weight:600}
+.wrap{max-width:920px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 34px}
+h1{font-size:26px;margin-top:0}h2{font-size:19px;margin-top:30px;border-top:1px solid var(--line);padding-top:18px}
+h3{font-size:16px}a{color:var(--accent)}blockquote{margin:0 0 18px;padding:10px 16px;background:#f0f4fb;border-left:4px solid var(--accent);border-radius:6px;color:#334155}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px}table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+</style></head><body><div class="top"><a href="../views/index.html">← 返回雷达市场总览</a></div>
+<div class="wrap"><div class="card"><h1 id="databricks">Databricks</h1>
+<blockquote>
+<p><strong>版本</strong>：v1（首次建档） | <strong>建档日期</strong>：2026-10-29
+<strong>赛道</strong>：3. 云 / 开发者基础设施 | <strong>地区</strong>：国外 | <strong>类型</strong>：龙头 | <strong>成立</strong>：2013
+<strong>护城河</strong>：湖仓一体 + Unity Catalog + Mosaic AI，企业数据与 AI 一体化平台</p>
+</blockquote>
+<h2 id="_1">一、公司概况</h2>
+<h3 id="_2">主营业务与产品服务</h3>
+<p>Databricks 是湖仓一体（Lakehouse）架构的主要推动者，由 Apache Spark 创始团队创立。核心产品 Data Intelligence Platform 把数据工程、数据分析、机器学习和生成式 AI 统一在同一套数据底座上，底层基于 Delta Lake 开放表格式，向上提供 Unity Catalog 治理、Databricks SQL、Delta Live Tables、Workflows 和 Mosaic AI。公司以多云 SaaS 方式交付（AWS / Azure / GCP），同时提供自托管方案。</p>
+<h3 id="_3">整体战略方向</h3>
+<ul>
+<li>从“数据湖 + 数据仓库”双栈走向湖仓一体，强调开放格式（Delta Lake / Iceberg）避免厂商锁定</li>
+<li>以 Unity Catalog 做跨数据与 AI 资产的统一治理，争夺企业数据目录与权限入口</li>
+<li>Mosaic AI 把模型训练、微调、评估、部署和 Agent 编排放进数据平台，走“数据旁边做 AI”的路线</li>
+<li>通过 Marketplace 和合作伙伴生态扩展行业解决方案</li>
+</ul>
+<h2 id="_4">二、产品分类</h2>
+<h3 id="_5">湖仓平台</h3>
+<ul>
+<li><strong>Databricks Data Intelligence Platform</strong>：基于湖仓一体的企业数据与 AI 平台，统一数据工程、分析、机器学习和生成式 AI 工作负载</li>
+<li><strong>Delta Lake</strong>：开源事务型数据湖存储格式，支持 ACID、时间旅行、schema 演进和增量处理</li>
+<li><strong>Databricks SQL</strong>：Serverless SQL 数仓引擎，面向 BI 报表和交互式分析</li>
+<li><strong>Delta Live Tables</strong>：声明式数据管道，支持流批一体的 ETL 与数据质量约束</li>
+</ul>
+<h3 id="_6">数据治理</h3>
+<ul>
+<li><strong>Unity Catalog</strong>：跨工作区、跨云的数据与 AI 资产统一目录，提供权限、血缘、审计和发现能力</li>
+<li><strong>Databricks Marketplace</strong>：数据、模型、应用和解决方案的交换市场</li>
+</ul>
+<h3 id="ai">数据工程与 AI</h3>
+<ul>
+<li><strong>Databricks Workflows</strong>：作业编排、调度与可观测的数据工程工作流</li>
+<li><strong>Mosaic AI</strong>：企业级模型训练、微调、评估、部署与 Agent 构建平台</li>
+<li><strong>Mosaic AI Model Serving</strong>：统一模型推理与 Agent 服务托管</li>
+<li><strong>MLflow</strong>：开源机器学习生命周期管理，覆盖实验跟踪、模型注册和部署</li>
+</ul>
+<h2 id="_7">三、服务分类</h2>
+<h3 id="_8">平台与云服务</h3>
+<ul>
+<li>多云托管服务：AWS / Azure / GCP 上的全托管 Databricks 工作区</li>
+<li>自托管与混合部署：面向数据主权和合规要求的企业部署选项</li>
+<li>专业服务与培训：数据工程、湖仓迁移、AI 平台建设的实施与认证</li>
+</ul>
+<h2 id="_9">四、解决方案分类</h2>
+<h3 id="_10">行业解决方案</h3>
+<ul>
+<li>金融、零售、制造、生命科学、公共部门的数据平台与 AI 落地</li>
+</ul>
+<h3 id="_11">场景解决方案</h3>
+<ul>
+<li>数据工程与 ETL、BI 与自助分析、机器学习与生成式 AI、实时数据管道、数据治理与合规</li>
+</ul>
+<h2 id="_12">五、更新记录</h2>
+<h3 id="_13">产品/服务/解决方案更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h3 id="_14">战略策略与行为更新栏</h3>
+<p>（首次建档，暂无更新）</p>
+<h2 id="_15">六、总结</h2>
+<h3 id="_16">强势业务或产品推荐</h3>
+<ul>
+<li><strong>Data Intelligence Platform</strong>：湖仓一体的事实标准之一，数据与 AI 工作负载在同一底座上闭环</li>
+<li><strong>Unity Catalog</strong>：治理能力是大型企业选型的核心差异点，也是数据资产入口</li>
+<li><strong>Mosaic AI</strong>：把模型训练/评估/部署放进数据平台，直接承接企业生成式 AI 需求</li>
+</ul>
+<h3 id="_17">强势战略留意</h3>
+<ul>
+<li>与 Snowflake 在湖仓/数据云正面竞争，同时面临 AWS、Azure、GCP 原生数据服务的挤压</li>
+<li>开放格式（Delta Lake / Iceberg）既是差异化，也要平衡商业化与生态控制力</li>
+<li>Mosaic AI 能否把数据客户转化为 AI 平台客户，是下一阶段增长的关键</li>
+</ul>
+<h2 id="_18">信息来源</h2>
+<ul>
+<li>官网 https://www.databricks.com（通）：Data Intelligence Platform 定位与产品体系</li>
+<li>产品页 https://www.databricks.com/product/data-intelligence-platform（通）：湖仓、Unity Catalog、Mosaic AI</li>
+<li>博客/新闻 https://www.databricks.com/blog（通）：产品发布与工程实践</li>
+</ul></div></div></body></html>
